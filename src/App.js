@@ -1,18 +1,35 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import Header from "./Header";
+import Pagecontent from './Pagecontent';
+import Footer from './Footer';
 
 class App extends Component {
+
+  constructor(){
+    super();
+    this.state = {
+      selectedpage: 1,
+    }
+  }
+
+
+  changeSelected(val) {
+    this.setState({selectedpage: val});
+    console.log('App level->change selectedpage',val);
+  }
+
+
   render() {
+    console.log('App level render->selectedpage',this.state.selectedpage);
+    // console.log(this.state.selectedpage);
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <Header selectedpage={this.state.selectedpage} changeSelected={this.changeSelected.bind(this)}/>
+
+        <Pagecontent className='content' />
+        <Footer />
       </div>
     );
   }

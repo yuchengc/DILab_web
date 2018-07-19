@@ -1,0 +1,146 @@
+@import './index.css';
+$approach_card_padding_l: 30;
+$approach_card_padding_m: 20;
+
+$approach_card_margin_l: 20;
+$approach_card_margin_m: 20;
+
+$approach_card_width-l: calc((60vw / 3) - #{$approach_card_margin_l}*2px);
+$approach_card_width-m:	calc((80vw / 3) - #{$approach_card_margin_m}*2px );
+$approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
+
+.test{
+	color:red;	
+}
+.approaches{
+
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 10px auto;
+
+
+
+	.approaches-cards{
+		display: block;
+		// display: flex;
+		// display-direction: row;
+		// justify-content:space-between;
+		// flex-wrap: wrap;
+		width: calc(60vw);
+		height: auto;
+		margin: auto;
+		position: relative;
+		padding-top: 50px;
+
+		.approach-card-extend{
+			@extend .approach-card;
+			width: 100% !important;
+			height: calc(60vw / 3 * 2 ) !important;
+			z-index: 5;
+			position: absolute;
+			top: #{$approach_card_margin_l}px;
+			left: 0;
+			background: green;
+			transition-duration: .5s;
+
+
+
+		}
+		.approach-card{
+			// $window_width: calc((1000px / 3) - 40px);
+			// position: relative;
+			// top: 0px;
+			display: inline-block;
+			width: $approach_card_width_l;
+			height: $approach_card_width_l;
+			background: #eeeeee;
+			margin: #{$approach_card_margin_l}px;
+			padding: #{$approach_card_padding_l}px;
+			overflow: hidden;
+			border-radius: 10px;
+			z-index: 1;
+			transition-duration: 1s;
+			.card-explore{
+				position: absolute;
+				top: $approach_card_margin_l;
+				left: $approach_card_margin_l;
+
+			}
+			.card-ideation{
+				@extend .card-explore;
+				left: calc( 60vw / 3 * 1);
+
+			}
+			.card-expliments{
+
+			}
+			.card-prototype{
+
+			}
+			.card-mvp{
+
+			}
+			.card-lego{
+
+			}
+
+			&:hover{
+
+				.info-level1{
+					p{
+						// display: block;
+						transform: translateY(-20px);
+						opacity: 1;
+
+					}
+				} 
+
+			}
+			.info-level1{
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 50%;
+				top: 50%;
+				
+
+				// background: green;
+				h5{
+					// display:block;
+
+					font-size: 1.6em;
+
+				}
+				p{
+					display:block;
+					width: 100%;
+					height: 100%;
+					font-size: 1em;
+					// display: none;
+					opacity: 0;
+					transition-duration: 0.5s;
+					position: relative;
+					top: 50px;
+				}
+			}
+			.info-level2{
+				display: none;
+
+				.detailedinfo{
+					display: block;
+
+
+					.inputinfo{
+						display: block;
+						ul{
+							list-style-type: none;
+
+						}
+					}
+				}
+			}
+			
+		}
+	}
+}
