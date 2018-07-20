@@ -5,6 +5,7 @@ const ApproachCards = ({approaches}) =>{
 	const approachcomponent = approaches.map((a,i)=>{
 		return(
 			<Card id={approaches[i].id}
+				classname={approaches[i].classname}
 				title={approaches[i].title}
 				purpose={approaches[i].purpose}
 				input={approaches[i].input}

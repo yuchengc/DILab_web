@@ -1,6 +1,7 @@
 export const approaches =[
 	{
 		id: 1,
+		classname: 'exploration',
 		title: 'Exploration',
 		purpose: 'Exploration:  here is the description, here is the description, here is the description,here is the descriptionoi h;qkjdnf;ugf',
 		processfigure: '#',
@@ -58,6 +59,7 @@ export const approaches =[
 	},
 	{
 		id: 2,
+		classname: 'ideation',
 		title: 'Ideation',
 		purpose: 'Ideation:here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
@@ -116,6 +118,7 @@ export const approaches =[
 	},
 	{
 		id: 3,
+		classname: 'expliments',
 		title: 'Expliments',
 		purpose: 'here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
@@ -174,6 +177,7 @@ export const approaches =[
 	},
 	{
 		id: 4,
+		classname: 'prototype',
 		title: 'Prototype',
 		purpose: 'here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
@@ -232,6 +236,7 @@ export const approaches =[
 	{
 		id: 5,
 		title: 'MVP',
+		classname: 'mvp',
 		purpose: 'here is the description, here is the description, here is the description,here is the description, here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
 		input: [
@@ -288,7 +293,8 @@ export const approaches =[
 	},
 	{
 		id: 6,
-		title: 'Lego',
+		classname: 'lego-bricks',
+		title: 'Lego Bricks',
 		purpose: 'here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
 		input: [

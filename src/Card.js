@@ -5,7 +5,7 @@ import React from 'react';
 
 const Card = (props) => {
 
-
+	let selectedcard = 0;
 	const listrender = (listitem) => {
 		
 		const output = listitem.map((item)=>{
@@ -23,18 +23,37 @@ const Card = (props) => {
 	}
 
 	const extendcard = (event) => {
-		var cardbg = event.target.closest('.approach-card');
-		// console.log("click the card, target:", event.target);
-		// console.log("click the card, select:", cardbg);
-		cardbg.classList.toggle("approach-card-extend");
-		console.log("added class");
+		// if(index !== selectedcard){
+			// document.querySelectorAll('.approach-card').forEach((card)=>{
+			// 	card.classList.remove('approach-card-extend');
+			// });
+		// }
+		var selectedcard = document.querySelector('approach-card-extend');
+		console.log('old selected card', selectedcard);
+		var now_selectedcard = event.target.closest('.approach-card');
+		// var card_index = cardbg.classList.item(1);
+		
+		// console.log('index',card_index);
 
+		if( now_selectedcard !== selectedcard){
+			document.querySelectorAll('.approach-card').forEach((card)=>{
+				card.classList.remove('approach-card-extend');
+			});
+		}else{
+			now_selectedcard.classList.remove("approach-card-extend");
+		}
+		// console.log("click the card, target:", event.target);
+		console.log("now select:", now_selectedcard);
+		// now_selectedcard.classList.toggle("approach-card-extend");
+		// console.log("added class");
+		selectedcard=now_selectedcard.classList.item(1);
+		console.log('new selected',selectedcard);
 	}
 
 
-	// var cardClass= ( props.title === index ? 'tab-item-selected':'tab-item');
+	var cardClass= `approach-card card-${props.classname}`;
 	return(
-		<div className='approach-card' onClick={extendcard}>
+		<div className={cardClass} onClick={extendcard}>
 			<div className='info-level1'>
 				<h5>{props.title}</h5>
 				<p>{props.purpose}</p>
