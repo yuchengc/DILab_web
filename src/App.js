@@ -28,7 +28,7 @@ class App extends Component {
       <div>
         <Header selectedpage={this.state.selectedpage} changeSelected={this.changeSelected.bind(this)}/>
 
-        <Pagecontent className='content' />
+        <Pagecontent className='content' selectedpage={this.state.selectedpage}  />
         <Footer />
       </div>
     );

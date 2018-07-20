@@ -1,4 +1,5 @@
 @import './index.css';
+$GLOBAL_CONTENT_WIDTH: 60vw;
 $approach_card_padding_l: 30;
 $approach_card_padding_m: 20;
 
@@ -9,8 +10,246 @@ $approach_card_width-l: calc((60vw / 3) - #{$approach_card_margin_l}*2px);
 $approach_card_width-m:	calc((80vw / 3) - #{$approach_card_margin_m}*2px );
 $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 
-.test{
-	color:red;	
+@mixin content-section($gb:#D8D8D8,$height: 1000px){
+	display: block;
+	height: $height;
+	width: 100%;
+	position: relative;
+	left: 0;
+	background: $gb;
+	// clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
+	// -webkit-clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
+}
+@mixin paragraph-section($top:25vh, $text_width:40vw, $align:left){
+	position: relative;
+	width: $GLOBAL_CONTENT_WIDTH;
+	height: auto;
+	margin: auto;
+	display: block;
+	top: $top;
+
+	// text-align: $align;
+	// @mixin aligndirection($align){
+
+	// }
+
+	h3{
+		font-size: 4rem;
+		width: $text_width;
+		position: relative;
+
+		@if $align == left {left: 0;}
+		@if $align == right {left: calc(100% - #{$text_width}) !important;}
+		text-align:left;
+		display: block;
+	}
+	h5{
+		width: $text_width;
+		// margin: auto;
+		position: relative;
+		font-size: 1.6rem;
+		font-weight: 200;
+		@if $align == left {left: 0;}
+		@if $align == right {left: calc(100% - #{$text_width}) !important;}
+		top:1rem;
+		// top: $top;
+		text-align:left;
+		display: block;
+	}
+	ul{
+		font-size: 1.6rem;
+		font-weight: 200;
+		@if $align == left {left: 0;}
+		@if $align == right {left: calc(100% - #{$text_width}) !important;}
+		display: block;
+		width: $text_width;
+		position: relative;
+		top: 3rem;
+		list-style-type: none;
+
+		li{
+			font-size: 1.6rem;
+			font-weight: 200;
+		}
+	}
+
+}
+
+.processpage-frame{
+	width: 100%;
+	height: auto;
+	left: 0;	
+}
+.work-process-greeting{
+	width: 100%;
+	height: auto;
+	left: 0;
+
+	.content-section{
+		
+		clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
+		-webkit-clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
+		@include content-section();
+
+		.paragraph-section{
+			@include paragraph-section();
+		}
+	}
+}
+
+.work-process-ques{
+	width: 100%;
+	height: auto;
+	left: 0;
+	// @extend .work-process-greeting;
+	.content-section{
+		@include content-section(#ffffff,800px);
+
+		.paragraph-section{
+
+			@include paragraph-section(10vh, 50vw, right);
+
+		}
+		.button-set{
+
+			width: $GLOBAL_CONTENT_WIDTH;
+			height: auto;
+			margin: 0 auto;
+			display: block;
+			// top: 50px;
+			position: relative;
+			top: 20vh;
+			left: 10vw;
+
+			button{
+				display: inline-block;
+				width: auto;
+				// height: rem;
+				padding: .5rem 1rem;
+				background: white;
+				border-radius: 5px;
+				border: 2px solid grey;
+				margin-right: 20px;
+
+			}
+		}
+	}
+}
+.work-process-scope{
+	width: 100%;
+	height: auto;
+	left: 0;
+	// @extend .work-process-greeting;
+	.content-section{
+		@include content-section(#eeeeee,800px);
+		clip-path: polygon(0 100%, 0% 14%, 100% 0%, 100% 100%);
+		-webkit-clip-path: polygon(0 100%, 0% 14%, 100% 0%, 100% 100%);
+
+
+		.paragraph-section{
+
+			@include paragraph-section(10vh, 50vw, left);
+
+		}
+		.button-set{
+
+			width: $GLOBAL_CONTENT_WIDTH;
+			height: auto;
+			margin: 0 auto;
+			display: block;
+			// top: 50px;
+			position: relative;
+			top: 20vh;
+			left: 10vw;
+
+			button{
+				display: inline-block;
+				width: auto;
+				// height: rem;
+				padding: .5rem 1rem;
+				background: white;
+				border-radius: 5px;
+				border: 2px solid grey;
+				margin-right: 20px;
+
+			}
+		}
+	}
+}
+
+
+
+
+.greeting-1{
+	display: block;
+	height: 1000px;
+	width: 100%;
+	position: relative;
+	left: 0;
+	background: #D8D8D8;
+	clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
+	-webkit-clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
+
+	h1{
+		font-size: 2rem;
+
+	}
+}
+.greeting-2, .greeting-3{
+	@extend .greeting-1;
+	clip-path: none;
+}
+
+.scroll-indicator-left{
+
+	width:30vw;
+	height:1rem;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	position: relative;
+	// left: 0;
+	flost: left;
+	z-index:5;
+	// rught: auto;
+
+	.side-caption-left{
+		font-size: 1rem;
+		&:after{
+			content: '';
+			width:15vw;
+			height: 5px;
+			position: relative;
+			background: black;
+			display: inline-block;
+			top: -0.2rem;
+			left: 20px;
+			transition-duration: .5s;
+
+
+		}
+	
+
+	}
+
+}
+.scroll-indicator-right{
+	@extend .scroll-indicator-left;
+	// width:30vw;
+	// height:1rem;
+	// transform: rotate(-90deg);
+	// -webkit-transform: rotate(-90deg);
+	position: relative;
+	float: right;
+	// right: 0;
+	// left: auto;
+
+	.side-caption-right{
+
+		@extend .side-caption-left;
+		
+
+	}
+
 }
 .approaches{
 
@@ -23,30 +262,10 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 
 	.approaches-cards{
 		display: block;
-		// display: flex;
-		// display-direction: row;
-		// justify-content:space-between;
-		// flex-wrap: wrap;
 		width: calc(60vw);
 		height: calc(40vw);
 		margin: auto;
 		position: relative;
-		// padding-top: 50px;
-
-		// .approach-card-extend{
-		// 	@extend .approach-card;
-		// 	width: 100% !important;
-		// 	height: calc(60vw / 3 * 2 ) !important;
-		// 	z-index: 5;
-		// 	position: absolute;
-		// 	top: 0 px;
-		// 	left: 0 px;
-		// 	background: green;
-		// 	transition-duration: .5s;
-
-
-
-		// }
 		.approach-card{
 			// $window_width: calc((1000px / 3) - 40px);
 			// position: relative;
@@ -80,20 +299,21 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 				width: 100%;
 				height: 50%;
 				top: 50%;
+				transition-duration: .5s;
 				
 
-				// background: green;
-				h5{
-					// display:block;
+				
+				.title {
+					// display: block;
 
-					font-size: 1.6em;
+					font-size: 1.6rem;
 
 				}
 				p{
 					display:block;
 					width: 100%;
 					height: 100%;
-					font-size: 1em;
+					font-size: 1rem;
 					// display: none;
 					opacity: 0;
 					transition-duration: 0.5s;
@@ -103,19 +323,8 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 			}
 			.info-level2{
 				display: none;
+				transition-duration: .5s;
 
-				.detailedinfo{
-					display: block;
-
-
-					.inputinfo{
-						display: block;
-						ul{
-							list-style-type: none;
-
-						}
-					}
-				}
 			}
 			
 		}
@@ -157,16 +366,58 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 		}
 		.approach-card-extend{
 			// @extend .approach-card;
-			// width: calc( 100% - #{$approach_card_margin_l}*2px) !important;
-			// height: calc(60vw / 3 * 2 ) !important;
+			width: calc( 100% - #{$approach_card_margin_l}*2px) !important;
+			height: calc(60vw / 3 * 2 ) !important;
 			z-index: 5;
 			position: absolute;
-			top: 0 px !important;
-			left: 0 px !important;
-			background: green;
+			top: 0px !important;
+			left: 0px !important;
+			background: #efefef;
 			transition-duration: .5s;
+			@extend .approach-card;
 
 
+			.info-level1{
+
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 30%;
+				top: 0;
+				transition-duration: .5s;
+
+				// background: green;
+				h5{
+					// display:block;
+
+					font-size: 1.6rem;
+
+				}
+				p{
+					display:block;
+					width: 100%;
+					height: 100%;
+					// font-size: 1rem;
+					// display: none;
+					opacity: 0;
+					transition-duration: 0.5s;
+					position: relative;
+					top: 50px;
+				}
+			}
+			.info-level2{
+				display: block;
+				transition-duration: .5s;
+
+
+				.detailedinfo{
+					.inputinfo ul, .todoinfo ul, .deliverableinfo ul{
+						list-style-type: none;
+
+
+					}
+				}
+			}
 
 		}
 

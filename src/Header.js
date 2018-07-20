@@ -21,7 +21,7 @@ class Header extends Component {
   // }
 
   render() {
-    console.log('Header level',this.props.selectedpage);
+    // console.log('Header level',this.props.selectedpage);
     return (
       <div className="nav-header">
         <div className="lab-title">

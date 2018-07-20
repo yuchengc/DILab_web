@@ -38,7 +38,7 @@ class Tabs extends Component{
   
 
   _renderTitle(){
-    console.log("Tab level",this.props.selected);
+    // console.log("Tab level",this.props.selected);
     // console.log(this.props.children);
 
     function labels(child, index) {

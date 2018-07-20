@@ -5,7 +5,7 @@ import React from 'react';
 
 const Card = (props) => {
 
-	let selectedcard = 0;
+
 	const listrender = (listitem) => {
 		
 		const output = listitem.map((item)=>{
@@ -23,39 +23,33 @@ const Card = (props) => {
 	}
 
 	const extendcard = (event) => {
-		// if(index !== selectedcard){
-			// document.querySelectorAll('.approach-card').forEach((card)=>{
-			// 	card.classList.remove('approach-card-extend');
-			// });
-		// }
-		var selectedcard = document.querySelector('approach-card-extend');
-		console.log('old selected card', selectedcard);
+	
+		var old_selectedcard_index = document.querySelector('.approach-card-extend') !== null ? document.querySelector('.approach-card-extend').classList.item(1) : 0;
+
+		// console.log('old selected card', old_selectedcard_index);
 		var now_selectedcard = event.target.closest('.approach-card');
-		// var card_index = cardbg.classList.item(1);
+		var now_selectedcard_index = now_selectedcard.classList.item(1);
 		
 		// console.log('index',card_index);
 
-		if( now_selectedcard !== selectedcard){
+		if( now_selectedcard_index !== old_selectedcard_index){
+			// console.log('now_selectedcard',now_selectedcard_index, 'old crad', old_selectedcard_index);
 			document.querySelectorAll('.approach-card').forEach((card)=>{
 				card.classList.remove('approach-card-extend');
 			});
-		}else{
-			now_selectedcard.classList.remove("approach-card-extend");
 		}
 		// console.log("click the card, target:", event.target);
-		console.log("now select:", now_selectedcard);
-		// now_selectedcard.classList.toggle("approach-card-extend");
-		// console.log("added class");
-		selectedcard=now_selectedcard.classList.item(1);
-		console.log('new selected',selectedcard);
+		// console.log("now select:", now_selectedcard);
+		now_selectedcard.classList.toggle("approach-card-extend");
+		
 	}
 
 
 	var cardClass= `approach-card card-${props.classname}`;
 	return(
-		<div className={cardClass} onClick={extendcard}>
+		<div className={cardClass} onClick={extendcard.bind(this)}>
 			<div className='info-level1'>
-				<h5>{props.title}</h5>
+				<h5 className='title'>{props.title}</h5>
 				<p>{props.purpose}</p>
 			</div>
 			<div className='info-level2'>
