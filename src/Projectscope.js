@@ -9,14 +9,14 @@ const Projectscope = () =>{
 			<div className='content-section'>
 				<img src='#' alt='bg'/>
 				<div className='paragraph-section'>
-					<h3>Help us understand your goal</h3>
+					<h3>Measure Project scope </h3>
 					<h5>A short sentence that describes this step. A short sentence that describes this step. A short sentence that describes this step.</h5>
 
 					<ul>
 						Some Questions we might ask:
-						<li>Question 1, what is your business goal?</li>
-						<li>Question 2, Who is the target user? What problem you want to solve?</li>
-						<li>Question 3, What is your project plan?</li>
+						<li>- Clarify the context of an idea supported by our Business.</li>
+						<li>- Reach a common understanding of the idea being presented.</li>
+						<li>- Develop a high level "outline design on a page" for these solution options.</li>
 					</ul>
 				</div>
 				<div className='button-set'>
@@ -27,7 +27,7 @@ const Projectscope = () =>{
 
 			</div>
 			<div className='scroll-indicator-left'>
-				<span className='side-caption-left'>BRING YOUR IDEA HERE !</span>
+				<span className='side-caption-left'></span>
 			</div>
 
 		</div>

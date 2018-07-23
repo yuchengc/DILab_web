@@ -6,7 +6,7 @@ $approach_card_padding_m: 20;
 $approach_card_margin_l: 20;
 $approach_card_margin_m: 20;
 
-$approach_card_width-l: calc((60vw / 3) - #{$approach_card_margin_l}*2px);
+$approach_card_width-l: calc((80vw / 3) - #{$approach_card_margin_l}*2px);
 $approach_card_width-m:	calc((80vw / 3) - #{$approach_card_margin_m}*2px );
 $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 
@@ -20,6 +20,31 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 	// clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
 	// -webkit-clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
 }
+
+@mixin section-title-size(){
+	font-size: 4rem;
+
+	text-align:left;
+	display: block;
+	position : relative;
+}
+@mixin section-subtitle-size(){
+	font-size: 1.6rem;
+	font-weight: 200;
+	top:1rem;
+	text-align:left;
+	display: block;
+	position : relative;
+}
+@mixin image-sizing($width, $height:auto, $top:10vh){
+	position: relative;
+	top: $top;
+	letf: 0;
+	width: $width;
+	height: $height;
+	margin-right: auto;
+	margin-left: auto;
+}
 @mixin paragraph-section($top:25vh, $text_width:40vw, $align:left){
 	position: relative;
 	width: $GLOBAL_CONTENT_WIDTH;
@@ -28,33 +53,29 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 	display: block;
 	top: $top;
 
-	// text-align: $align;
-	// @mixin aligndirection($align){
-
-	// }
 
 	h3{
-		font-size: 4rem;
+		@include section-title-size();
+		// font-size: 4rem;
 		width: $text_width;
-		position: relative;
+		// position: relative;
 
 		@if $align == left {left: 0;}
 		@if $align == right {left: calc(100% - #{$text_width}) !important;}
-		text-align:left;
-		display: block;
+		// text-align:left;
+		// display: block;
 	}
 	h5{
+		@include section-subtitle-size();
 		width: $text_width;
-		// margin: auto;
-		position: relative;
-		font-size: 1.6rem;
-		font-weight: 200;
+		// position: relative;
+		// font-size: 1.6rem;
+		// font-weight: 200;
 		@if $align == left {left: 0;}
 		@if $align == right {left: calc(100% - #{$text_width}) !important;}
-		top:1rem;
-		// top: $top;
-		text-align:left;
-		display: block;
+		// top:1rem;
+		// text-align:left;
+		// display: block;
 	}
 	ul{
 		font-size: 1.6rem;
@@ -79,6 +100,8 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 	width: 100%;
 	height: auto;
 	left: 0;	
+	position: relative;
+	top: 0;
 }
 .work-process-greeting{
 	width: 100%;
@@ -101,7 +124,9 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 	width: 100%;
 	height: auto;
 	left: 0;
-	// @extend .work-process-greeting;
+	position: relative;
+	top: 0;
+	
 	.content-section{
 		@include content-section(#ffffff,800px);
 
@@ -137,9 +162,11 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 }
 .work-process-scope{
 	width: 100%;
-	height: auto;
+	height: 800px;
 	left: 0;
-	// @extend .work-process-greeting;
+	position: relative;
+	top: 0;
+	
 	.content-section{
 		@include content-section(#eeeeee,800px);
 		clip-path: polygon(0 100%, 0% 14%, 100% 0%, 100% 100%);
@@ -148,21 +175,22 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 
 		.paragraph-section{
 
-			@include paragraph-section(10vh, 50vw, left);
+			@include paragraph-section(20vh, 50vw, left);
 
 		}
 		.button-set{
 
 			width: $GLOBAL_CONTENT_WIDTH;
 			height: auto;
-			margin: 0 auto;
+			margin: 0px auto;
 			display: block;
 			// top: 50px;
 			position: relative;
-			top: 20vh;
-			left: 10vw;
+			top: 25vh;
+			left: 0vw;
 
 			button{
+
 				display: inline-block;
 				width: auto;
 				// height: rem;
@@ -175,8 +203,126 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 			}
 		}
 	}
+	.scroll-indicator-left{
+		z-index: 1;
+		.side-caption-left{
+			&:after{
+				width:15vw;
+				left: -5vw;
+			}
+		}
+	}
 }
 
+.work-process-outcome{
+	width: 100%;
+	height: 800px;
+	left: 0;
+	position: relative;
+	top: 0;
+	
+	img{
+		@include image-sizing(45vw, auto,10vh);
+		position: absolute;
+		left: 10vw;
+		z-index: 5;
+	}
+	.content-section{
+		@include content-section(#ffffff,900px);
+		clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
+		-webkit-clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
+
+		
+		.paragraph-section{
+
+			@include paragraph-section(15vh, 30vw, right);
+			position: absolute;
+			left: 30vw;
+
+		}
+		.button-set{
+
+			width: $GLOBAL_CONTENT_WIDTH;
+			height: auto;
+			margin: 0px auto;
+			display: block;
+			// top: 50px;
+			position: relative;
+			top: 25vh;
+			left: 0vw;
+
+			button{
+
+				display: inline-block;
+				width: auto;
+				// height: rem;
+				padding: .5rem 1rem;
+				background: white;
+				border-radius: 5px;
+				border: 2px solid grey;
+				margin-right: 20px;
+
+			}
+		}
+	}
+	.scroll-indicator-left{
+		z-index: 1;
+		.side-caption-left{
+			&:after{
+				width:15vw;
+				left: -5vw;
+			}
+		}
+	}
+}
+
+.work-process-Futuresupport{
+	width: 100%;
+	height: 800px;
+	left: 0;
+	position: relative;
+	top: 0;
+	
+	.content-section{
+		@include content-section(#efefef,600px);
+		clip-path: polygon(0 100%, 0% 0%, 100% 14%, 100% 100%);
+		-webkit-clip-path: polygon(0 100%, 0% 0%, 100% 14%, 100% 100%);
+
+		
+		.paragraph-section{
+
+			@include paragraph-section(15vh, 50vw, left);
+			// position: absolute;
+			// left: 30vw;
+
+		}
+		.button-set{
+
+			width: $GLOBAL_CONTENT_WIDTH;
+			height: auto;
+			margin: 0px auto;
+			display: block;
+			// top: 50px;
+			position: relative;
+			top: 25vh;
+			left: 0vw;
+
+			button{
+
+				display: inline-block;
+				width: auto;
+				// height: rem;
+				padding: .5rem 1rem;
+				background: white;
+				border-radius: 5px;
+				border: 2px solid grey;
+				margin-right: 20px;
+
+			}
+		}
+	}
+	
+}
 
 
 
@@ -199,6 +345,7 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 	@extend .greeting-1;
 	clip-path: none;
 }
+
 
 .scroll-indicator-left{
 
@@ -242,6 +389,7 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 	float: right;
 	// right: 0;
 	// left: auto;
+	z-index: 5;
 
 	.side-caption-right{
 
@@ -251,21 +399,47 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 	}
 
 }
-.approaches{
+.work-process-internal-approaches{
 
 	display: block;
 	width: 100%;
 	height: auto;
-	margin: 10px auto;
+	margin: 0px auto;
+	background: #eeeeee;
+	padding-top: 12vh;
 
+	h3{
+		@include section-title-size();
+		width: calc(60vw);
+		// height: calc(55vw);
+		margin: auto;
+	}
+	h5{
+		@include section-subtitle-size();
+		width: calc(60vw);
+		// height: calc(55vw);
+		margin: auto;
+		margin-bottom: 5vh;
+	}
 
+	.scroll-indicator-left{
+		z-index: 1;
+		.side-caption-left{
+			
+			&:after{
+				width:20vw;
+				left: 20pxw;
+			}
+		}
+	}
 
 	.approaches-cards{
 		display: block;
-		width: calc(60vw);
-		height: calc(40vw);
+		width: calc(80vw);
+		height: calc(60vw);
 		margin: auto;
 		position: relative;
+		z-index: 2;
 		.approach-card{
 			// $window_width: calc((1000px / 3) - 40px);
 			// position: relative;
@@ -273,12 +447,12 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 			display: inline-block;
 			width: $approach_card_width_l;
 			height: $approach_card_width_l;
-			background: #eeeeee;
+			background: white;
 			margin: #{$approach_card_margin_l}px;
 			padding: #{$approach_card_padding_l}px;
 			overflow: hidden;
 			border-radius: 10px;
-			z-index: 1;
+			z-index: 3;
 			transition-duration: 1s;
 			
 			&:hover{
@@ -337,42 +511,42 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 		}
 		.card-ideation{
 			@extend .card-exploration;
-			left: calc( 60vw / 3 * 1);
+			left: calc( 80vw / 3 * 1);
 
 		}
 		.card-expliments{
 			@extend .card-exploration;
-			left: calc( 60vw / 3 * 2);
+			left: calc( 80vw / 3 * 2);
 
 		}
 		.card-prototype{
 			@extend .card-exploration;
 			// left: calc( 60vw / 3 * 1);
-			top: calc( (60vw / 3 * 1));
+			top: calc( (80vw / 3 * 1));
 
 		}
 		.card-mvp{
 			@extend .card-exploration;
 			// left: calc( 60vw / 3 * 1);
-			top: calc( 60vw / 3 * 1);
-			left: calc( 60vw / 3 * 1);
+			top: calc( 80vw / 3 * 1);
+			left: calc( 80vw / 3 * 1);
 
 		}
 		.card-lego-bricks{
 			@extend .card-exploration;
 			// left: calc( 60vw / 3 * 1);
-			top: calc( 60vw / 3 * 1);
-			left: calc( 60vw / 3 * 2);
+			top: calc( 80vw / 3 * 1);
+			left: calc( 80vw / 3 * 2);
 		}
 		.approach-card-extend{
 			// @extend .approach-card;
 			width: calc( 100% - #{$approach_card_margin_l}*2px) !important;
-			height: calc(60vw / 3 * 2 ) !important;
+			height: calc(80vw / 3 * 2 ) !important;
 			z-index: 5;
 			position: absolute;
 			top: 0px !important;
 			left: 0px !important;
-			background: #efefef;
+			background: white;
 			transition-duration: .5s;
 			@extend .approach-card;
 
