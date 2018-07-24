@@ -1,8 +1,8 @@
 import React from 'react';
-import './content_processpage.css'
+import './Approaches.css'
 import Approachcards from './Approachcards'
 import {approaches_content} from './approaches_content' 
-import './style/animate.css';
+import '../../../style_global/animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 // import Card from './Card';
 

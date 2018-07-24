@@ -1,0 +1,216 @@
+@import '../mixin_processpage.scss';
+@import '../variable_processpage.scss';
+
+.work-process-internal-approaches{
+
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+	background: #eeeeee;
+	padding-top: 12vh;
+
+	h3{
+		@include section-title-size();
+		width: calc(60vw);
+		// height: calc(55vw);
+		margin: auto;
+	}
+	h5{
+		@include section-subtitle-size();
+		width: calc(60vw);
+		// height: calc(55vw);
+		margin: auto;
+		margin-bottom: 5vh;
+	}
+
+	.scroll-indicator-left{
+		z-index: 1;
+		top: -10vw;
+		.side-caption-left{
+			
+			&:after{
+				width:20vw;
+				left: 20pxw;
+			}
+		}
+	}
+
+	.approaches-cards{
+		display: block;
+		width: calc(80vw);
+		height: calc(60vw);
+		margin: auto;
+		position: relative;
+		z-index: 2;
+		.approach-card{
+			// $window_width: calc((1000px / 3) - 40px);
+			// position: relative;
+			// top: 0px;
+			display: inline-block;
+			width: $approach_card_width_l;
+			height: $approach_card_width_l;
+			background: white;
+			margin: #{$approach_card_margin_l}px;
+			padding: #{$approach_card_padding_l}px;
+			overflow: hidden;
+			border-radius: 10px;
+			z-index: 3;
+			transition-duration: 1s;
+			
+			&:hover{
+
+				.info-level1{
+					p{
+						// display: block;
+						transform: translateY(-20px);
+						opacity: 1;
+
+					}
+				} 
+
+			}
+			.info-level1{
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 50%;
+				top: 50%;
+				transition-duration: .5s;
+				left:0;
+				
+
+				
+				.title {
+					// display: block;
+
+					font-size: 1.6rem;
+
+				}
+				p{
+					display:block;
+					width: 100%;
+					height: 100%;
+					font-size: 1rem;
+					// display: none;
+					opacity: 0;
+					transition-duration: 0.5s;
+					position: relative;
+					top: 0px;
+				}
+			}
+			.info-level2{
+				display: none;
+				transition-duration: .5s;
+
+			}
+			
+		}
+		.card-exploration{
+			@extend .approach-card;
+			position: absolute !important;
+			top: $approach_card_margin_l;
+			left: $approach_card_margin_l;
+
+		}
+		.card-ideation{
+			@extend .card-exploration;
+			left: calc( 80vw / 3 * 1);
+
+		}
+		.card-expliments{
+			@extend .card-exploration;
+			left: calc( 80vw / 3 * 2);
+
+		}
+		.card-prototype{
+			@extend .card-exploration;
+			// left: calc( 60vw / 3 * 1);
+			top: calc( (80vw / 3 * 1));
+
+		}
+		.card-mvp{
+			@extend .card-exploration;
+			// left: calc( 60vw / 3 * 1);
+			top: calc( 80vw / 3 * 1);
+			left: calc( 80vw / 3 * 1);
+
+		}
+		.card-lego-bricks{
+			@extend .card-exploration;
+			// left: calc( 60vw / 3 * 1);
+			top: calc( 80vw / 3 * 1);
+			left: calc( 80vw / 3 * 2);
+		}
+		.approach-card-extend{
+			// @extend .approach-card;
+			width: calc( 100% - #{$approach_card_margin_l}*2px) !important;
+			height: calc(80vw / 3 * 2 ) !important;
+			z-index: 5;
+			position: absolute;
+			top: 0px !important;
+			left: 0px !important;
+			background: white;
+			transition-duration: .5s;
+
+			@extend .approach-card;
+			&:hover{
+				.info-level1{
+					p{
+						// display: block;
+						transform: translateY(0px);
+						opacity: 1;
+
+					}
+				} 
+			}
+
+			.info-level1{
+
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 30%;
+				top: 0;
+				transition-duration: .5s;
+				left: 0;
+
+				// background: green;
+				.title{
+					// display:block;
+					margin: 0;
+					position: relative;
+					left:0;
+					font-size: 1.6rem;
+
+				}
+				p{
+					display:block;
+					width: 100%;
+					height: 100%;
+					// font-size: 1rem;
+					// display: none;
+					opacity: 1;
+					transition-duration: 0.5s;
+					position: relative;
+					top: 50px;
+				}
+			}
+			.info-level2{
+				display: block;
+				transition-duration: .5s;
+
+
+				.detailedinfo{
+					.inputinfo ul, .todoinfo ul, .deliverableinfo ul{
+						list-style-type: none;
+
+
+					}
+				}
+			}
+
+		}
+
+	}
+}

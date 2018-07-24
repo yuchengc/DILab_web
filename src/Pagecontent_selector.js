@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Processpage from './Processpage'
+import Processpage from './components/process_page/Processpage'
 
 
 class Pagecontent extends Component {

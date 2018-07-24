@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Header from "./Header";
-import Pagecontent from './Pagecontent';
+import Pagecontent from './Pagecontent_selector';
 import Footer from './components/Footer';
 
 class App extends Component {

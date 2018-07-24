@@ -1,6 +1,6 @@
 import React from 'react';
 import './content_processpage.css';
-import outcome from './images/outcome.png';
+import outcome from '../../images/outcome.png';
 // import Card from './Card';
 
 const Outcome = () =>{

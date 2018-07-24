@@ -1,8 +1,8 @@
 import React from 'react';
 import './content_processpage.css';
-import './style/animate.css';
+import '../../style_global/animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-import ideas_bg from './images/ideas_bg.png';
+import ideas_bg from '../../images/ideas_bg.png';
 // import Card from './Card';
 
 const Startgreeting = () =>{

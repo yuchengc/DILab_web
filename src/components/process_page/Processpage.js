@@ -1,12 +1,12 @@
 import './content_processpage.css'
 
-import Startgreeting from './Startgreeting/Startgreeting'
-import Questionnaire from './Questionnaire/Questionnaire'
-import Projectscope from './Projectscope/Projectscope'
+import Startgreeting from './Startgreeting'
+import Questionnaire from './Questionnaire'
+import Projectscope from './Projectscope'
 import Approaches from './approaches/Approaches'
-import Outcome from './Outcome/Outcome'
+import Outcome from './Outcome'
 import Futuresupport from './Futuresupport'
-import Casestudy_gallery_small from './components/casestudy/Casestudy_gallery_small'
+import Casestudy_gallery_small from '../casestudy/Casestudy_gallery_small'
 
 
 

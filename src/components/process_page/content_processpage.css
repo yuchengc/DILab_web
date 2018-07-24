@@ -1,4 +1,4 @@
-@import url(./index.css);
+@import url(../../index.css);
 .processpage-frame {
   width: 100%;
   height: auto;
@@ -357,21 +357,6 @@
         border-radius: 5px;
         border: 2px solid grey;
         margin-right: 20px; }
-
-.greeting-1, .greeting-2, .greeting-3 {
-  display: block;
-  height: 1000px;
-  width: 100%;
-  position: relative;
-  left: 0;
-  background: #D8D8D8;
-  clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
-  -webkit-clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%); }
-  .greeting-1 h1, .greeting-2 h1, .greeting-3 h1 {
-    font-size: 2rem; }
-
-.greeting-2, .greeting-3 {
-  clip-path: none; }
 
 .scroll-indicator-left, .scroll-indicator-right {
   width: 30vw;

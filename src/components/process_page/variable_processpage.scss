@@ -1,0 +1,11 @@
+$approach_card_padding_l: 30;
+$approach_card_padding_m: 20;
+
+$approach_card_margin_l: 20;
+$approach_card_margin_m: 20;
+
+$approach_card_width-l: calc((80vw / 3) - #{$approach_card_margin_l}*2px);
+$approach_card_width-m:	calc((80vw / 3) - #{$approach_card_margin_m}*2px );
+$approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
+
+$linear_gradient_green: linear-gradient(-80deg , #52E1C2, #70E598);

@@ -1,4 +1,4 @@
-import './content_processpage.css'
+import '../content_processpage.css'
 
 import React from 'react';
  

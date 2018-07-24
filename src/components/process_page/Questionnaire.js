@@ -1,6 +1,6 @@
 import React from 'react';
 import './content_processpage.css'
-import './style/animate.css';
+import '../../style_global/animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 // import Card from './Card';
 
