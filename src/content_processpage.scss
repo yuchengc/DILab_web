@@ -205,10 +205,11 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 	}
 	.scroll-indicator-left{
 		z-index: 1;
+		top: 5vw;
 		.side-caption-left{
 			&:after{
 				width:15vw;
-				left: -5vw;
+				left: 0;
 			}
 		}
 	}
@@ -267,6 +268,7 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 	}
 	.scroll-indicator-left{
 		z-index: 1;
+		overflow: visible;
 		.side-caption-left{
 			&:after{
 				width:15vw;
@@ -350,30 +352,46 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 .scroll-indicator-left{
 
 	width:30vw;
-	height:1rem;
-	transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
+	height:1.2rem;
+	transform: rotate(90deg);
+	transform-origin: 0% 50%;
+	-webkit-transform-origin: 0% 50%;
+	-webkit-transform: rotate(90deg);
 	position: relative;
-	// left: 0;
-	flost: left;
+	left: 15vw;;
+	// flost: left;
 	z-index:5;
+	top: -15vw;
 	// rught: auto;
-
+	.side-indicator-bar{
+		width:15vw;
+		height: 5px;
+		position: relative;
+		background: black;
+		display: inline-block;
+		top: -0.2rem;
+		left: 0px;
+	}
 	.side-caption-left{
 		font-size: 1rem;
-		&:after{
-			content: '';
-			width:15vw;
-			height: 5px;
-			position: relative;
-			background: black;
-			display: inline-block;
-			top: -0.2rem;
-			left: 20px;
-			transition-duration: .5s;
+		transform: rotate(180deg) !important;
+		transform-origin: 50% 50%;
+		-webkit-transform-origin: 50% 50%;
+		-webkit-transform: rotate(180deg);
+		margin: 0 20px;
+		// &:after{
+		// 	content: '';
+		// 	width:15vw;
+		// 	height: 5px;
+		// 	position: relative;
+		// 	background: black;
+		// 	display: inline-block;
+		// 	top: -0.2rem;
+		// 	left: 20px;
+		// 	// transition-duration: .5s;
 
 
-		}
+		// }
 	
 
 	}
@@ -387,7 +405,8 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 	// -webkit-transform: rotate(-90deg);
 	position: relative;
 	float: right;
-	// right: 0;
+	right: 0;
+	top: -5vw;
 	// left: auto;
 	z-index: 5;
 
@@ -424,6 +443,7 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 
 	.scroll-indicator-left{
 		z-index: 1;
+		top: -10vw;
 		.side-caption-left{
 			
 			&:after{
@@ -474,6 +494,7 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 				height: 50%;
 				top: 50%;
 				transition-duration: .5s;
+				left:0;
 				
 
 				
@@ -492,7 +513,7 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 					opacity: 0;
 					transition-duration: 0.5s;
 					position: relative;
-					top: 50px;
+					top: 0px;
 				}
 			}
 			.info-level2{
@@ -548,8 +569,18 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 			left: 0px !important;
 			background: white;
 			transition-duration: .5s;
-			@extend .approach-card;
 
+			@extend .approach-card;
+			&:hover{
+				.info-level1{
+					p{
+						// display: block;
+						transform: translateY(0px);
+						opacity: 1;
+
+					}
+				} 
+			}
 
 			.info-level1{
 
@@ -559,11 +590,14 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 				height: 30%;
 				top: 0;
 				transition-duration: .5s;
+				left: 0;
 
 				// background: green;
-				h5{
+				.title{
 					// display:block;
-
+					margin: 0;
+					position: relative;
+					left:0;
 					font-size: 1.6rem;
 
 				}
@@ -573,7 +607,7 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 					height: 100%;
 					// font-size: 1rem;
 					// display: none;
-					opacity: 0;
+					opacity: 1;
 					transition-duration: 0.5s;
 					position: relative;
 					top: 50px;

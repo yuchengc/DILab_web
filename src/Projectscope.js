@@ -1,5 +1,7 @@
 import React from 'react';
 import './content_processpage.css'
+import './style/animate.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 // import Card from './Card';
 
 const Projectscope = () =>{
@@ -26,9 +28,10 @@ const Projectscope = () =>{
 				
 
 			</div>
-			<div className='scroll-indicator-left'>
+			<ScrollAnimation animateIn="wapeLefttoRight" offset={50} duration={0.8} delay={0} className='scroll-indicator-left' >
+				<div className='side-indicator-bar'></div>
 				<span className='side-caption-left'></span>
-			</div>
+			</ScrollAnimation>
 
 		</div>
 	);

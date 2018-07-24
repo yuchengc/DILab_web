@@ -3,6 +3,7 @@ import "./Header.css";
 import Tabs from './Tabs'
 import Pane from './Pane'
 // import Indicator from './Indicator'
+import logo from './images/logo.png';
 
 
 class Header extends Component {
@@ -25,7 +26,10 @@ class Header extends Component {
     return (
       <div className="nav-header">
         <div className="lab-title">
-          <img src="" alt="logo"/>
+          <span className='logo'>
+            <img src={logo} alt="logo"/>
+          </span>
+          
           <h1 >Digital Innovation Lab</h1>
         </div>
         
