@@ -1,0 +1,72 @@
+@import url(./index.css);
+.nav-header {
+  position: fixed;
+  top: 0;
+  wisth: 100%;
+  height: 56px;
+  display: block;
+  width: 100%;
+  height: 56px;
+  color: #444444;
+  background: rgba(0, 0, 0, 0);
+  z-index: 10; }
+  .nav-header .lab-title {
+    display: inline-block;
+    width: calc( 100% - 32vw);
+    height: 56px; }
+    .nav-header .lab-title .logo {
+      width: 100%;
+      height: 100%;
+      margin-left: 50px;
+      max-width: 40px;
+      display: inline-block;
+      position: relative; }
+      .nav-header .lab-title .logo img {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 10px; }
+    .nav-header .lab-title h1 {
+      display: inline-block;
+      line-height: 56px;
+      font-size: 1.2em;
+      padding-left: 20px; }
+  .nav-header ul {
+    display: block;
+    list-style-type: none;
+    position: absolute;
+    right: 0;
+    top: 0px; }
+    .nav-header ul .tab-item, .nav-header ul .tab-item-selected {
+      display: inline-block;
+      width: 8vw;
+      height: 56px;
+      line-height: 56px;
+      text-align: center;
+      text-decoration: none; }
+      .nav-header ul .tab-item a, .nav-header ul .tab-item-selected a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%; }
+        .nav-header ul .tab-item a:hover span, .nav-header ul .tab-item-selected a:hover span {
+          color: #3F45A0 !important; }
+        .nav-header ul .tab-item a span, .nav-header ul .tab-item-selected a span {
+          text-decoration: none;
+          color: grey; }
+    .nav-header ul .tab-item-selected {
+      transition-duration: .5s; }
+      .nav-header ul .tab-item-selected a span {
+        color: black !important;
+        font-weight: bold !important; }
+    .nav-header ul .tab-indicator {
+      transition-duration: .5s;
+      display: block;
+      position: absolute;
+      background: #3F45A0;
+      width: 8vw;
+      height: 4px;
+      bottom: 0px;
+      left: 0px; }
+    .nav-header ul .tab-active {
+      transition-duration: .5s; }

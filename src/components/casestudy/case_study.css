@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  margin: 0;
+  padding: 0;
+  /*font-family: sans-serif;*/
+  font-family: ".SF NS Display";
+  font-size: 16px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box !important;
+  text-decoration: none;
+  font-size: 1em; }
+
+.casestudy-gallery-small {
+  width: 100%; }
+  .casestudy-gallery-small h3 {
+    font-size: 1.6rem;
+    font-weight: 200;
+    top: 1rem;
+    text-align: left;
+    display: block;
+    position: relative;
+    text-align: center; }
+
+.case-cards {
+  width: 60vw;
+  height: auto;
+  display: block;
+  margin: 10vh auto; }
+
+.project-card {
+  display: inline-block;
+  width: calc(calc(60vw / 4) - 20px);
+  height: calc(calc(60vw / 4) - 20px);
+  margin-right: 20px;
+  position: relative; }
+  .project-card .info-level1 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0; }
+  .project-card h5 {
+    font-size: 1.6rem;
+    transition-duration: .3s;
+    opacity: 0;
+    position: relative;
+    top: 3rem;
+    left: 1.5rem;
+    display: block;
+    width: calc(100% - 3rem); }
+  .project-card p {
+    font-size: 1rem;
+    transition-duration: .3s;
+    opacity: 0;
+    position: relative;
+    top: 3rem;
+    left: 1.5rem;
+    display: block;
+    width: calc(100% - 3rem); }
+  .project-card:hover .info-level1 {
+    background: white;
+    opacity: 0.6; }
+  .project-card:hover h5 {
+    opacity: 1;
+    top: 1.5rem; }
+  .project-card:hover p {
+    opacity: 1;
+    top: 1.5rem; }
