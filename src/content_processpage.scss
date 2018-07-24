@@ -10,6 +10,8 @@ $approach_card_width-l: calc((80vw / 3) - #{$approach_card_margin_l}*2px);
 $approach_card_width-m:	calc((80vw / 3) - #{$approach_card_margin_m}*2px );
 $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 
+$linear_gradient_green: linear-gradient(-80deg , #52E1C2, #70E598);
+
 @mixin content-section($gb:#D8D8D8,$height: 1000px){
 	display: block;
 	height: $height;
@@ -45,6 +47,9 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 	margin-right: auto;
 	margin-left: auto;
 }
+
+// @mixin section-bg()
+
 @mixin paragraph-section($top:25vh, $text_width:40vw, $align:left){
 	position: relative;
 	width: $GLOBAL_CONTENT_WIDTH;
@@ -107,15 +112,32 @@ $approach_card_width-s: calc((100vw / 3) - #{$approach_card_margin_m}*2px );
 	width: 100%;
 	height: auto;
 	left: 0;
+	position: relative;
 
 	.content-section{
 		
 		clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
 		-webkit-clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
-		@include content-section();
+		@include content-section($linear_gradient_green);
+
 
 		.paragraph-section{
 			@include paragraph-section();
+		}
+		.section-bg{
+			position: absolute;
+			left: 50vw;
+			top: 25vh;
+			width: 40vw;
+			height: auto;
+			display: block;
+			filter:invert(100%) grayscale(100%); 
+
+			img{
+				width: 100%;
+				height: 100%;
+			}
+
 		}
 	}
 }

@@ -9,7 +9,7 @@ const Projectscope = () =>{
 	return(
 		<div className='work-process-scope'>
 			<div className='content-section'>
-				<img src='#' alt='bg'/>
+				<img className='section-bg' src='#' alt='bg'/>
 				<div className='paragraph-section'>
 					<h3>Measure Project scope </h3>
 					<h5>A short sentence that describes this step. A short sentence that describes this step. A short sentence that describes this step.</h5>
