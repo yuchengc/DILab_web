@@ -10,7 +10,7 @@ const Casestudy_gallery_small = () =>{
 		<div className='casestudy-gallery-small'>
 			<h3>What we have done - Case Study</h3>
 			
-			<Casestudy_cards cases={case_content}/>
+			<Casestudy_cards cases={case_content} size='sm'/>
 			
 		</div>
 

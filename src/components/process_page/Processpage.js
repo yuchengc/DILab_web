@@ -1,4 +1,4 @@
-import './content_processpage.css'
+import './Processpage.css'
 
 import Startgreeting from './Startgreeting'
 import Questionnaire from './Questionnaire'

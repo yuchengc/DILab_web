@@ -5,6 +5,7 @@ export const approaches_content =[
 		title: 'Exploration',
 		purpose: 'Exploration:  here is the description, here is the description, here is the description,here is the descriptionoi h;qkjdnf;ugf',
 		processfigure: '#',
+		background: 'images/exploration_bg.svg',
 		input: [
 			{
 				id: 1,
@@ -63,6 +64,7 @@ export const approaches_content =[
 		title: 'Ideation',
 		purpose: 'Ideation:here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
+		background: 'images/ideation_bg.svg',
 		input: [
 			{
 				id: 1,
@@ -118,10 +120,11 @@ export const approaches_content =[
 	},
 	{
 		id: 3,
-		classname: 'expliments',
-		title: 'Expliments',
+		classname: 'experliments',
+		title: 'Experliments',
 		purpose: 'here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
+		background: 'images/experliment_bg.svg',
 		input: [
 			{
 				id: 1,
@@ -181,6 +184,7 @@ export const approaches_content =[
 		title: 'Prototype',
 		purpose: 'here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
+		background: 'images/prototype_bg.svg',
 		input: [
 			{
 				id: 1,
@@ -239,6 +243,7 @@ export const approaches_content =[
 		classname: 'mvp',
 		purpose: 'here is the description, here is the description, here is the description,here is the description, here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
+		background: 'images/mvp_bg.svg',
 		input: [
 			{
 				id: 1,
@@ -297,6 +302,7 @@ export const approaches_content =[
 		title: 'Lego Bricks',
 		purpose: 'here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
+		background: 'images/lego_bg.svg',
 		input: [
 			{
 				id: 1,

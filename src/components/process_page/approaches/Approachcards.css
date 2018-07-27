@@ -1,0 +1,7 @@
+.approaches-cards {
+  display: block;
+  width: calc(80vw);
+  height: calc(60vw);
+  margin: auto;
+  position: relative;
+  z-index: 2; }

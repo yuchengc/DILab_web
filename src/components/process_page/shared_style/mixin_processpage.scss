@@ -1,4 +1,6 @@
-@mixin content-section($gb:#D8D8D8,$height: 1000px){
+@import 'variable_processpage.scss';
+
+@mixin content-section($gb:#D8D8D8,$height: 90vh){
 	display: block;
 	height: $height;
 	width: 100%;
@@ -10,14 +12,14 @@
 }
 
 @mixin section-title-size(){
-	font-size: 4rem;
+	font-size: $title-font-size-h3;
 
 	text-align:left;
 	display: block;
 	position : relative;
 }
 @mixin section-subtitle-size(){
-	font-size: 1.6rem;
+	font-size: $paragraph-font-size-h5;
 	font-weight: 200;
 	top:1rem;
 	text-align:left;
@@ -69,7 +71,7 @@
 		// display: block;
 	}
 	ul{
-		font-size: 1.6rem;
+		font-size: $paragraph-font-size-h5;
 		font-weight: 200;
 		@if $align == left {left: 0;}
 		@if $align == right {left: calc(100% - #{$text_width}) !important;}
@@ -80,7 +82,7 @@
 		list-style-type: none;
 
 		li{
-			font-size: 1.6rem;
+			font-size: $paragraph-font-size-h5;
 			font-weight: 200;
 		}
 	}

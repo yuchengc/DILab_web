@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import "./footer.css";
-import logo from '../images/logo.png';
+import "./Footer.css";
+import logo from '../images/logo.svg';
 // import Tabs from './Tabs'
 // import Pane from './Pane'
 // import Indicator from './Indicator'
@@ -25,11 +25,20 @@ class Footer extends Component {
     // console.log('Header level',this.props.selectedpage);
     return (
       <footer className="footer">
-        <div className="lab-title">
-          <img src={logo} alt="logo"/>
-          <h1 >Digital Innovation Lab</h1>
-        </div>
-        <div>Contact information</div>
+        
+        <img className='logo' src={logo} alt="logo"/>
+        <span className='copyrightinfo'>
+          <p>Power by</p>
+          <h5 style={{color:'#68E4A3'}}>Syngenta</h5>
+          <h6>Digital Innovation Lab</h6>
+        </span>
+          
+        
+
+        <span className='contactinfo'>
+          <p>Email: abce@email.com</p>
+          <p>Address: 1800 S Oak St, Suite 112, Champaign IL</p>
+        </span>
 
 
       </footer>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import './Approachcards.css'
 
 const ApproachCards = ({approaches}) =>{
 	const approachcomponent = approaches.map((a,i)=>{
@@ -10,6 +11,7 @@ const ApproachCards = ({approaches}) =>{
 				purpose={approaches[i].purpose}
 				input={approaches[i].input}
 				processfigure={approaches[i].processfigure}
+				background={approaches[i].background}
 
 			/>
 

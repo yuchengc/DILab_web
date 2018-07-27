@@ -1,10 +1,11 @@
-import '../content_processpage.css'
+import './Card.css'
 
 import React from 'react';
  
 
 const Card = (props) => {
-
+	const bg_image=require(`./${props.background}`);
+	console.log('bg_image', bg_image)
 
 	const listrender = (listitem) => {
 		
@@ -36,18 +37,23 @@ const Card = (props) => {
 			// console.log('now_selectedcard',now_selectedcard_index, 'old crad', old_selectedcard_index);
 			document.querySelectorAll('.approach-card').forEach((card)=>{
 				card.classList.remove('approach-card-extend');
+				// card.style.backgroundImage = `url(${bg_image})`;
 			});
 		}
 		// console.log("click the card, target:", event.target);
 		// console.log("now select:", now_selectedcard);
 		now_selectedcard.classList.toggle("approach-card-extend");
+		now_selectedcard.style.backgroundImage = '';
 		
 	}
 
 
 	var cardClass= `approach-card card-${props.classname}`;
+	// const bg_image=require(`./${props.background}`);
+	// console.log('bg_image', bg_image)
 	return(
-		<div className={cardClass} onClick={extendcard.bind(this)}>
+		<div className={cardClass} onClick={extendcard.bind(this)} >
+			<img src={`${bg_image}`} alt='bg' />
 			<div className='info-level1'>
 				<h5 className='title'>{props.title}</h5>
 				<p>{props.purpose}</p>
@@ -67,7 +73,10 @@ const Card = (props) => {
 
 				</div>
 			</div>
+			<div className='btn-close'></div>
 		</div>
 	);
 }
 export default Card;
+
+// style={{backgroundImage: `url(${bg_image}) `, backgroundSize: 'cover', }}

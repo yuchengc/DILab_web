@@ -1,5 +1,10 @@
 import React from 'react';
-import './content_processpage.css'
+import './Futuresupport.css';
+import '../../style_global/animate.css';
+import ScrollAnimation from 'react-animate-on-scroll';
+import Wheat_icon from '../../images/wheat.svg';
+import './Scrollindicator.css';
+// import Scrollindicator from './Scrollindicator';
 // import Card from './Card';
 
 const Futuresupport = () =>{
@@ -18,7 +23,15 @@ const Futuresupport = () =>{
 				
 
 			</div>
+			<div className={`scroll-indicator-right`} >
+				<div className='scroll-indicator-icon'>
+					<img src={Wheat_icon} />
+				</div>
+				<div className='side-indicator-bar'></div>
+				<span className={`side-caption-right`}>CASE STUDY</span>
 			
+			</div>
+				
 
 		</div>
 	);

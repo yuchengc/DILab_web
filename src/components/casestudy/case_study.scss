@@ -1,14 +1,17 @@
 @import '../../index.scss';
+@import '../../style_global/variable.scss';
 // @import '../../content_processpage.scss';
 
-$gallery_width: 60vw;
+$gallery_width: $GLOBAL_CONTENT_WIDTH;
 $project_card_w_sm : calc(#{$gallery_width} / 4);
 $project_card_w_m : calc(100% / 3);
 $project_card_w_l : 50%;
+$project_card_w_xl : 90%;
 
 $card_margin_sm: 20px;
 $card_margin_m: 30px;
 $card_margin_l: 30px;
+$card_margin_xl: 0px;
 
 
 @mixin card($w, $h){
@@ -41,9 +44,35 @@ $card_margin_l: 30px;
 	margin: 10vh auto;
 
 }
+.project-card-xl {
+	// @include card(project_card_w_sm, auto);
+	display: inline-block;
+	width: calc(#{$project_card_w_xl} - #{$card_margin_xl});
+	height: calc(#{$project_card_w_xl} - #{$card_margin_xl});
+	margin-right: $card_margin_xl;
+	// padding: 30px;
+	position: relative;
+}
+.project-card-l {
+	// @include card(project_card_w_sm, auto);
+	display: inline-block;
+	width: calc(#{$project_card_w_l} - #{$card_margin_l});
+	height: calc(#{$project_card_w_l} - #{$card_margin_l});
+	margin-right: $card_margin_l;
+	// padding: 30px;
+	position: relative;
+}
+.project-card-m {
+	// @include card(project_card_w_sm, auto);
+	display: inline-block;
+	width: calc(#{$project_card_w_m} - #{$card_margin_m});
+	height: calc(#{$project_card_w_m} - #{$card_margin_m});
+	margin-right: $card_margin_m;
+	// padding: 30px;
+	position: relative;
+}
 
-
-.project-card {
+.project-card-sm {
 	// @include card(project_card_w_sm, auto);
 	display: inline-block;
 	width: calc(#{$project_card_w_sm} - #{$card_margin_sm});

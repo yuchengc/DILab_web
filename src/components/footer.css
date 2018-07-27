@@ -2,6 +2,52 @@
   background: #efefef;
   display: block;
   width: 100%;
-  height: 150px;
+  height: 140px;
   border-width: 5px 0px 0px 0px;
-  border-color: #68E4A3; }
+  border-color: #68E4A3;
+  box-sizing: border-box !important;
+  padding: 30px 50px;
+  position: relative; }
+  .footer .logo {
+    position: relative;
+    width: 46px;
+    display: inline-block; }
+  .footer .copyrightinfo {
+    margin-left: 30px;
+    display: inline-block;
+    position: relative; }
+    .footer .copyrightinfo h5 {
+      font-size: 1.6rem;
+      display: block; }
+    .footer .copyrightinfo h6 {
+      font-size: 1.2rem;
+      display: block; }
+    .footer .copyrightinfo p {
+      font-size: 0.8rem;
+      display: block; }
+  .footer .contactinfo {
+    display: inline-block;
+    position: relative;
+    text-align: right;
+    float: right; }
+    .footer .contactinfo h5 {
+      font-size: 1.6rem;
+      display: block;
+      text-align: right; }
+    .footer .contactinfo h6 {
+      font-size: 1.2rem;
+      display: block;
+      text-align: right; }
+    .footer .contactinfo p {
+      font-size: 0.8rem;
+      display: block;
+      text-align: right; }
+  .footer h5 {
+    font-size: 1.6rem;
+    display: block; }
+  .footer h6 {
+    font-size: 1.2rem;
+    display: block; }
+  .footer p {
+    font-size: 0.8rem;
+    display: block; }

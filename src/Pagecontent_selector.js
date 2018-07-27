@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Processpage from './components/process_page/Processpage'
+import Casestudy_gallery from './components/casestudy/Casestudy_gallery'
 
 
 class Pagecontent extends Component {
@@ -23,7 +24,7 @@ class Pagecontent extends Component {
 				break;
 			case 2:
 				return(
-					<div>case study oage</div>
+					<div><Casestudy_gallery /></div>
 				);
 				break;
 			case 3:

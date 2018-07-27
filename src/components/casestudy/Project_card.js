@@ -25,7 +25,7 @@ const Project_card = (props) => {
 
 
 
-	var cardClass= 'project-card';
+	var cardClass= `project-card-${props.size}`;
 	var bgimage_style={background: `url(${props.backgroundimg}) no-repeat left ` , backgroundSize: 'cover',};
 	// console.log(`${props.backgroundimg}`);
 	return(

@@ -3,7 +3,7 @@ import "./Header.css";
 import Tabs from './Tabs'
 import Pane from './Pane'
 // import Indicator from './Indicator'
-import logo from './images/logo.png';
+import logo from './images/logo.svg';
 
 
 class Header extends Component {

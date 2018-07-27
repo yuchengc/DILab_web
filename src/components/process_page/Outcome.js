@@ -1,5 +1,5 @@
 import React from 'react';
-import './content_processpage.css';
+import './Outcome.css';
 import outcome from '../../images/outcome.png';
 // import Card from './Card';
 

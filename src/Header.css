@@ -13,24 +13,29 @@
   .nav-header .lab-title {
     display: inline-block;
     width: calc( 100% - 32vw);
-    height: 56px; }
+    height: 56px;
+    position: relative; }
     .nav-header .lab-title .logo {
-      width: 100%;
       height: 100%;
       margin-left: 50px;
-      max-width: 40px;
+      max-width: 25px;
       display: inline-block;
-      position: relative; }
+      position: absolute;
+      top: 5px; }
       .nav-header .lab-title .logo img {
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        top: 10px; }
+        top: 3px; }
     .nav-header .lab-title h1 {
       display: inline-block;
       line-height: 56px;
       font-size: 1.2em;
-      padding-left: 20px; }
+      padding-left: 20px;
+      position: absolute;
+      top: 0;
+      left: 100px; }
   .nav-header ul {
     display: block;
     list-style-type: none;

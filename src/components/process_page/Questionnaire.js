@@ -1,7 +1,8 @@
 import React from 'react';
-import './content_processpage.css'
+import './Questionnaire.css'
 import '../../style_global/animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Scrollindicator from './Scrollindicator';
 // import Card from './Card';
 
 const Questionnaire = () =>{
@@ -28,15 +29,17 @@ const Questionnaire = () =>{
 				
 
 			</div>
-			<ScrollAnimation animateIn="wapeLefttoRight" offset={50} duration={0.8} delay={0} className='scroll-indicator-right' >
-					<div className='side-indicator-bar'></div> 
-  					<span className='side-caption-right'>BRING YOUR IDEA HERE !</span>
-  				
-				
-			</ScrollAnimation>
+			<Scrollindicator wording='BRING YOUR IDEA HERE !' side='right'/>
+			
 
 		</div>
 	);
 }
 export default Questionnaire;
 
+// <ScrollAnimation animateIn="wapeLefttoRight" offset={50} duration={0.8} delay={0} className='scroll-indicator-right' >
+// 					<div className='side-indicator-bar'></div> 
+//   					<span className='side-caption-right'>BRING YOUR IDEA HERE !</span>
+  				
+				
+// 			</ScrollAnimation>

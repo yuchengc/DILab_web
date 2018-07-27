@@ -1,0 +1,11 @@
+@import '../shared_style/mixin_processpage.scss';
+@import '../shared_style/variable_processpage.scss';
+
+.approaches-cards{
+		display: block;
+		width: calc(80vw);
+		height: calc(60vw);
+		margin: auto;
+		position: relative;
+		z-index: 2;
+}

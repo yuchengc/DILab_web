@@ -3,7 +3,7 @@ import Project_card from './Project_card';
 
 import './case_study.css'
 
-const CaseCards_small = ({cases}) =>{
+const CaseCards_small = ({cases, size}) =>{
 	const casestudycomponent = cases.map((a,i)=>{
 		
 		return(
@@ -12,7 +12,7 @@ const CaseCards_small = ({cases}) =>{
 				description={cases[i].description}
 				date={cases[i].date}
 				backgroundimg={cases[i].bgimage}
-
+				size={size}
 			/>
 
 		);

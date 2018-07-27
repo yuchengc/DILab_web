@@ -1,0 +1,67 @@
+@import 'shared_style/mixin_processpage.scss';
+@import 'shared_style/variable_processpage.scss';
+@import '../../style_global/variable.scss';
+
+.scroll-indicator-left{
+
+	width:30vw;
+	height:1.2rem;
+	transform: rotate(90deg);
+	transform-origin: 0% 50%;
+	-webkit-transform-origin: 0% 50%;
+	-webkit-transform: rotate(90deg);
+	position: relative;
+	left: 15vw;;
+	// flost: left;
+	z-index:5;
+	top: -18vw;
+	// rught: auto;
+	.side-indicator-bar{
+		width:15vw;
+		height: 5px;
+		position: relative;
+		background: black;
+		display: inline-block;
+		top: -0.2rem;
+		left: 0px;
+	}
+	.side-caption-left{
+		font-size: 1rem;
+		transform: rotate(180deg) !important;
+		transform-origin: 50% 50%;
+		-webkit-transform-origin: 50% 50%;
+		-webkit-transform: rotate(180deg);
+		margin: 0 20px;
+		
+	}
+	.scroll-indicator-icon{
+		transform: rotate(-90deg) !important;
+		width: 80px;
+		height: auto;
+		position: absolute;
+		top: calc(-80px - 0.3rem);
+
+	}
+
+}
+.scroll-indicator-right{
+	@extend .scroll-indicator-left;
+	// width:30vw;
+	// height:1rem;
+	// transform: rotate(-90deg);
+	// -webkit-transform: rotate(-90deg);
+	position: relative;
+	float: right;
+	right: 0;
+	top: -8vw;
+	// left: auto;
+	z-index: 5;
+
+	.side-caption-right{
+
+		@extend .side-caption-left;
+		
+
+	}
+
+}

@@ -1,7 +1,8 @@
 import React from 'react';
-import './content_processpage.css'
+import './Projectscope.css'
 import '../../style_global/animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Scrollindicator from './Scrollindicator';
 // import Card from './Card';
 
 const Projectscope = () =>{
@@ -28,12 +29,15 @@ const Projectscope = () =>{
 				
 
 			</div>
-			<ScrollAnimation animateIn="wapeLefttoRight" offset={50} duration={0.8} delay={0} className='scroll-indicator-left' >
-				<div className='side-indicator-bar'></div>
-				<span className='side-caption-left'></span>
-			</ScrollAnimation>
+			<Scrollindicator wording='' side='left'/>
+
 
 		</div>
 	);
 }
 export default Projectscope;
+
+			// <ScrollAnimation animateIn="wapeLefttoRight" offset={50} duration={0.8} delay={0} className='scroll-indicator-left' >
+			// 	<div className='side-indicator-bar'></div>
+			// 	<span className='side-caption-left'></span>
+			// </ScrollAnimation>
