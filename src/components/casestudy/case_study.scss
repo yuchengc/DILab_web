@@ -2,9 +2,14 @@
 @import '../../style_global/variable.scss';
 // @import '../../content_processpage.scss';
 
+$cards_4: 4;
+$cards_3: 3;
+$cards_2: 2;
+$cards_1: 1;
+
 $gallery_width: $GLOBAL_CONTENT_WIDTH;
-$project_card_w_sm : calc(#{$gallery_width} / 4);
-$project_card_w_m : calc(100% / 3);
+$project_card_w_sm : calc(#{$gallery_width} / #{$cards_4});
+$project_card_w_m : calc(100% / #{$cards_3});
 $project_card_w_l : 50%;
 $project_card_w_xl : 90%;
 
@@ -14,11 +19,18 @@ $card_margin_l: 30px;
 $card_margin_xl: 0px;
 
 
+
+
 @mixin card($w, $h){
 	display: block;
 	width: $w !important;
 	height: $h;
 
+}
+@mixin gallery_width($width:$gallery_width){
+	width: $width;
+	height: auto;
+	display: block;
 }
 
 .casestudy-gallery-small{
@@ -38,9 +50,10 @@ $card_margin_xl: 0px;
 	}
 }
 .case-cards{
-	width: $gallery_width;
-	height: auto;
-	display: block; 
+	@include gallery_width(80vw);
+	// width: $gallery_width;
+	// height: auto;
+	// display: block; 
 	margin: 10vh auto;
 
 }
