@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Processpage from './components/process_page/Processpage'
-import Casestudy_gallery from './components/casestudy/Casestudy_gallery'
+import Casestudypage from './components/casestudy/Casestudypage'
 
 
 class Pagecontent extends Component {
@@ -24,7 +24,7 @@ class Pagecontent extends Component {
 				break;
 			case 2:
 				return(
-					<div><Casestudy_gallery /></div>
+					<div><Casestudypage /></div>
 				);
 				break;
 			case 3:

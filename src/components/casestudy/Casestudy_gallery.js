@@ -5,12 +5,13 @@ import {case_content} from './case_content'
 
 class Casestudy_gallery extends Component {
 
+
 	render(){
 		return(
 		<div className='casestudy-gallery'>
-			<h3>What we have done - Case Study</h3>
 			
-			<Casestudy_cards cases={case_content} size='xl'/>
+			
+			<Casestudy_cards cases={this.props.case_content} size='m'/>
 			
 		</div>
 

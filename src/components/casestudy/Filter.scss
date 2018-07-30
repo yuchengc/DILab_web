@@ -1,0 +1,16 @@
+.filter{
+	width: 80vw;
+	heigth: auto;
+	position: relative;
+	left: 12vw;
+
+	.filter-item{
+		color: #EF7C00;
+		font-weight: bold;
+		padding-right: 10px;
+		margin-right: 20px; 
+		margin-top: 20px;
+		cursor: pointer;
+		display: inline-block;
+	}
+}

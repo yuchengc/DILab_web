@@ -25,38 +25,93 @@ body {
     position: relative;
     text-align: center; }
 
-.case-cards {
+.case-cards-xl {
   width: 80vw;
+  height: auto;
+  display: block;
+  margin: 10vh auto; }
+
+.case-cards-l {
+  width: 80vw;
+  height: auto;
+  display: block;
+  margin: 10vh auto; }
+
+.case-cards-m {
+  width: 76vw;
+  height: auto;
+  display: block;
+  margin: 10vh auto; }
+
+.case-cards-sm {
+  width: 60vw;
   height: auto;
   display: block;
   margin: 10vh auto; }
 
 .project-card-xl {
   display: inline-block;
-  width: calc(90% - 0px);
-  height: calc(90% - 0px);
+  width: calc(80vw - 0px);
+  height: calc(80vw - 0px);
   margin-right: 0px;
-  position: relative; }
-
-.project-card-l {
-  display: inline-block;
-  width: calc(50% - 30px);
-  height: calc(50% - 30px);
-  margin-right: 30px;
+  margin-bottom: 0px;
   position: relative; }
 
 .project-card-m {
   display: inline-block;
-  width: calc(calc(100% / 3) - 30px);
-  height: calc(calc(100% / 3) - 30px);
+  width: calc(calc(76vw  / 3) - 30px);
+  height: calc(calc(76vw  / 3) - 30px);
   margin-right: 30px;
+  margin-bottom: 30px;
   position: relative; }
+
+.project-card-l {
+  display: inline-block;
+  width: calc(calc(80vw / 2) - 30px);
+  height: calc(calc(80vw / 2) - 30px);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  position: relative; }
+  .project-card-l .info-level1 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0; }
+  .project-card-l h5 {
+    font-size: 1.6rem;
+    transition-duration: .3s;
+    opacity: 0;
+    position: relative;
+    top: 3rem;
+    left: 1.5rem;
+    display: block;
+    width: calc(100% - 3rem); }
+  .project-card-l p {
+    font-size: 1rem;
+    transition-duration: .3s;
+    opacity: 0;
+    position: relative;
+    top: 3rem;
+    left: 1.5rem;
+    display: block;
+    width: calc(100% - 3rem); }
+  .project-card-l:hover .info-level1 {
+    background: white;
+    opacity: 0.6; }
+  .project-card-l:hover h5 {
+    opacity: 1;
+    top: 1.5rem; }
+  .project-card-l:hover p {
+    opacity: 1;
+    top: 1.5rem; }
 
 .project-card-sm {
   display: inline-block;
   width: calc(calc(60vw / 4) - 20px);
   height: calc(calc(60vw / 4) - 20px);
   margin-right: 20px;
+  margin-bottom: 20px;
   position: relative; }
   .project-card-sm .info-level1 {
     display: block;
