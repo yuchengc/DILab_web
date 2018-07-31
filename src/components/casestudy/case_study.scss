@@ -13,10 +13,17 @@ $gallery_width_l: 80vw;
 $gallery_width_xl: 80vw;
 
 
+
+
 $project_card_w_sm : calc(#{$gallery_width_s} / #{$cards_4});
 $project_card_w_m : calc(#{$gallery_width_m}  / #{$cards_3});
 $project_card_w_l : calc(#{$gallery_width_l} / #{$cards_2});
 $project_card_w_xl : $gallery_width_l;
+
+$gallery_height_s: $GLOBAL_CONTENT_WIDTH;
+$gallery_height_m: calc(#{$project_card_w_m} * 3);
+$gallery_height_l: calc(#{$project_card_w_l} * 5);
+$gallery_height_xl: calc(#{$project_card_w_xl} * 5);
 
 $card_margin_sm: 20px;
 $card_margin_m: 30px;
@@ -60,7 +67,8 @@ $card_margin_xl: 0px;
 	// width: $gallery_width;
 	// height: auto;
 	// display: block; 
-	margin: 10vh auto;
+	margin: 3vh auto;
+
 
 }
 .case-cards-l{
@@ -69,7 +77,7 @@ $card_margin_xl: 0px;
 	// width: $gallery_width;
 	// height: auto;
 	// display: block; 
-	margin: 10vh auto;
+	margin: 3vh auto;
 
 }
 .case-cards-m{
@@ -78,7 +86,8 @@ $card_margin_xl: 0px;
 	// width: $gallery_width;
 	// height: auto;
 	// display: block; 
-	margin: 10vh auto;
+	margin: 3vh auto;
+	height: $gallery_height_m;
 
 }
 .case-cards-sm{
@@ -87,7 +96,7 @@ $card_margin_xl: 0px;
 	// width: $gallery_width;
 	// height: auto;
 	// display: block; 
-	margin: 10vh auto;
+	margin: 5vh auto;
 
 }
 .project-card-xl {
@@ -110,34 +119,37 @@ $card_margin_xl: 0px;
 // 	// padding: 30px;
 // 	position: relative;
 // }
-.project-card-m {
+
+
+.project-card {
 	// @include card(project_card_w_sm, auto);
 	// @extend .project-card-l;
 	display: inline-block;
-	width: calc(#{$project_card_w_m} - #{$card_margin_m});
-	height: calc(#{$project_card_w_m} - #{$card_margin_m});
-	margin-right: $card_margin_m;
-	margin-bottom: $card_margin_m;
+	
 	// padding: 30px;
 	position: relative;
-}
-
-.project-card-l {
-	// @include card(project_card_w_sm, auto);
-	display: inline-block;
-	width: calc(#{$project_card_w_l} - #{$card_margin_l});
-	height: calc(#{$project_card_w_l} - #{$card_margin_l});
-	margin-right: $card_margin_l;
-	margin-bottom: $card_margin_l;
-	// padding: 30px;
-	position: relative;
-
 	.info-level1{
+		position: absolute;
+		top:0;
+		left:0;
 		display: block;
 		width: 100%;
 		height: 100% ;
-		background: white;
+		// background: white;
 		opacity: 0;
+		transition-delay: 0s;
+		&:active{
+			color: black;
+		}
+		&:checked{
+			color: black;
+		}
+	}
+	.cardmask{
+		@extend .info-level1;
+		background: linear-gradient(-80deg , #52E1C2, #70E598);
+		clip-path: polygon(0 100%, 0% 0%, 0% 0%, 0% 100%);
+		-webkit-clip-path: polygon(0 100%, 0% 0%, 0% 0%, 0% 100%);
 	}
 
 	h5{
@@ -162,20 +174,73 @@ $card_margin_xl: 0px;
 	}
 	&:hover{
 		.info-level1{
-			background: white;
-			opacity: 0.6;
+			opacity: 1;
+		}
+		.cardmask{
+			// background: white;
+			opacity: 0.8;
+			animation: parjectcard-hovereffect .3s ease-in-out both
 		}
 		// -webkit-filter: opacity(50%);
 		// filter: opacity(50%);
 		h5{
+			color: black;
 			opacity: 1;
 			top: 1.5rem;
 
 		}
 		p{
+			color: black;
 			opacity: 1;
 			top:1.5rem;
 		}
+	}
+}
+
+.project-card-m{
+	width: calc(#{$project_card_w_m} - #{$card_margin_m});
+	height: calc(#{$project_card_w_m} - #{$card_margin_m});
+	margin-right: $card_margin_m;
+	margin-bottom: $card_margin_m;
+}
+@keyframes parjectcard-hovereffect {
+	0%{
+		clip-path: polygon(0 100%, 0% 0%, 0% 0%, 0% 100%);
+		-webkit-clip-path: polygon(0 100%, 0% 0%, 0% 0%, 0% 100%);
+	}
+	50%{
+		clip-path: polygon(0 100%, 0% 0%, 75% 0%, 65% 100%);
+		-webkit-clip-path: polygon(0 100%, 0% 0%, 75% 0%, 65% 100%);
+	}
+	// 70%{
+	// 	clip-path: polygon(0 100%, 0% 0%, 80% 0%, 75% 100%);
+	// 	-webkit-clip-path: polygon(0 100%, 0% 0%, 80% 0%, 75% 100%);
+	// }
+	100%{
+		clip-path: polygon(0 100%, 0% 0%, 100% 0%, 100% 100%);
+		-webkit-clip-path: polygon(0 100%, 0% 0%, 100% 0%, 100% 100%);
+	}
+}
+.project-card-l {
+	
+	width: calc(#{$project_card_w_l} - #{$card_margin_l});
+	height: calc(#{$project_card_w_l} - #{$card_margin_l});
+	margin-right: $card_margin_l;
+	margin-bottom: $card_margin_l;
+	// padding: 30px;
+	
+}
+.card-shiffle-animation{
+	transform-origin: center;
+	animation: shiffle-card .5s ease-in-out 0s 1 ;
+}
+
+@keyframes shiffle-card {
+	from{
+		transform: scale(0);
+	}
+	to{
+		transform: scale(1);
 	}
 }
 
@@ -188,6 +253,8 @@ $card_margin_xl: 0px;
 	margin-bottom: $card_margin_sm;
 	// padding: 30px;
 	position: relative;
+	transform-origin: top left;
+
 
 	.info-level1{
 		display: block;

@@ -32,7 +32,9 @@ class Tabs extends Component{
     indicator.style.left=leftposition;
     this.props.changeSelected(index);
     // console.log("update app level state",);
-
+    if (index==2){
+      this.props.resetProjectPage(0);
+    }
 
   }
   

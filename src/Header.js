@@ -33,7 +33,7 @@ class Header extends Component {
           <h1 >Digital Innovation Lab</h1>
         </div>
         
-        <Tabs selected={this.props.selectedpage} changeSelected={this.props.changeSelected.bind(this)}>
+        <Tabs selected={this.props.selectedpage} changeSelected={this.props.changeSelected.bind(this)} resetProjectPage={this.props.resetProjectPage.bind(this)}>
           <Pane label="About us">
             <div>tab 1 contents</div> 
           </Pane>

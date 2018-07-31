@@ -1,15 +1,42 @@
 .banner-container{
 	width: 100%;
-	height: 45vh;
+	height: 50vh;
 	position: relative;
 	// background: grey;
+	.background-section{
+		width: 40vw;
+		height:auto;
+		position: absolute;
+		top: 10vh;
+		right: 12vw;
+		
 
+
+		.casestudy-banner-img{
+			width: 30vw;
+			height: auto;
+			display: block;
+			position: absolute;
+			right: 2vw;
+			top: 0;
+
+		}
+		.cube-bg{
+			display: block;
+			width: 14vw;
+			height: 14vw;
+			background: linear-gradient(-80deg , #52E1C2, #70E598);
+			position: absolute;
+			right: 0;
+			top: 12vw;
+		}
+	}
 	.text-section{
 		display: block;
-		position: relative;
+		position: absolute;
 		left: 12vw;
-		width: 65%;
-		top: 24vh;
+		width: 50vw;
+		top: 22vh;
 
 		.greeting{
 			font-size: 3rem;

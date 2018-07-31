@@ -7,10 +7,12 @@ import Filter from './Filter';
 
 
 class Casestudypage extends Component {
-	constructor(){
-		super();
+	constructor(props){
+		super(props);
 		this.state = { cases: case_content, 
-					   filter: 'all' }
+					   filter: 'all',
+					   
+					  }
 	}
 	onFilterChange = (event) => {
 		// console.log(event.target.id)
@@ -20,18 +22,39 @@ class Casestudypage extends Component {
 		// })
 		// console.log('on triggered event',filteredCases)
 	}
+
+
+	onSelectProject = (event) => {
+		// this.setState({selected_project : 1})
+		var selectedProject=event.target.closest('.project-card').getAttribute('projectKey');
+		this.props.pagereset_f(selectedProject);
+		console.log("click a project", event.target.closest('.project-card').getAttribute('projectKey'))
+	}
+
 	render(){
+		// if (this.props.pagereset === 0){
+		// 	this.setState({selected_project : 0})
+		// }
+		// console.log("page reset",this.props.pagereset)
 		const filteredCases = this.state.cases.filter(cases => {
 			return cases.calalog.includes(this.state.filter.toLowerCase())
 		})
-		console.log('on render level',filteredCases)
-		return(
-			<div className='casestudypage-frame'>
-				<TopBanner />
-				<Filter filterChange={this.onFilterChange}/>
-				<Casestudy_gallery case_content={filteredCases}/>
-			</div>
-		);
+		// console.log('on render level',filteredCases)
+		console.log('selected_project',this.state.selected_project)
+		if (this.props.selectedProject === 0){
+			return(
+				<div className='casestudypage-frame'>
+					<TopBanner />
+					<Filter filterChange={this.onFilterChange}/>
+					<Casestudy_gallery case_content={filteredCases} select_project={this.onSelectProject}/>
+				</div>
+			);
+		}
+		else {
+			return(
+				<div> specific project !!!!!</div>
+			);
+		}
 	}
 
 }

@@ -11,7 +11,7 @@ class Casestudy_gallery extends Component {
 		<div className='casestudy-gallery'>
 			
 			
-			<Casestudy_cards cases={this.props.case_content} size='m'/>
+			<Casestudy_cards cases={this.props.case_content} select_project={this.props.select_project} size='m'/>
 			
 		</div>
 

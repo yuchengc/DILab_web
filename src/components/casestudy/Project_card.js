@@ -25,18 +25,20 @@ const Project_card = (props) => {
 
 
 
-	var cardClass= `project-card-${props.size}`;
+	var cardClass= `project-card project-card-${props.size} card-shiffle-animation`;
 	var bgimage_style={background: `url(${props.backgroundimg}) no-repeat left ` , backgroundSize: 'cover',};
+	// console.log(props.isd);
 	// console.log(`${props.backgroundimg}`);
 	return(
-		<div className={cardClass} style={bgimage_style}>
-			<div className='cardmask'></div>
-			<div className='info-level1' >
+		<li key={props.id} projectKey={props.id} className={cardClass} style={bgimage_style} onClick={props.select_project}>
+			
+			<div className='info-level1' href='#'>
+				<div className='cardmask'></div>
 				<h5>{props.title}</h5>
 				<p>{props.description}</p>
 			</div>
 			
-		</div>
+		</li>
 	);
 }
 export default Project_card;

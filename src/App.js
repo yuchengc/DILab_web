@@ -11,6 +11,7 @@ class App extends Component {
     super();
     this.state = {
       selectedpage: 2,
+      selectedProject: 0,
     }
   }
 
@@ -19,16 +20,19 @@ class App extends Component {
     this.setState({selectedpage: val});
     console.log('App level->change selectedpage',val);
   }
-
+  resetProjectPage(p_id){
+    this.setState({selectedProject: p_id});
+  }
 
   render() {
     console.log('App level render->selectedpage',this.state.selectedpage);
+    console.log('App level render->selected project',this.state.selectedProject);
     // console.log(this.state.selectedpage);
     return (
       <div>
-        <Header selectedpage={this.state.selectedpage} changeSelected={this.changeSelected.bind(this)}/>
+        <Header selectedpage={this.state.selectedpage} changeSelected={this.changeSelected.bind(this)} resetProjectPage={this.resetProjectPage.bind(this)}/>
 
-        <Pagecontent className='content' selectedpage={this.state.selectedpage}  />
+        <Pagecontent className='content' selectedpage={this.state.selectedpage} selectedProject={this.state.selectedProject} default_selectedProject_f={this.resetProjectPage.bind(this)} />
         <Footer />
       </div>
     );
