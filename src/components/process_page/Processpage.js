@@ -23,7 +23,7 @@ class Processpage extends Component {
 				<Approaches />
 				<Outcome />
 				<Futuresupport />
-				<Casestudy_gallery_small />
+				<Casestudy_gallery_small cases_num={4} />
 
 			</div>
 		);

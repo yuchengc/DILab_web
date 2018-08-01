@@ -2,7 +2,8 @@
 @import 'shared_style/variable_processpage.scss';
 @import '../../style_global/variable.scss';
 
-$bg-image-width: 60%;
+$bg-image-width-l: 60%;
+$bg-image-width-m: 80%;
 .work-process-greeting{
 	width: 100%;
 	height: auto;
@@ -21,13 +22,13 @@ $bg-image-width: 60%;
 		}
 		.section-bg{
 			position: absolute;
-			left: calc(100% - #{$bg-image-width} - 5%);
+			left: calc(100% - #{$bg-image-width-l} - 5%);
 			// top: 20vh;
 			// margin-right: auto;
 			// margin-left: auto;
 			rigth: 0;
 			bottom: 0;
-			width:$bg-image-width;
+			width:$bg-image-width-l;
 			height: auto;
 			display: block;
 			// filter:invert(100%) grayscale(100%) opacity(100%); 
@@ -39,4 +40,63 @@ $bg-image-width: 60%;
 
 		}
 	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.work-process-greeting{
+		width: 100%;
+		height: auto;
+		left: 0;
+		position: relative;
+		// background: red;
+
+		.content-section{
+			
+			clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
+			-webkit-clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
+			@include content-section($linear_gradient_green,50vh);
+
+
+			.paragraph-section{
+				@include paragraph-section(15vh, 40vw, left, 80vw);
+				h3{
+					font-size: $title-font-size-h3-m;
+					
+				}
+				h5{
+					font-size: $paragraph-font-size-h5-m;
+				}
+				ul{
+					font-size: $paragraph-font-size-h5-m;
+					
+
+					li{
+						font-size: $paragraph-font-size-h5-m;
+						
+					}
+				}
+
+			}
+			.section-bg{
+				position: absolute;
+				left: calc(100% - #{$bg-image-width-m} - 8%);
+				// top: 20vh;
+				// margin-right: auto;
+				// margin-left: auto;
+				rigth: 0;
+				bottom: 0;
+				width:$bg-image-width-m;
+				height: auto;
+				display: block;
+				// filter:invert(100%) grayscale(100%) opacity(100%); 
+
+				img{
+					width: 100%;
+					height: 100%;
+				}
+
+			}
+		}
+	}
+
 }

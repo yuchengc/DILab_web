@@ -18,7 +18,7 @@ class App extends Component {
 
   changeSelected(val) {
     this.setState({selectedpage: val});
-    console.log('App level->change selectedpage',val);
+    // console.log('App level->change selectedpage',val);
   }
   resetProjectPage(p_id){
     this.setState({selectedProject: p_id});

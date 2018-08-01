@@ -38,9 +38,9 @@
 
 // @mixin section-bg()
 
-@mixin paragraph-section($top:25vh, $text_width:40vw, $align:left){
+@mixin paragraph-section($top:25vh, $text_width:40vw, $align:left, $section_width:$GLOBAL_CONTENT_WIDTH){
 	position: relative;
-	width: $GLOBAL_CONTENT_WIDTH;
+	width: $section_width;
 	height: auto;
 	margin: auto;
 	display: block;

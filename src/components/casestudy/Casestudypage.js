@@ -40,8 +40,9 @@ class Casestudypage extends Component {
 			return cases.calalog.includes(this.state.filter.toLowerCase())
 		})
 		// console.log('on render level',filteredCases)
-		console.log('selected_project',this.state.selected_project)
+		// console.log('selected_project',this.state.selected_project)
 		if (this.props.selectedProject === 0){
+			
 			return(
 				<div className='casestudypage-frame'>
 					<TopBanner />

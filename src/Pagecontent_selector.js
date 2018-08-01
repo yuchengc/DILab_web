@@ -23,7 +23,7 @@ class Pagecontent extends Component {
 				);
 				break;
 			case 2:
-				console.log("content selector", this.props.selectedProject)
+				// console.log("content selector", this.props.selectedProject)
 				return(
 					<div><Casestudypage pagereset_f={this.props.default_selectedProject_f} selectedProject={this.props.selectedProject}/></div>
 				);
