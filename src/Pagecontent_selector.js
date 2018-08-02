@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Processpage from './components/process_page/Processpage'
 import Casestudypage from './components/casestudy/Casestudypage'
+import Aboutpage from './components/about_page/Aboutpage'
 
 
 class Pagecontent extends Component {
@@ -10,7 +11,7 @@ class Pagecontent extends Component {
 		switch (this.props.selectedpage){
 			case 0:
 				return(
-					<div>about us oage</div>
+					<Aboutpage />
 				);
 				break;
 			case 1:
