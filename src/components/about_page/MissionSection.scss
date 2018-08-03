@@ -1,8 +1,39 @@
+// @import 'shared_style/mixin_processpage.scss';
+// @import 'shared_style/variable_processpage.scss';
+@import '../../style_global/variable.scss';
+@import '../../style_global/mixin.scss';
+
+
 .section-container{
 	width: 100%;
-	height: 80vh;
-	background: green;
+	
+	
 	display: block;
 	position: relative;
-	top: 0px;
+	top: 3vh;
+	
+
+	.paragraph-section-right{
+		@include paragraph-section(15vh, 50vw, right, 70vw );
+		margin-bottom: 10vh;
+		h3{
+			text-align: right;
+		}
+	}
+	
+}
+
+h3{
+	font-size: $title-font-size-h3;
+
+}
+p{
+	font-size:$paragraph-font-size-p;
+}
+.missionsection{
+	clip-path: polygon(0 86%, 0% 0%, 100% 0%, 100% 100%);
+	-webkit-clip-path: polygon(0 86%, 0% 0%, 100% 0%, 100% 100%);
+	height: 70vh;
+	background: #60D0B7;
+	z-index: 2;
 }

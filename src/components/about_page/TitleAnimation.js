@@ -28,21 +28,24 @@ class TitleAnimation extends Component {
 		// var positionY = Math.random() * 50;
 		// console.log("chat-y offset",positionY);
 		for (var i=0; i < titleString.length; i++){
+			var offfsetY= Math.floor(Math.random() * 100);
 			console.log("character",i,titleString.charAt(i))
-			var positionY = Math.floor(Math.random() * 100);
-			var half_positionY= positionY * 0.5;
-			console.log("chat-y offset",positionY);
+			var offfsetY_max = offfsetY;
+			var offfsetY_min = offfsetY * (-1);
+			var half_positionY= offfsetY_max * 0.5;
+			console.log("chat-y offset",offfsetY_max);
 			
 			// outElements.push(<span className={`title-cht chat-${i}`} style={{top: `${positionY}px`}}> {titleString.charAt(i)} </span>);
 			outElements.push(
 				<Parallax
+					key={i}
 					className='parallax-style title-cht'
-					offsetYMax={positionY}
-					offsetYmin={-positionY}
-					style={{marginTop: `400px`,}}
+					offsetYMax={offfsetY_max}
+					offsetYmin={offfsetY_min}
+					
 					disabled = {true}
 					// offsetXMax={20}
-					// slowerScrollRate={}
+					// slowerScrollRate={true}
 
 				>	
 				
