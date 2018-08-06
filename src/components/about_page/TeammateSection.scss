@@ -1,0 +1,17 @@
+@import '../../style_global/variable.scss';
+@import '../../style_global/mixin.scss';
+
+.teammates{
+	width: 100%;
+	height: auto;
+	display: block;
+	position:relative;
+	top: -10vh;
+	
+	h3{
+		font-size:$title-font-size-h3;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 10vh;
+	}
+}

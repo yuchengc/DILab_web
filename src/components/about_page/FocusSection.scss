@@ -15,7 +15,9 @@
 	}
 	.paragraph-section-left{
 		@include paragraph-section(10vh, 40vw,left, 70vw );
-		
+		h4{
+			margin-top: 3rem;
+		}
 		.section-img{
 			position: relative;
 			display: inline-block;
@@ -63,8 +65,12 @@
 .focussection{
 	// clip-path: polygon(0 86%, 0% 0%, 100% 0%, 100% 100%);
 	// -webkit-clip-path: polygon(0 86%, 0% 0%, 100% 0%, 100% 100%);
-	height: 100vh;
+	height: 110vh;
 	top: -20vh;
 	background: rgba(0,0,0,0.05);
-		padding-top: 20vh;
+	padding-top: 20vh;
+
+	.scroll-indicator-left{
+		top: -25vw;
+	}
 }

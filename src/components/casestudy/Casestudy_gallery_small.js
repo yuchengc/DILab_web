@@ -2,6 +2,7 @@ import React from 'react';
 // import './content_processpage.css'
 import Casestudy_cards from './Casestudy_cards'
 import {case_content} from './case_content' 
+import "./Casestudy_gallery_small.css"
 // import Card from './Card';
 
 const Casestudy_gallery_small = (props) =>{

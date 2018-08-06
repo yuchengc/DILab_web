@@ -45,6 +45,8 @@
       .section-container .paragraph-section-left ul li {
         font-size: 1.2rem;
         font-weight: 200; }
+    .section-container .paragraph-section-left h4 {
+      margin-top: 3rem; }
     .section-container .paragraph-section-left .section-img {
       position: relative;
       display: inline-block;
@@ -109,7 +111,9 @@
       left: 5vw; }
 
 .focussection {
-  height: 100vh;
+  height: 110vh;
   top: -20vh;
   background: rgba(0, 0, 0, 0.05);
   padding-top: 20vh; }
+  .focussection .scroll-indicator-left {
+    top: -25vw; }

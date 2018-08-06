@@ -4,6 +4,9 @@ import TitleAnimation from './TitleAnimation';
 import MissionSection from './MissionSection';
 import {ParallaxProvider} from 'react-scroll-parallax';
 import FocusSection from './FocusSection';
+import TeammateSection from './TeammateSection';
+import ConnectionUIUC from './ConnectionUIUC';
+import Casestudy_gallery_small from '../casestudy/Casestudy_gallery_small';
 import './Aboutpage.css';
 
 class Aboutpage extends Component {
@@ -21,6 +24,9 @@ class Aboutpage extends Component {
 				</div>
 				<MissionSection />
 				<FocusSection />
+				<TeammateSection />
+				<ConnectionUIUC />
+				<Casestudy_gallery_small cases_num={4} />
 
 
 			</ParallaxProvider>
