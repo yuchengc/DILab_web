@@ -13,8 +13,8 @@
     left: 10%; }
   .uiuc-section .section-title {
     position: absolute;
-    left: calc(50% + 15%);
-    top: 10vh; }
+    left: calc(50% - 5%);
+    top: 12vh; }
   .uiuc-section p {
     position: absolute;
     left: 10%;

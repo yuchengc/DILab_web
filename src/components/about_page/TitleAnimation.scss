@@ -32,6 +32,60 @@ $chat_num : 20;
 	top:10px;
 	left: 10px;
 }
+.title-side-bar{
+	width: 16px;
+	height: calc(24rem + 4rem);
+	position: absolute;
+	background: black;
+	left: -3rem;
+	// top: calc(24rem + 12rem);
+	z-index: 10;
+}
+
+@media only screen and (max-width: 1200px) {
+	.title-word{
+		position: relative;
+		// top:;
+		height: 6rem;
+		display: block;
+	}
+	.title-cht{
+		// color: red;
+		position: relative;
+		font-size: 6rem;
+		font-weight: 900;
+		letter-spacing: 0px;
+		transition-duration: .5s;
+		color: #F5A623;
+		display: inline-block;
+		// top: 10vh;
+		width: auto;
+		height: auto;
+		// margin-top: 50vh;
+		// top: random(50)+px;
+	}
+	.chat-front{
+		position: relative;
+		top:0;
+		left: 0;
+		color: black;
+
+	}
+	.chat-back{
+		position: absolute;
+		top: 6px;
+		left: 6px;
+	}
+	.title-side-bar{
+		width: 14px;
+		height: calc(18rem + 4rem);
+		position: absolute;
+		background: black;
+		// left: 12vw;
+		top: calc(0rem);
+		z-index: 10;
+	}
+}
 // .parallax-style{
 // 	display: inline-block;
 

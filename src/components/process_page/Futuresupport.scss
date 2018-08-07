@@ -22,30 +22,60 @@
 			// left: 30vw;
 
 		}
-		.button-set{
-
-			width: $GLOBAL_CONTENT_WIDTH;
-			height: auto;
-			margin: 0px auto;
-			display: block;
-			// top: 50px;
-			position: relative;
-			top: 25vh;
-			left: 0vw;
-
-			button{
-
-				display: inline-block;
-				width: auto;
-				// height: rem;
-				padding: .5rem 1rem;
-				background: white;
-				border-radius: 5px;
-				border: 2px solid grey;
-				margin-right: 20px;
-
-			}
-		}
+		
 	}
 	
+}
+@media only screen and (max-width: 1200px) {
+	.work-process-Futuresupport{
+		width: 100%;
+		height: auto;
+		left: 0;
+		position: relative;
+		top: 0;
+		
+		.content-section{
+			@include content-section(#efefef,50vw);
+			clip-path: polygon(0 100%, 0% 0%, 100% 14%, 100% 100%);
+			-webkit-clip-path: polygon(0 100%, 0% 0%, 100% 14%, 100% 100%);
+
+			
+			.paragraph-section{
+
+				@include paragraph-section(18vw, 50vw, left, $GLOBAL_CONTENT_WIDTH_M);
+				// position: absolute;
+				// left: 30vw;
+				h3{
+					font-size: $title-font-size-h3-m;
+					
+				}
+				h5{
+					font-size: $paragraph-font-size-h5-m;
+				}
+				ul{
+					font-size: $paragraph-font-size-h5-m;
+					
+
+					li{
+						font-size: $paragraph-font-size-h5-m;
+						
+					}
+				}
+
+			}
+			
+		}
+		.scroll-indicator-right{
+			// position: relative;
+			.scroll-indicator-icon{
+				// position: relative;
+				img{
+					// width: 5vw;
+					top: -5vw;
+					position: relative;
+				}
+			}
+		}
+		
+	}
 }

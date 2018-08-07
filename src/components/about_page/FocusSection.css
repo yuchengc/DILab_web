@@ -111,9 +111,10 @@
       left: 5vw; }
 
 .focussection {
-  height: 110vh;
+  height: auto;
   top: -20vh;
   background: rgba(0, 0, 0, 0.05);
-  padding-top: 20vh; }
+  padding-top: 20vh;
+  padding-bottom: 18vh; }
   .focussection .scroll-indicator-left {
     top: -25vw; }

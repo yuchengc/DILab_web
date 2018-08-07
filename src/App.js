@@ -18,10 +18,13 @@ class App extends Component {
 
   changeSelected(val) {
     this.setState({selectedpage: val});
+    window.scrollTo(0,0);
+
     // console.log('App level->change selectedpage',val);
   }
   resetProjectPage(p_id){
     this.setState({selectedProject: p_id});
+    window.scrollTo(0,0);
   }
 
   render() {

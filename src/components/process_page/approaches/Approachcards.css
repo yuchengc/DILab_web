@@ -5,3 +5,12 @@
   margin: auto;
   position: relative;
   z-index: 2; }
+
+@media only screen and (max-width: 1200px) {
+  .approaches-cards {
+    display: block;
+    width: calc(80vw + 9vw);
+    height: calc((80vw + 9vw) / 3 * 2);
+    margin: auto;
+    position: relative;
+    z-index: 2; } }

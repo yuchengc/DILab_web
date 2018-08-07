@@ -65,11 +65,11 @@
 .focussection{
 	// clip-path: polygon(0 86%, 0% 0%, 100% 0%, 100% 100%);
 	// -webkit-clip-path: polygon(0 86%, 0% 0%, 100% 0%, 100% 100%);
-	height: 110vh;
+	height: auto;
 	top: -20vh;
 	background: rgba(0,0,0,0.05);
 	padding-top: 20vh;
-
+	padding-bottom: 18vh;
 	.scroll-indicator-left{
 		top: -25vw;
 	}

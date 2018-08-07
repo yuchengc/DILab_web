@@ -16,8 +16,9 @@ class Aboutpage extends Component {
 			<div className='aboutpage-frame'>
 			<ParallaxProvider >
 				<LandingAnimation />
-				<div className='title-side-bar'></div>
+				
 				<div className="title-set">
+					<div className='title-side-bar'></div>
 					<TitleAnimation titleString={"DIGITAL"} />
 					<TitleAnimation titleString={"INNOVATION"} />
 					<TitleAnimation titleString={"LAB"} />

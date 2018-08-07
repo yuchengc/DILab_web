@@ -1,267 +1,479 @@
 @import '../shared_style/mixin_processpage.scss';
 @import '../shared_style/variable_processpage.scss';
+@import '../.././../style_global/variable.scss';
 
 .approach-card{
-			// $window_width: calc((1000px / 3) - 40px);
-			// position: relative;
-			// top: 0px;
-			display: inline-block;
-			width: $approach_card_width_l;
-			height: $approach_card_width_l;
-			background: white;
-			margin: #{$approach_card_margin_l}px;
-			padding: #{$approach_card_padding_l}px;
-			overflow: hidden;
-			border-radius: 10px;
-			z-index: 3;
-			transition-duration: 1s;
-			position: relative;
+	
+	display: inline-block;
+	width: $approach_card_width_l;
+	height: $approach_card_width_l;
+	background: white;
+	margin: #{$approach_card_margin_l}px;
+	padding: #{$approach_card_padding_l}px;
+	overflow: hidden;
+	border-radius: 10px;
+	z-index: 3;
+	transition-duration: 1s;
+	position: relative;
 
-			
-			&:hover{
+	
+	&:hover{
 
-				.info-level1{
-					background: rgba(140,198,63,0.6);
-					p{
-						// display: block;
-						transform: translateY(-20px);
-						opacity: 1;
-
-
-					}
-				} 
-
-			}
-			img{
-				display: block;
-				position: absolute;
-				top:0;
-				left:0;
-				width: 100%;
-				height: 100%;
-				transition-duration: 0.8s;
-
-
-			}
-			.info-level1{
-				display: block;
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				top: 0%;
-				transition-duration: .5s;
-				left:0;
-				padding: 40px;
-				background: rgba(140,198,63,0);
-
-				
-				.title {
-					// display: block;
-
-					font-size: $card-title-cont-size-h5;
-
-				}
-				p{
-					display:block;
-					width: 100%;
-					height: 100%;
-					font-size: 1rem;
-					// display: none;
-					opacity: 0;
-					transition-duration: 0.5s;
-					position: relative;
-					top: 0px;
-				}
-			}
-			.info-level2{
-				display: none;
-				transition-duration: .5s;
-
-			}
-			.btn-close{
-				opacity: 0;
-				display: block;
-				position: absolute;
-				width: 40px;
-				height: 40px;
-				border-radius: 20px;
-				background: rgba(0,0,0,0.4) !important;
-
-				&:before{
-					content: "";
-					display: block;
-					width: 24px;
-					height: 4px;
-					background: white;
-					transform: rotate(45deg);
-					// transform-original: 
-					position: absolute;
-					top: 18px;
-					left: 8px;
-					// z-index:5;
-
-				}
-				&:after{
-					content: "";
-					display: block;
-					width: 24px;
-					height: 4px;
-					background: white;
-					transform: rotate(-45deg);
-					position: absolute;
-					top: 18px;
-					left: 8px;
-					// z-index:5;
-				}
-
-			}
-			
-		}
-		.card-exploration{
-			@extend .approach-card;
-			position: absolute !important;
-			top: $approach_card_margin_l;
-			left: $approach_card_margin_l;
-			// background-color: rgba(255,255,255,0.5) !important;
-			// background-blend-mode: multiply;
-
-		}
-		.card-ideation{
-			@extend .card-exploration;
-			left: calc( 80vw / 3 * 1);
-
-		}
-		.card-experliments{
-			@extend .card-exploration;
-			left: calc( 80vw / 3 * 2);
-			// left: 1000px;
-
-		}
-		.card-prototype{
-			@extend .card-exploration;
-			// left: calc( 60vw / 3 * 1);
-			top: calc( (80vw / 3 * 1));
-
-		}
-		.card-mvp{
-			@extend .card-exploration;
-			// left: calc( 60vw / 3 * 1);
-			top: calc( 80vw / 3 * 1);
-			left: calc( 80vw / 3 * 1);
-
-		}
-		.card-lego-bricks{
-			@extend .card-exploration;
-			// left: calc( 60vw / 3 * 1);
-			top: calc( 80vw / 3 * 1);
-			left: calc( 80vw / 3 * 2);
-		}
-		.approach-card-extend{
-			// @extend .approach-card;
-			width: calc( 100% - #{$approach_card_margin_l}*2px) !important;
-			height: calc(80vw / 3 * 2 ) !important;
-			z-index: 5;
-			position: absolute;
-			top: 0px !important;
-			left: 0px !important;
-			background: white;
-			transition-duration: .5s;
-			background-image: '' !important;
-
-			@extend .approach-card;
-			&:hover{
-				.info-level1{
-					background: rgba(140,198,63,0);
-					p{
-						// display: block;
-						transform: translateY(0px);
-						opacity: 1;
-
-					}
-				} 
-			}
-			img{
-				opacity: 0;
-			}
-			.info-level1{
-
-				display: block;
-				position: absolute;
-				width: 100%;
-				height: 30%;
-				top: 0;
-				transition-duration: .5s;
-				left: 0;
-
-				// background: green;
-				.title{
-					// display:block;
-					margin: 0;
-					position: relative;
-					left:0;
-					font-size: $card-title-cont-size-h5;
-
-				}
-				p{
-					display:block;
-					width: 100%;
-					height: 100%;
-					// font-size: 1rem;
-					// display: none;
-					opacity: 1;
-					transition-duration: 0.5s;
-					position: relative;
-					top: 50px;
-				}
-			}
-			.info-level2{
-				display: block;
-				transition-duration: .5s;
-				position: absolute;
-				top: 20%;
-
-
-				.detailedinfo{
-					.inputinfo ul, .todoinfo ul, .deliverableinfo ul{
-						list-style-type: none;
-
-
-					}
-				}
-			}
-			.btn-close{
+		.info-level1{
+			background: rgba(140,198,63,0.6);
+			p{
+				// display: block;
+				transform: translateY(-20px);
 				opacity: 1;
-				right: 40px;
-				top: 40px;
-
-				// background: rgba(0,0,0,0);
-
-				&:before{
-				// 	content: "";
-				// 	display: block;
-				// 	width: 30px;
-				// 	height: 4px;
-				// 	background: red;
-				// 	// transform: rotate(45deg);
-				// 	position: absolute;
-				// 	top: 0;
-				// 	left: 0;
-				// 	z-index:5;
-				}
-				&:after{
-				// 	content: "";
-				// 	display: block;
-				// 	width: 30px;
-				// 	height: 4px;
-				// 	background: red;
-				// 	// transform: rotate(45deg);
-				// 	position: absolute;
-				// 	top: 0;
-				// 	left: 0;
-				// 	z-index:5;
-				}
 
 
 			}
+		} 
+
+	}
+	img{
+		display: block;
+		position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		height: 100%;
+		transition-duration: 0.8s;
+
+
+	}
+	.info-level1{
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0%;
+		transition-duration: .5s;
+		left:0;
+		padding: 40px;
+		background: rgba(140,198,63,0);
+
+		
+		.title {
+			// display: block;
+
+			font-size: $paragraph-font-size-h5-m;
 
 		}
+		p{
+			display:block;
+			width: 100%;
+			height: 100%;
+			font-size: $paragraph-font-size-p-m;
+			// display: none;
+			opacity: 0;
+			transition-duration: 0.5s;
+			position: relative;
+			top: 0px;
+		}
+	}
+	.info-level2{
+		display: none;
+		transition-duration: .5s;
+
+	}
+	.btn-close{
+		opacity: 0;
+		display: block;
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		border-radius: 20px;
+		background: rgba(0,0,0,0.4) !important;
+
+		&:before{
+			content: "";
+			display: block;
+			width: 24px;
+			height: 4px;
+			background: white;
+			transform: rotate(45deg);
+			// transform-original: 
+			position: absolute;
+			top: 18px;
+			left: 8px;
+			// z-index:5;
+
+		}
+		&:after{
+			content: "";
+			display: block;
+			width: 24px;
+			height: 4px;
+			background: white;
+			transform: rotate(-45deg);
+			position: absolute;
+			top: 18px;
+			left: 8px;
+			// z-index:5;
+		}
+
+	}
+	
+}
+.card-exploration{
+	@extend .approach-card;
+	position: absolute !important;
+	top: $approach_card_margin_l;
+	left: $approach_card_margin_l;
+	// background-color: rgba(255,255,255,0.5) !important;
+	// background-blend-mode: multiply;
+
+}
+.card-ideation{
+	@extend .card-exploration;
+	left: calc( 80vw / 3 * 1);
+
+}
+.card-experliments{
+	@extend .card-exploration;
+	left: calc( 80vw / 3 * 2);
+	// left: 1000px;
+
+}
+.card-prototype{
+	@extend .card-exploration;
+	// left: calc( 60vw / 3 * 1);
+	top: calc( (80vw / 3 * 1));
+
+}
+.card-mvp{
+	@extend .card-exploration;
+	// left: calc( 60vw / 3 * 1);
+	top: calc( 80vw / 3 * 1);
+	left: calc( 80vw / 3 * 1);
+
+}
+.card-lego-bricks{
+	@extend .card-exploration;
+	// left: calc( 60vw / 3 * 1);
+	top: calc( 80vw / 3 * 1);
+	left: calc( 80vw / 3 * 2);
+}
+.approach-card-extend{
+	// @extend .approach-card;
+	width: calc( 100% - #{$approach_card_margin_l}*2px) !important;
+	height: calc(80vw / 3 * 2 ) !important;
+	z-index: 5;
+	position: absolute;
+	top: 0px !important;
+	left: 0px !important;
+	background: white;
+	transition-duration: .5s;
+	background-image: '' !important;
+
+	@extend .approach-card;
+	&:hover{
+		.info-level1{
+			background: rgba(140,198,63,0);
+			p{
+				// display: block;
+				transform: translateY(0px);
+				opacity: 1;
+
+			}
+		} 
+	}
+	img{
+		opacity: 0;
+	}
+	.info-level1{
+
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 30%;
+		top: 0;
+		transition-duration: .5s;
+		left: 0;
+
+		// background: green;
+		.title{
+			// display:block;
+			margin: 0;
+			position: relative;
+			left:0;
+			font-size: $card-title-cont-size-h5;
+
+		}
+		p{
+			display:block;
+			width: 100%;
+			height: 100%;
+			// font-size: 1rem;
+			// display: none;
+			opacity: 1;
+			transition-duration: 0.5s;
+			position: relative;
+			top: 50px;
+		}
+	}
+	.info-level2{
+		display: block;
+		transition-duration: .5s;
+		position: absolute;
+		top: 20%;
+
+
+		.detailedinfo{
+			.inputinfo ul, .todoinfo ul, .deliverableinfo ul{
+				list-style-type: none;
+
+
+			}
+		}
+	}
+	.btn-close{
+		opacity: 1;
+		right: 40px;
+		top: 40px;
+
+
+
+	}
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+	.approach-card{
+		
+		display: inline-block;
+		width: $approach_card_width_m;
+		height: $approach_card_width_m;
+		background: white;
+		margin: #{$approach_card_margin_m}px;
+		padding: #{$approach_card_padding_m}px;
+		overflow: hidden;
+		border-radius: 10px;
+		z-index: 3;
+		transition-duration: 1s;
+		position: relative;
+
+		
+		&:hover{
+
+			.info-level1{
+				background: rgba(140,198,63,0.6);
+				p{
+					// display: block;
+					transform: translateY(-20px);
+					opacity: 1;
+
+
+				}
+			} 
+
+		}
+		img{
+			display: block;
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+			transition-duration: 0.8s;
+
+
+		}
+		.info-level1{
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0%;
+			transition-duration: .5s;
+			left:0;
+			padding: 40px;
+			background: rgba(140,198,63,0);
+
+			
+			.title {
+				// display: block;
+
+				font-size: $card-title-cont-size-h5;
+
+			}
+			p{
+				display:block;
+				width: 100%;
+				height: 100%;
+				font-size: 1rem;
+				// display: none;
+				opacity: 0;
+				transition-duration: 0.5s;
+				position: relative;
+				top: 0px;
+			}
+		}
+		.info-level2{
+			display: none;
+			transition-duration: .5s;
+
+		}
+		.btn-close{
+			opacity: 0;
+			display: block;
+			position: absolute;
+			width: 40px;
+			height: 40px;
+			border-radius: 20px;
+			background: rgba(0,0,0,0.4) !important;
+
+			&:before{
+				content: "";
+				display: block;
+				width: 24px;
+				height: 4px;
+				background: white;
+				transform: rotate(45deg);
+				// transform-original: 
+				position: absolute;
+				top: 18px;
+				left: 8px;
+				// z-index:5;
+
+			}
+			&:after{
+				content: "";
+				display: block;
+				width: 24px;
+				height: 4px;
+				background: white;
+				transform: rotate(-45deg);
+				position: absolute;
+				top: 18px;
+				left: 8px;
+				// z-index:5;
+			}
+
+		}
+		
+	}
+	.card-exploration{
+		// @extend .approach-card;
+		position: absolute !important;
+		top: $approach_card_margin_m;
+		left: $approach_card_margin_m;
+
+
+	}
+	.card-ideation{
+		// @extend .card-exploration;
+		left: calc( (#{$GLOBAL_CONTENT_WIDTH_M} + 9vw) / 3 * 1);
+
+	}
+	.card-experliments{
+		// @extend .card-exploration;
+		left: calc( (#{$GLOBAL_CONTENT_WIDTH_M} + 9vw) / 3 * 2);
+		// left: 1000px;
+
+	}
+	.card-prototype{
+		// @extend .card-exploration;
+		// left: calc( 60vw / 3 * 1);
+		top: calc( ((#{$GLOBAL_CONTENT_WIDTH_M} + 9vw) / 3 * 1));
+
+	}
+	.card-mvp{
+		// @extend .card-exploration;
+		// left: calc( 60vw / 3 * 1);
+		top: calc( (#{$GLOBAL_CONTENT_WIDTH_M} + 9vw) / 3 * 1);
+		left: calc( (#{$GLOBAL_CONTENT_WIDTH_M} + 9vw) / 3 * 1);
+
+	}
+	.card-lego-bricks{
+		// @extend .card-exploration;
+		// left: calc( 60vw / 3 * 1);
+		top: calc( (#{$GLOBAL_CONTENT_WIDTH_M} + 9vw) / 3 * 1);
+		left: calc( (#{$GLOBAL_CONTENT_WIDTH_M} + 9vw) / 3 * 2);
+	}
+	.approach-card-extend{
+		// @extend .approach-card;
+		width: calc( 100% - #{$approach_card_margin_m}*2px) !important;
+		height: calc(100% - #{$approach_card_margin_m}*2px) !important;
+		z-index: 5;
+		position: absolute;
+		top: 0px !important;
+		left: 0px !important;
+		background: white;
+		transition-duration: .5s;
+		background-image: '' !important;
+
+		// @extend .approach-card;
+		&:hover{
+			.info-level1{
+				background: rgba(140,198,63,0);
+				p{
+					// display: block;
+					transform: translateY(0px);
+					opacity: 1;
+
+				}
+			} 
+		}
+		img{
+			opacity: 0;
+		}
+		.info-level1{
+
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 30%;
+			top: 0;
+			transition-duration: .5s;
+			left: 0;
+
+			// background: green;
+			.title{
+				// display:block;
+				margin: 0;
+				position: relative;
+				left:0;
+				font-size: $card-title-cont-size-h5;
+
+			}
+			p{
+				display:block;
+				width: 100%;
+				height: 100%;
+				// font-size: 1rem;
+				// display: none;
+				opacity: 1;
+				transition-duration: 0.5s;
+				position: relative;
+				top: 50px;
+			}
+		}
+		.info-level2{
+			display: block;
+			transition-duration: .5s;
+			position: absolute;
+			top: 20%;
+
+
+			.detailedinfo{
+				.inputinfo ul, .todoinfo ul, .deliverableinfo ul{
+					list-style-type: none;
+
+
+				}
+			}
+		}
+		.btn-close{
+			opacity: 1;
+			right: 40px;
+			top: 40px;
+
+
+
+		}
+
+	}
+}

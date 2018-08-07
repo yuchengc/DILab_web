@@ -9,7 +9,7 @@ class Tabs extends Component{
 	initialFollowme(index){
   	var indicator = document.querySelector(".tab-indicator");
 
-   	var leftposition= index * 8+ 'vw';
+   	var leftposition= index * 10+ 'vw';
    	return( {left:leftposition});
     // indicator.style.left=leftposition;
     // this.props.changeSelected(index);
@@ -27,7 +27,7 @@ class Tabs extends Component{
     });
     var indicator = document.querySelector(".tab-indicator");
 
-   	var leftposition= index * 8+ 'vw';
+   	var leftposition= index * 10 + 'vw';
 
     indicator.style.left=leftposition;
     this.props.changeSelected(index);
