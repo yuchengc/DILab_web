@@ -8,10 +8,10 @@ import Scrollindicator from './Scrollindicator';
 const Projectscope = () =>{
 	
 	return(
-		<div className='work-process-scope'>
-			<div className='content-section'>
-				<img className='section-bg' src='#' alt='bg'/>
-				<div className='paragraph-section'>
+		<div className='work-process-scope row no-gutters'>
+			<div className='content-section row no-gutters align-items-center'>
+				
+				<div className='paragraph-section col col-5 offset-2 col-xl-5 offset-xl-2 align-items-center'>
 					<h3>Measure Project scope </h3>
 					<h5>A short sentence that describes this step. A short sentence that describes this step. A short sentence that describes this step.</h5>
 
@@ -21,11 +21,12 @@ const Projectscope = () =>{
 						<li>- Reach a common understanding of the idea being presented.</li>
 						<li>- Develop a high level "outline design on a page" for these solution options.</li>
 					</ul>
+					<div className='button-set'>
+						<button type='button'>DOWNLOAD THE QUESTIONNAIRE</button>
+						
+					</div>
 				</div>
-				<div className='button-set'>
-					<button type='button'>DOWNLOAD THE QUESTIONNAIRE</button>
-					
-				</div>
+				
 				
 
 			</div>

@@ -10,7 +10,7 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      selectedpage: 0,
+      selectedpage: 2,
       selectedProject: 0,
     }
   }
@@ -32,8 +32,8 @@ class App extends Component {
     console.log('App level render->selected project',this.state.selectedProject);
     // console.log(this.state.selectedpage);
     return (
-      <div>
-        <Header selectedpage={this.state.selectedpage} changeSelected={this.changeSelected.bind(this)} resetProjectPage={this.resetProjectPage.bind(this)}/>
+      <div className='container-fluid app-frame'>
+        <Header className='row' selectedpage={this.state.selectedpage} changeSelected={this.changeSelected.bind(this)} resetProjectPage={this.resetProjectPage.bind(this)}/>
 
         <Pagecontent className='content' selectedpage={this.state.selectedpage} selectedProject={this.state.selectedProject} default_selectedProject_f={this.resetProjectPage.bind(this)} />
         <Footer />

@@ -2,10 +2,10 @@
 @import '../../../style_global/variable.scss';
 
 @mixin content-section($gb:#D8D8D8,$height: 90vh){
-	display: block;
+	// display: block;
 	height: $height;
 	width: 100%;
-	position: relative;
+	// position: relative;
 	left: 0;
 	background: $gb;
 	// clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
@@ -38,14 +38,61 @@
 }
 
 // @mixin section-bg()
+@mixin paragraph-section-font-xl(){
+	h3{
+		font-size: $title-font-size-h3;
+	}
+	h4{
+		font-size: $title-font-size-h4;
+	}
+	h5{
+		font-size: $paragraph-font-size-h5;
+	}
+	p{
+		font-size: $paragraph-font-size-p;
+	}
+	ul{
+		margin-top: 30px;
+		font-size: $paragraph-font-size-h5;
+		font-weight: 200;
 
+		li{
+			font-size: $paragraph-font-size-h5;
+			font-weight: 200;
+		}
+	}
+}
+@mixin paragraph-section-font-l(){
+	h3{
+		font-size: $title-font-size-h3;
+	}
+	h4{
+		font-size: $title-font-size-h4;
+	}
+	h5{
+		font-size: $paragraph-font-size-h5;
+	}
+	p{
+		font-size: $paragraph-font-size-p;
+	}
+	ul{
+		margin-top: 30px;
+		font-size: $paragraph-font-size-h5;
+		font-weight: 200;
+
+		li{
+			font-size: $paragraph-font-size-h5;
+			font-weight: 200;
+		}
+	}
+}
 @mixin paragraph-section($top:25vh, $text_width:40vw, $align:left, $section_width:$GLOBAL_CONTENT_WIDTH){
 	position: relative;
-	width: $section_width;
-	height: auto;
-	margin: auto;
-	display: block;
-	top: $top;
+	// width: $section_width;
+	// height: auto;
+	// margin: auto;
+	// display: block;
+	// top: $top;
 
 
 	h3{

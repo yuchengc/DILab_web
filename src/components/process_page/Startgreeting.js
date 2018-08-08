@@ -9,10 +9,10 @@ import Scrollindicator from './Scrollindicator';
 const Startgreeting = () =>{
 	
 	return(
-		<div className='work-process-greeting'>
-			<div className='content-section'>
-				<img className='section-bg' src={ideas_bg} alt='bg'/>
-				<div className='paragraph-section'>
+		<div className='work-process-greeting row no-gutters'>
+			<div className='content-section col-12 row align-items-center no-gutters'>
+				<img className='section-bg col-xl-8 col-lg-8 col-md-8 col-sm-10' src={ideas_bg} alt='bg'/>
+				<div className='col col-5 offset-2 col-xl-5 offset-xl-2 align-items-center '>
 					<h3>You have a idea ? Great !</h3>
 					<h5>A short sentence that describes the overall process. A short sentence that describes the overall process. A short sentence that describes the overall process.</h5>
 

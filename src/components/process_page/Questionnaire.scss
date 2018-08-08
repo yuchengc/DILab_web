@@ -10,23 +10,24 @@
 	top: 0;
 	
 	.content-section{
-		@include content-section(#ffffff,52vw);
-
+		@include content-section(#ffffff,auto);
+		padding: 15vh 0;
 		.paragraph-section{
 
-			@include paragraph-section(10vh, 50vw, right);
+			// @include paragraph-section(10vh, 50vw, right);
+			@include paragraph-section-font-xl();
 
 		}
 		.button-set{
 
-			width: $GLOBAL_CONTENT_WIDTH;
+			// width: $GLOBAL_CONTENT_WIDTH;
 			height: auto;
-			margin: 0 auto;
+			// margin: 0 auto;
 			display: block;
 			// top: 50px;
 			position: relative;
-			top: 20vh;
-			left: 10vw;
+			// top: 20vh;
+			// left: 10vw;
 
 			button{
 				display: inline-block;
@@ -37,6 +38,7 @@
 				border-radius: 5px;
 				border: 2px solid grey;
 				margin-right: 20px;
+				margin-bottom:20px;
 
 			}
 		}
@@ -44,61 +46,79 @@
 }
 @media only screen and (max-width: 1200px) {
 
-	.work-process-ques{
-		width: 100%;
-		height: auto;
-		left: 0;
-		position: relative;
-		top: 0;
+	h3{
+		font-size: $title-font-size-h3-m !important;
 		
-		.content-section{
-			@include content-section(#ffffff,50vw);
+	}
+	h5{
+		font-size: $paragraph-font-size-h5-m !important;
+	}
+	ul{
+		font-size: $paragraph-font-size-h5-m;
+		
 
-			.paragraph-section{
-
-				// @include paragraph-section(10vh, 50vw, right);
-				@include paragraph-section(8vw, 50vw, left, $GLOBAL_CONTENT_WIDTH_M);
-				h3{
-					font-size: $title-font-size-h3-m;
-					
-				}
-				h5{
-					font-size: $paragraph-font-size-h5-m;
-				}
-				ul{
-					font-size: $paragraph-font-size-h5-m;
-					
-
-					li{
-						font-size: $paragraph-font-size-h5-m;
-						
-					}
-				}
-
-			}
-			.button-set{
-
-				width: $GLOBAL_CONTENT_WIDTH_M;
-				height: auto;
-				margin: 0 auto;
-				display: block;
-				// top: 50px;
-				position: relative;
-				top: 16vw;
-				left: calc(#{$GLOBAL_CONTENT_WIDTH_M} - 50vw);
-
-				button{
-					display: inline-block;
-					width: auto;
-					// height: rem;
-					padding: .5rem 1rem;
-					background: white;
-					border-radius: 5px;
-					border: 2px solid grey;
-					margin-right: 20px;
-
-				}
-			}
+		li{
+			font-size: $paragraph-font-size-h5-m;
+			
 		}
 	}
+
+
+	// .work-process-ques{
+	// 	width: 100%;
+	// 	height: auto;
+	// 	left: 0;
+	// 	position: relative;
+	// 	top: 0;
+		
+	// 	.content-section{
+	// 		@include content-section(#ffffff,50vw);
+
+	// 		.paragraph-section{
+
+	// 			// @include paragraph-section(10vh, 50vw, right);
+	// 			@include paragraph-section(8vw, 50vw, left, $GLOBAL_CONTENT_WIDTH_M);
+	// 			h3{
+	// 				font-size: $title-font-size-h3-m;
+					
+	// 			}
+	// 			h5{
+	// 				font-size: $paragraph-font-size-h5-m;
+	// 			}
+	// 			ul{
+	// 				font-size: $paragraph-font-size-h5-m;
+					
+
+	// 				li{
+	// 					font-size: $paragraph-font-size-h5-m;
+						
+	// 				}
+	// 			}
+
+	// 		}
+	// 		.button-set{
+
+	// 			width: $GLOBAL_CONTENT_WIDTH_M;
+	// 			height: auto;
+	// 			margin: 0 auto;
+	// 			display: block;
+	// 			// top: 50px;
+	// 			position: relative;
+	// 			top: 16vw;
+	// 			left: calc(#{$GLOBAL_CONTENT_WIDTH_M} - 50vw);
+
+	// 			button{
+	// 				display: inline-block;
+	// 				width: auto;
+	// 				// height: rem;
+	// 				padding: .5rem 1rem;
+	// 				background: white;
+	// 				border-radius: 5px;
+	// 				border: 2px solid grey;
+	// 				margin-right: 20px;
+
+	// 			}
+	// 		}
+	// 	}
+	// }
 }

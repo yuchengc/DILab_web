@@ -8,10 +8,10 @@ import Scrollindicator from './Scrollindicator';
 const Questionnaire = () =>{
 	
 	return(
-		<div className='work-process-ques'>
-			<div className='content-section'>
+		<div className='work-process-ques row no-gutters'>
+			<div className='content-section col-12 row align-items-center'>
 				<img src='#' alt='bg'/>
-				<div className='paragraph-section'>
+				<div className='paragraph-section col-5 offset-5 col-xl-5 offset-xl-5'>
 					<h3>Help us understand your goal</h3>
 					<h5>A short sentence that describes this step. A short sentence that describes this step. A short sentence that describes this step.</h5>
 
@@ -21,15 +21,16 @@ const Questionnaire = () =>{
 						<li>Question 2, Who is the target user? What problem you want to solve?</li>
 						<li>Question 3, What is your project plan?</li>
 					</ul>
+					<div className='button-set '>
+						<button type='button'>DOWNLOAD THE QUESTIONNAIRE</button>
+						<button type='button'>CONTACT US</button>
+					</div>
 				</div>
-				<div className='button-set'>
-					<button type='button'>DOWNLOAD THE QUESTIONNAIRE</button>
-					<button type='button'>CONTACT US</button>
-				</div>
+				
 				
 
 			</div>
-			<Scrollindicator wording='BRING YOUR IDEA HERE !' side='right'/>
+			<Scrollindicator wording='BRING YOUR IDEA HERE !' side='right' />
 			
 
 		</div>

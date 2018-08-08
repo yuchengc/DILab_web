@@ -44,13 +44,13 @@ const PeopleCardsSet = (props) =>{
 		
 	});
 	return(
-		<div className='people-cards-set'>
+		<div className='people-cards-set col-8 col-xl-8 col-lg-8 offset-2 offset-xl-2 offset-lg-2 no-gutters'>
 
 				{teammatecomponent}
-				<div className="ft-set">
+				<div className="ft-set row">
 					{cardRender(ft_people)}
 				</div>
-				<div className="it-set">
+				<div className="it-set row ">
 					{cardRender(it_people)}
 				</div>
 		

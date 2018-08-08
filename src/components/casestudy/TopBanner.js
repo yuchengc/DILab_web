@@ -5,8 +5,8 @@ import casestudy_banner from '../../images/casestudy_banner.svg';
 const TopBanner = () =>{
 	
 	return(
-		<div className='banner-container'>
-			<div className='background-section'>
+		<div className='banner-container row'>
+			<div className='background-section row no-gutters'>
 					
 					<div className='cube-bg'></div>
 					<img className='casestudy-banner-img' src={casestudy_banner} alt='interfaces'/>

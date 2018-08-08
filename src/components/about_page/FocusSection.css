@@ -1,120 +1,35 @@
 .section-container {
-  width: 100%;
-  display: block;
   position: relative;
   top: 3vh; }
-  .section-container .paragraph-section-left {
-    position: relative;
-    width: 70vw;
-    height: auto;
-    margin: auto;
-    display: block;
-    top: 10vh; }
-    .section-container .paragraph-section-left h3 {
-      font-size: 3rem;
-      text-align: left;
-      display: block;
-      position: relative;
-      width: 40vw;
-      left: 0; }
-    .section-container .paragraph-section-left h4 {
-      font-size: 2rem;
-      text-align: left;
-      display: block;
-      position: relative;
-      width: 40vw;
-      left: 0; }
-    .section-container .paragraph-section-left h5 {
-      font-size: 1.2rem;
-      font-weight: 200;
-      top: 1rem;
-      text-align: left;
-      display: block;
-      position: relative;
-      width: 40vw;
-      left: 0; }
-    .section-container .paragraph-section-left ul {
-      font-size: 1.2rem;
-      font-weight: 200;
-      left: 0;
-      display: block;
-      width: 40vw;
-      position: relative;
-      top: 3rem;
-      list-style-type: none; }
-      .section-container .paragraph-section-left ul li {
-        font-size: 1.2rem;
-        font-weight: 200; }
-    .section-container .paragraph-section-left h4 {
-      margin-top: 3rem; }
-    .section-container .paragraph-section-left .section-img {
-      position: relative;
-      display: inline-block;
-      width: 20vw;
-      height: 20vw;
-      top: -10vh; }
-    .section-container .paragraph-section-left .section-img-right {
-      left: 45vw; }
-    .section-container .paragraph-section-left .section-img-left {
-      left: 0vw; }
   .section-container .paragraph-section {
-    position: relative;
-    width: 70vw;
-    height: auto;
-    margin: auto;
-    display: block;
-    top: 10vh; }
+    margin-bottom: 5vh; }
     .section-container .paragraph-section h3 {
-      font-size: 3rem;
-      text-align: left;
-      display: block;
-      position: relative;
-      width: 40vw;
-      left: calc(100% - 40vw) !important; }
+      font-size: 3rem; }
     .section-container .paragraph-section h4 {
-      font-size: 2rem;
-      text-align: left;
-      display: block;
-      position: relative;
-      width: 40vw;
-      left: calc(100% - 40vw) !important; }
+      font-size: 2rem; }
     .section-container .paragraph-section h5 {
-      font-size: 1.2rem;
-      font-weight: 200;
-      top: 1rem;
-      text-align: left;
-      display: block;
-      position: relative;
-      width: 40vw;
-      left: calc(100% - 40vw) !important; }
+      font-size: 1.2rem; }
+    .section-container .paragraph-section p {
+      font-size: 1rem; }
     .section-container .paragraph-section ul {
+      margin-top: 30px;
       font-size: 1.2rem;
-      font-weight: 200;
-      left: calc(100% - 40vw) !important;
-      display: block;
-      width: 40vw;
-      position: relative;
-      top: 3rem;
-      list-style-type: none; }
+      font-weight: 200; }
       .section-container .paragraph-section ul li {
         font-size: 1.2rem;
         font-weight: 200; }
-    .section-container .paragraph-section .section-img {
-      position: relative;
-      display: inline-block;
-      width: 20vw;
-      height: 20vw;
-      top: -10vh; }
-    .section-container .paragraph-section .section-img-right {
-      left: 45vw; }
-    .section-container .paragraph-section .section-img-left {
-      left: 5vw; }
+    .section-container .paragraph-section h4 {
+      margin-top: 3rem; }
+    .section-container .paragraph-section .section-img img {
+      width: 100%;
+      height: auto; }
+
+.scroll-indicator-left {
+  top: -20vw; }
 
 .focussection {
   height: auto;
   top: -20vh;
   background: rgba(0, 0, 0, 0.05);
-  padding-top: 20vh;
-  padding-bottom: 18vh; }
-  .focussection .scroll-indicator-left {
-    top: -25vw; }
+  padding-top: 30vh;
+  padding-bottom: 15vh; }

@@ -8,13 +8,20 @@
 	left: 0;
 	position: relative;
 	top: 0;
-	
-	img{
-		@include image-sizing(45vw, auto,10vh);
-		position: absolute;
-		left: 10vw;
-		z-index: 5;
+	.side-img{
+		img{
+			// @include image-sizing(45vw, auto,10vh);
+			position: absolute;
+			top:0;
+			left: 10%;
+			width: 100%;
+			height: auto;
+			// left: 10vw;
+			z-index: 5;
+			transform: translateY(-50%);
+		}
 	}
+	
 	.content-section{
 		@include content-section(#ffffff,900px);
 		clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
@@ -23,9 +30,10 @@
 		
 		.paragraph-section{
 
-			@include paragraph-section(15vh, 30vw, right);
-			position: absolute;
-			left: 30vw;
+			// @include paragraph-section(15vh, 30vw, right);
+			// position: absolute;
+			// left: 30vw;
+			@include paragraph-section-font-xl();
 
 		}
 		.button-set{
@@ -87,10 +95,10 @@
 			
 			.paragraph-section{
 
-				@include paragraph-section(16vw, 30vw, right, $GLOBAL_CONTENT_WIDTH_M);
+				// @include paragraph-section(16vw, 30vw, right, $GLOBAL_CONTENT_WIDTH_M);
 				// @include paragraph-section(18vw, 50vw, left, $GLOBAL_CONTENT_WIDTH_M);
-				position: absolute;
-				left: 10vw;
+				// position: absolute;
+				// left: 10vw;
 				h3{
 					font-size: $title-font-size-h3-m;
 					

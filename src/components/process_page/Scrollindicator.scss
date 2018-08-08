@@ -11,7 +11,7 @@
 	-webkit-transform-origin: 0% 50%;
 	-webkit-transform: rotate(90deg);
 	position: relative;
-	left: 15vw;;
+	left: 15vw !important;
 	// flost: left;
 	z-index:5;
 	top: -18vw;
@@ -36,10 +36,15 @@
 	}
 	.scroll-indicator-icon{
 		transform: rotate(-90deg) !important;
+		transform-origin: 50% 50%;
+		-webkit-transform: rotate(-90deg) !important;
+		-webkit-transform-origin: 50% 50%;
 		width: 80px;
 		height: auto;
 		position: absolute;
-		top: calc(-80px - 0.3rem);
+		top: calc(-80px - 2.5px);
+		left: -20px;
+		// left: -0.3rem;
 
 	}
 
@@ -52,7 +57,8 @@
 	// -webkit-transform: rotate(-90deg);
 	position: relative;
 	float: right;
-	right: 0;
+	left: 85vw  !important;
+	// right: 0;
 	top: -8vw;
 	// left: auto;
 	z-index: 5;
@@ -76,7 +82,7 @@
 		-webkit-transform-origin: 0% 50%;
 		-webkit-transform: rotate(90deg);
 		position: relative;
-		left: 10vw;;
+		left: 10vw  !important;
 		// flost: left;
 		z-index:5;
 		top: -18vw;
@@ -104,7 +110,7 @@
 			width: 80px;
 			height: auto;
 			position: absolute;
-			top: calc(-80px - 0.3rem);
+			top: calc(-80px - 2.5px);
 
 		}
 
@@ -122,7 +128,7 @@
 		// -webkit-transform: rotate(-90deg);
 		position: relative;
 		float: right;
-		left: 20vw;
+		left: 90vw  !important;
 		right: 0;
 		top: -8vw;
 		// left: auto;

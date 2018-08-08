@@ -10,11 +10,13 @@ import Scrollindicator from '../Scrollindicator';
 const Approaches = () =>{
 	
 	return(
-		<div className='work-process-internal-approaches'>
-			<h3>Approaches</h3>
-			<h5>some sentances some sentances some sentances some sentances some sentances </h5>
+		<div className='work-process-internal-approaches row no-gutters'>
+			<div className='col col-5 offset-2 col-xl-5 offset-xl-2 title'>
+				<h3 >Approaches</h3>
+				<h5>some sentances some sentances some sentances some sentances some sentances </h5>
+			</div>
 			<Approachcards approaches={approaches_content}/>
-			<Scrollindicator wording='WE DO MVP!' side='left'/>
+			<Scrollindicator wording='' side='left'/>
 			
 		</div>
 

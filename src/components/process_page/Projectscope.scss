@@ -4,50 +4,54 @@
 
 .work-process-scope{
 	width: 100%;
-	height: 60vw;
+	height: auto;
 	left: 0;
 	position: relative;
 	top: 0;
-	
+	background: linear-gradient(rgba(255,255,255,0), #eeeeee 50%);
+	padding: 0;
+			
 	.content-section{
-		@include content-section(#eeeeee,61vw);
-		clip-path: polygon(0 100%, 0% 14%, 100% 0%, 100% 100%);
-		-webkit-clip-path: polygon(0 100%, 0% 14%, 100% 0%, 100% 100%);
+		@include content-section(#eeeeee, auto);
+		clip-path: polygon(0 101%, 0% 14%, 100% 0%, 100% 101%);
+		-webkit-clip-path: polygon(0 101%, 0% 14%, 100% 0%, 100% 101%);
+		padding: 25vh 0;
 
 
 		.paragraph-section{
 
-			@include paragraph-section(20vh, 50vw, left);
+			// @include paragraph-section(20vh, 50vw, left);
+			@include paragraph-section-font-xl();
+			.button-set{
 
-		}
-		.button-set{
+				// width: $GLOBAL_CONTENT_WIDTH;
+				height: auto;
+				margin: 0px auto;
+				display: block;
+				// top: 50px;
+				position: relative;
+				// top: 25vh;
+				// left: 0vw;
 
-			width: $GLOBAL_CONTENT_WIDTH;
-			height: auto;
-			margin: 0px auto;
-			display: block;
-			// top: 50px;
-			position: relative;
-			top: 25vh;
-			left: 0vw;
+				button{
 
-			button{
+					display: inline-block;
+					width: auto;
+					// height: rem;
+					padding: .5rem 1rem;
+					background: white;
+					border-radius: 5px;
+					border: 2px solid grey;
+					margin-right: 20px;
 
-				display: inline-block;
-				width: auto;
-				// height: rem;
-				padding: .5rem 1rem;
-				background: white;
-				border-radius: 5px;
-				border: 2px solid grey;
-				margin-right: 20px;
-
+				}
 			}
 		}
+		
 	}
 	.scroll-indicator-left{
 		z-index: 1;
-		top: 5vw;
+		top: 3vw;
 		.side-caption-left{
 			&:after{
 				width:15vw;
@@ -59,13 +63,13 @@
 @media only screen and (max-width: 1200px) {
 	.work-process-scope{
 		width: 100%;
-		height: 60vw;
+		height: auto;
 		left: 0;
 		position: relative;
 		top: 0;
 		
 		.content-section{
-			@include content-section(#eeeeee,61vw);
+			@include content-section(#eeeeee,65vw);
 			clip-path: polygon(0 100%, 0% 14%, 100% 0%, 100% 100%);
 			-webkit-clip-path: polygon(0 100%, 0% 14%, 100% 0%, 100% 100%);
 
@@ -119,12 +123,15 @@
 		}
 		.scroll-indicator-left{
 			z-index: 1;
-			top: 5vw;
+			top: 0vw;
+			.side-indicator-bar{
+				width:20vw;
+			}
 			.side-caption-left{
-				&:after{
-					width:15vw;
-					left: 0;
-				}
+				// &:after{
+				// 	width:15vw;
+				// 	left: 0;
+				// }
 			}
 		}
 	}

@@ -44,7 +44,7 @@ class Casestudypage extends Component {
 		if (this.props.selectedProject === 0){
 			
 			return(
-				<div className='casestudypage-frame'>
+				<div className='casestudypage-frame  no-gutters'>
 					<TopBanner />
 					<Filter filterChange={this.onFilterChange}/>
 					<Casestudy_gallery case_content={filteredCases} select_project={this.onSelectProject}/>

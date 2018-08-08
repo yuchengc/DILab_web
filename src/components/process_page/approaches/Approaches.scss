@@ -11,20 +11,23 @@
 	background: #eeeeee;
 	padding-top: 6.6vh;
 
-	h3{
-		@include section-title-size();
-		width: calc(#{$GLOBAL_CONTENT_WIDTH});
-		// height: calc(55vw);
-		margin: auto;
+	// h3{
+	// 	@include section-title-size();
+	// 	width: calc(#{$GLOBAL_CONTENT_WIDTH});
+	// 	// height: calc(55vw);
+	// 	margin: auto;
+	// }
+	// h5{
+	// 	@include section-subtitle-size();
+	// 	width: calc(#{$GLOBAL_CONTENT_WIDTH});
+	// 	// height: calc(55vw);
+	// 	margin: auto;
+	// 	margin-bottom: 2.5vw;
+	// }
+	
+	.title{
+		@include paragraph-section-font-xl();
 	}
-	h5{
-		@include section-subtitle-size();
-		width: calc(#{$GLOBAL_CONTENT_WIDTH});
-		// height: calc(55vw);
-		margin: auto;
-		margin-bottom: 2.5vw;
-	}
-
 	.scroll-indicator-left{
 		z-index: 1;
 		top: -10vw;
@@ -68,7 +71,7 @@
 
 		.scroll-indicator-left{
 			z-index: 1;
-			top: -5vw;
+			top: -5vw !important;
 			.side-indicator-bar{
 				width: 20vw;
 			}

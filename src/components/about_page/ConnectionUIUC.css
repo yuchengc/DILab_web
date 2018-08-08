@@ -1,10 +1,10 @@
 .uiuc-section {
   width: 100%;
-  height: 500px;
+  height: auto;
   position: relative;
-  display: block;
   background: #F5A623;
-  margin-top: 10vh; }
+  margin-top: 10vh;
+  padding: 15vh 0; }
   .uiuc-section .uiuc-img {
     width: 60%;
     height: 70%;
@@ -12,9 +12,7 @@
     top: -45%;
     left: 10%; }
   .uiuc-section .section-title {
-    position: absolute;
-    left: calc(50% - 5%);
-    top: 12vh; }
+    text-align: center; }
   .uiuc-section p {
     position: absolute;
     left: 10%;

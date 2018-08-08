@@ -1,49 +1,28 @@
 .work-process-greeting {
-  width: 100%;
   height: auto;
   left: 0;
   position: relative; }
   .work-process-greeting .content-section {
     clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
     -webkit-clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
-    display: block;
     height: 50vw;
     width: 100%;
-    position: relative;
     left: 0;
     background: linear-gradient(-80deg, #52E1C2, #70E598); }
     .work-process-greeting .content-section .paragraph-section {
-      position: relative;
-      width: 60vw;
-      height: auto;
-      margin: auto;
-      display: block;
-      top: 25vh; }
+      align-items: center; }
       .work-process-greeting .content-section .paragraph-section h3 {
-        font-size: 3rem;
-        text-align: left;
-        display: block;
-        position: relative;
-        width: 40vw;
-        left: 0; }
+        font-size: 3rem; }
+      .work-process-greeting .content-section .paragraph-section h4 {
+        font-size: 2rem; }
       .work-process-greeting .content-section .paragraph-section h5 {
-        font-size: 1.2rem;
-        font-weight: 200;
-        top: 1rem;
-        text-align: left;
-        display: block;
-        position: relative;
-        width: 40vw;
-        left: 0; }
+        font-size: 1.2rem; }
+      .work-process-greeting .content-section .paragraph-section p {
+        font-size: 1rem; }
       .work-process-greeting .content-section .paragraph-section ul {
+        margin-top: 30px;
         font-size: 1.2rem;
-        font-weight: 200;
-        left: 0;
-        display: block;
-        width: 40vw;
-        position: relative;
-        top: 3rem;
-        list-style-type: none; }
+        font-weight: 200; }
         .work-process-greeting .content-section .paragraph-section ul li {
           font-size: 1.2rem;
           font-weight: 200; }
@@ -55,77 +34,13 @@
       width: 60%;
       height: auto;
       display: block; }
-      .work-process-greeting .content-section .section-bg img {
-        width: 100%;
-        height: 100%; }
 
 @media only screen and (max-width: 1200px) {
-  .work-process-greeting {
-    width: 100%;
-    height: auto;
-    left: 0;
-    position: relative; }
-    .work-process-greeting .content-section {
-      clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
-      -webkit-clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
-      display: block;
-      height: 50vw;
-      width: 100%;
-      position: relative;
-      left: 0;
-      background: linear-gradient(-80deg, #52E1C2, #70E598); }
-      .work-process-greeting .content-section .paragraph-section {
-        position: relative;
-        width: 80vw;
-        height: auto;
-        margin: auto;
-        display: block;
-        top: 18vw; }
-        .work-process-greeting .content-section .paragraph-section h3 {
-          font-size: 3rem;
-          text-align: left;
-          display: block;
-          position: relative;
-          width: 40vw;
-          left: 0; }
-        .work-process-greeting .content-section .paragraph-section h5 {
-          font-size: 1.2rem;
-          font-weight: 200;
-          top: 1rem;
-          text-align: left;
-          display: block;
-          position: relative;
-          width: 40vw;
-          left: 0; }
-        .work-process-greeting .content-section .paragraph-section ul {
-          font-size: 1.2rem;
-          font-weight: 200;
-          left: 0;
-          display: block;
-          width: 40vw;
-          position: relative;
-          top: 3rem;
-          list-style-type: none; }
-          .work-process-greeting .content-section .paragraph-section ul li {
-            font-size: 1.2rem;
-            font-weight: 200; }
-        .work-process-greeting .content-section .paragraph-section h3 {
-          font-size: 2rem; }
-        .work-process-greeting .content-section .paragraph-section h5 {
-          font-size: 1rem; }
-        .work-process-greeting .content-section .paragraph-section ul {
-          font-size: 1rem; }
-          .work-process-greeting .content-section .paragraph-section ul li {
-            font-size: 1rem; }
-      .work-process-greeting .content-section .section-bg {
-        position: absolute;
-        left: calc(100% - 70% - 5%);
-        top: calc(100% - 70% - 15%);
-        rigth: 0;
-        bottom: 0;
-        width: 70%;
-        height: auto;
-        display: block; }
-        .work-process-greeting .content-section .section-bg img {
-          width: 100%;
-          height: 100%; } }
+  h3 {
+    font-size: 2rem !important; }
+  h5 {
+    font-size: 1rem !important; }
+  ul {
+    font-size: 1rem; }
+    ul li {
+      font-size: 1rem; } }

@@ -8,22 +8,32 @@ const FocusSection = () =>{
 	
 	return(
 		<div>
-			<div className='section-container focussection' >
-				
-				<div className='paragraph-section-left'>
-					<h3>OUR FOCUS</h3>
-					<h4>Solve business challenges</h4>
-					<h5>Collaborate with us to dissect the challenge at hand, explore possible avenues of exploration, and create an impeccable end product.</h5>
-					<img src={image_example} className='section-img section-img-right' alt='illustration'/>	
+			<div className='section-container focussection row no-gutters align-items-center' >
+				<h3 className='col col-8 col-xl-8 col-lg-8 offset-2 offset-xl-2 offset-lg-2'>OUR FOCUS</h3>
+				<div className='paragraph-section col col-8 col-xl-8 col-lg-8 offset-2 offset-xl-2 offset-lg-2'>
+					<div className='row align-items-start'>
+						<div className='text-content col col-8 col-xl-8 col-lg-8'>
+							<h4 >Solve business challenges</h4>
+							<h5 >Collaborate with us to dissect the challenge at hand, explore possible avenues of exploration, and create an impeccable end product.</h5>
+						</div>
+						<div className='section-img col col-4 col-xl-4 col-lg-4'>
+							<img src={image_example}  alt='illustration'/>	
+						</div> 
+					</div>
 				</div>
 				
 			
 
-				<div className='paragraph-section'>
-					
-					<h4>WE BELIEVE</h4>
-					<h5>Some body text about our mission and how much we value communication and that we want to share the cool stuff we do. Some body text about our mission and how much we value communication and that we want to share the cool stuff we do.</h5>
-					<img src={image_example} className='section-img section-img-left' alt='illustration'/>
+				<div className='paragraph-section col col-8 col-xl-8 col-lg-8 offset-2 offset-xl-2 offset-lg-2'>
+					<div className='row align-items-start'>
+						<div className='text-content col col-8 col-xl-8 col-lg-8 order-2'>
+							<h4>WE BELIEVE</h4>
+							<h5>Some body text about our mission and how much we value communication and that we want to share the cool stuff we do. Some body text about our mission and how much we value communication and that we want to share the cool stuff we do.</h5>
+						</div>
+						<div className='section-img col col-4 col-xl-4 col-lg-4 order-1 '>
+							<img src={image_example}  alt='illustration'/>
+						</div>
+					</div>
 				</div>
 
 			</div>

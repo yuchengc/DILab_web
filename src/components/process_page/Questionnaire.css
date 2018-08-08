@@ -5,55 +5,30 @@
   position: relative;
   top: 0; }
   .work-process-ques .content-section {
-    display: block;
-    height: 52vw;
+    height: auto;
     width: 100%;
-    position: relative;
     left: 0;
-    background: #ffffff; }
-    .work-process-ques .content-section .paragraph-section {
-      position: relative;
-      width: 60vw;
-      height: auto;
-      margin: auto;
-      display: block;
-      top: 10vh; }
-      .work-process-ques .content-section .paragraph-section h3 {
-        font-size: 3rem;
-        text-align: left;
-        display: block;
-        position: relative;
-        width: 50vw;
-        left: calc(100% - 50vw) !important; }
-      .work-process-ques .content-section .paragraph-section h5 {
+    background: #ffffff;
+    padding: 15vh 0; }
+    .work-process-ques .content-section .paragraph-section h3 {
+      font-size: 3rem; }
+    .work-process-ques .content-section .paragraph-section h4 {
+      font-size: 2rem; }
+    .work-process-ques .content-section .paragraph-section h5 {
+      font-size: 1.2rem; }
+    .work-process-ques .content-section .paragraph-section p {
+      font-size: 1rem; }
+    .work-process-ques .content-section .paragraph-section ul {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: 200; }
+      .work-process-ques .content-section .paragraph-section ul li {
         font-size: 1.2rem;
-        font-weight: 200;
-        top: 1rem;
-        text-align: left;
-        display: block;
-        position: relative;
-        width: 50vw;
-        left: calc(100% - 50vw) !important; }
-      .work-process-ques .content-section .paragraph-section ul {
-        font-size: 1.2rem;
-        font-weight: 200;
-        left: calc(100% - 50vw) !important;
-        display: block;
-        width: 50vw;
-        position: relative;
-        top: 3rem;
-        list-style-type: none; }
-        .work-process-ques .content-section .paragraph-section ul li {
-          font-size: 1.2rem;
-          font-weight: 200; }
+        font-weight: 200; }
     .work-process-ques .content-section .button-set {
-      width: 60vw;
       height: auto;
-      margin: 0 auto;
       display: block;
-      position: relative;
-      top: 20vh;
-      left: 10vw; }
+      position: relative; }
       .work-process-ques .content-section .button-set button {
         display: inline-block;
         width: auto;
@@ -61,78 +36,15 @@
         background: white;
         border-radius: 5px;
         border: 2px solid grey;
-        margin-right: 20px; }
+        margin-right: 20px;
+        margin-bottom: 20px; }
 
 @media only screen and (max-width: 1200px) {
-  .work-process-ques {
-    width: 100%;
-    height: auto;
-    left: 0;
-    position: relative;
-    top: 0; }
-    .work-process-ques .content-section {
-      display: block;
-      height: 50vw;
-      width: 100%;
-      position: relative;
-      left: 0;
-      background: #ffffff; }
-      .work-process-ques .content-section .paragraph-section {
-        position: relative;
-        width: 80vw;
-        height: auto;
-        margin: auto;
-        display: block;
-        top: 8vw; }
-        .work-process-ques .content-section .paragraph-section h3 {
-          font-size: 3rem;
-          text-align: left;
-          display: block;
-          position: relative;
-          width: 50vw;
-          left: 0; }
-        .work-process-ques .content-section .paragraph-section h5 {
-          font-size: 1.2rem;
-          font-weight: 200;
-          top: 1rem;
-          text-align: left;
-          display: block;
-          position: relative;
-          width: 50vw;
-          left: 0; }
-        .work-process-ques .content-section .paragraph-section ul {
-          font-size: 1.2rem;
-          font-weight: 200;
-          left: 0;
-          display: block;
-          width: 50vw;
-          position: relative;
-          top: 3rem;
-          list-style-type: none; }
-          .work-process-ques .content-section .paragraph-section ul li {
-            font-size: 1.2rem;
-            font-weight: 200; }
-        .work-process-ques .content-section .paragraph-section h3 {
-          font-size: 2rem; }
-        .work-process-ques .content-section .paragraph-section h5 {
-          font-size: 1rem; }
-        .work-process-ques .content-section .paragraph-section ul {
-          font-size: 1rem; }
-          .work-process-ques .content-section .paragraph-section ul li {
-            font-size: 1rem; }
-      .work-process-ques .content-section .button-set {
-        width: 80vw;
-        height: auto;
-        margin: 0 auto;
-        display: block;
-        position: relative;
-        top: 16vw;
-        left: calc(80vw - 50vw); }
-        .work-process-ques .content-section .button-set button {
-          display: inline-block;
-          width: auto;
-          padding: .5rem 1rem;
-          background: white;
-          border-radius: 5px;
-          border: 2px solid grey;
-          margin-right: 20px; } }
+  h3 {
+    font-size: 2rem !important; }
+  h5 {
+    font-size: 1rem !important; }
+  ul {
+    font-size: 1rem; }
+    ul li {
+      font-size: 1rem; } }

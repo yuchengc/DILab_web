@@ -1,53 +1,32 @@
 .work-process-Futuresupport {
   width: 100%;
-  height: 800px;
+  height: auto;
   left: 0;
   position: relative;
   top: 0; }
   .work-process-Futuresupport .content-section {
-    display: block;
-    height: 600px;
+    height: auto;
     width: 100%;
-    position: relative;
     left: 0;
     background: #efefef;
     clip-path: polygon(0 100%, 0% 0%, 100% 14%, 100% 100%);
-    -webkit-clip-path: polygon(0 100%, 0% 0%, 100% 14%, 100% 100%); }
-    .work-process-Futuresupport .content-section .paragraph-section {
-      position: relative;
-      width: 60vw;
-      height: auto;
-      margin: auto;
-      display: block;
-      top: 15vh; }
-      .work-process-Futuresupport .content-section .paragraph-section h3 {
-        font-size: 3rem;
-        text-align: left;
-        display: block;
-        position: relative;
-        width: 50vw;
-        left: 0; }
-      .work-process-Futuresupport .content-section .paragraph-section h5 {
+    -webkit-clip-path: polygon(0 100%, 0% 0%, 100% 14%, 100% 100%);
+    padding: 15vh 0; }
+    .work-process-Futuresupport .content-section .paragraph-section h3 {
+      font-size: 3rem; }
+    .work-process-Futuresupport .content-section .paragraph-section h4 {
+      font-size: 2rem; }
+    .work-process-Futuresupport .content-section .paragraph-section h5 {
+      font-size: 1.2rem; }
+    .work-process-Futuresupport .content-section .paragraph-section p {
+      font-size: 1rem; }
+    .work-process-Futuresupport .content-section .paragraph-section ul {
+      margin-top: 30px;
+      font-size: 1.2rem;
+      font-weight: 200; }
+      .work-process-Futuresupport .content-section .paragraph-section ul li {
         font-size: 1.2rem;
-        font-weight: 200;
-        top: 1rem;
-        text-align: left;
-        display: block;
-        position: relative;
-        width: 50vw;
-        left: 0; }
-      .work-process-Futuresupport .content-section .paragraph-section ul {
-        font-size: 1.2rem;
-        font-weight: 200;
-        left: 0;
-        display: block;
-        width: 50vw;
-        position: relative;
-        top: 3rem;
-        list-style-type: none; }
-        .work-process-Futuresupport .content-section .paragraph-section ul li {
-          font-size: 1.2rem;
-          font-weight: 200; }
+        font-weight: 200; }
 
 @media only screen and (max-width: 1200px) {
   .work-process-Futuresupport {
@@ -57,21 +36,14 @@
     position: relative;
     top: 0; }
     .work-process-Futuresupport .content-section {
-      display: block;
       height: 50vw;
       width: 100%;
-      position: relative;
       left: 0;
       background: #efefef;
       clip-path: polygon(0 100%, 0% 0%, 100% 14%, 100% 100%);
       -webkit-clip-path: polygon(0 100%, 0% 0%, 100% 14%, 100% 100%); }
       .work-process-Futuresupport .content-section .paragraph-section {
-        position: relative;
-        width: 80vw;
-        height: auto;
-        margin: auto;
-        display: block;
-        top: 18vw; }
+        position: relative; }
         .work-process-Futuresupport .content-section .paragraph-section h3 {
           font-size: 3rem;
           text-align: left;

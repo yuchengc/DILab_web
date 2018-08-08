@@ -5,23 +5,21 @@
   margin: 0px auto;
   background: #eeeeee;
   padding-top: 6.6vh; }
-  .work-process-internal-approaches h3 {
-    font-size: 3rem;
-    text-align: left;
-    display: block;
-    position: relative;
-    width: calc(60vw);
-    margin: auto; }
-  .work-process-internal-approaches h5 {
+  .work-process-internal-approaches .title h3 {
+    font-size: 3rem; }
+  .work-process-internal-approaches .title h4 {
+    font-size: 2rem; }
+  .work-process-internal-approaches .title h5 {
+    font-size: 1.2rem; }
+  .work-process-internal-approaches .title p {
+    font-size: 1rem; }
+  .work-process-internal-approaches .title ul {
+    margin-top: 30px;
     font-size: 1.2rem;
-    font-weight: 200;
-    top: 1rem;
-    text-align: left;
-    display: block;
-    position: relative;
-    width: calc(60vw);
-    margin: auto;
-    margin-bottom: 2.5vw; }
+    font-weight: 200; }
+    .work-process-internal-approaches .title ul li {
+      font-size: 1.2rem;
+      font-weight: 200; }
   .work-process-internal-approaches .scroll-indicator-left {
     z-index: 1;
     top: -10vw; }
@@ -49,7 +47,7 @@
       margin-bottom: 2vw; }
     .work-process-internal-approaches .scroll-indicator-left {
       z-index: 1;
-      top: -5vw; }
+      top: -5vw !important; }
       .work-process-internal-approaches .scroll-indicator-left .side-indicator-bar {
         width: 20vw; }
       .work-process-internal-approaches .scroll-indicator-left .side-caption-left:after {

@@ -29,10 +29,10 @@ const PeopleCard = (props) => {
 	// console.log(`${props.backgroundimg}`);
 	var cardClass= ``;
 	if (props.jobType === 'full-time') {
-		cardClass= `people-card card-ft`;
+		cardClass= `people-card card-ft col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12`;
 	}
 	else {
-		var cardClass= `people-card card-it`;
+		var cardClass= `people-card card-it col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6`;
 	}
 	var profile_img=require(`${props.profilePicture}`);
 	return(
