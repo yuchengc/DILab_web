@@ -9,11 +9,11 @@ const Outcome = () =>{
 		<div className='work-process-outcome row no-gutters align-items-center'>
 			
 			<div className='content-section row no-gutters align-items-center'>
-				<div className='side-img col-5  col-xl-5 '>
+				<div className='side-img col-10 col-xl-5 col-lg-5 col-md-10 col-sm-10 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-2'>
 					<img className='' src={outcome} alt='bg'/>
 				</div>
 					
-				<div className='paragraph-section col-5 offset-1 col-lg-5 col-xl-5 offset-xl-1 offset-lg-1'>
+				<div className='paragraph-section col-10 offset-1 col-lg-5 col-xl-5 col-md-10 col-sm-10 offset-xl-1 offset-lg-1 offset-md-1 offset-sm-1 order-xl-2 order-lg-2 order-md-1 order-sm-1 order-1'>
 					<h3>Minimum Viable Product</h3>
 					<h5>(Need rephrase) Delivery of a basic working version of the product with enough features to be launched with real users and integrated with SYT systems​</h5>
 

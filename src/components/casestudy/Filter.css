@@ -1,8 +1,6 @@
 .filter {
-  width: 80vw;
   heigth: auto;
-  position: relative;
-  left: 12vw; }
+  position: relative; }
   .filter .filter-item {
     color: #EF7C00;
     font-weight: bold;

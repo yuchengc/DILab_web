@@ -24,22 +24,26 @@ class Footer extends Component {
   render() {
     // console.log('Header level',this.props.selectedpage);
     return (
-      <footer className="footer">
+      <footer className="footer row no-gutters justify-content-between align-items-center">
+        <div className='left-items col-5 align-self-center'>
+          <span className='logo '>
+            <img  src={logo} alt="logo"/>
+          </span>
+          <span className='copyrightinfo'>
+            <p>Power by</p>
+            <h5 style={{color:'#68E4A3'}}>Syngenta</h5>
+            <h6>Digital Innovation Lab</h6>
+          </span>
+        </div>
         
-        <img className='logo' src={logo} alt="logo"/>
-        <span className='copyrightinfo'>
-          <p>Power by</p>
-          <h5 style={{color:'#68E4A3'}}>Syngenta</h5>
-          <h6>Digital Innovation Lab</h6>
-        </span>
           
         
-
-        <span className='contactinfo'>
-          <p>Email: abce@email.com</p>
-          <p>Address: 1800 S Oak St, Suite 112, Champaign IL</p>
-        </span>
-
+        <div className='right-items col-5'>
+          <span className='contactinfo'>
+            <p>Email: abce@email.com</p>
+            <p>Address: 1800 S Oak St, Suite 112, Champaign IL</p>
+          </span>
+        </div>
 
       </footer>
     );

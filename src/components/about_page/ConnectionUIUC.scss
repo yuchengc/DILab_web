@@ -1,32 +1,104 @@
-.uiuc-section{
+.uiuc-section-frame{
 	width: 100%;
 	height: auto;
 	position: relative;
-	// display: block;
-	background: #F5A623;
-	margin-top: 10vh;
-	padding: 15vh 0;
+	// padding: 10vh 0;
 
 	.uiuc-img{
-		width: 60%;
-		height: 70%;
+		// width: 60%;
+		height: auto;
 		// background: #efefef;
-		position: absolute;
-		top: -45%;
+		position: relative;
+		// top: 250px;
 		left: 10%;
-	}
-	.section-title{
-		// position: absolute;
-		// left: calc(50% - 5%);
-		// top: 12vh;
-		text-align: center;
-	}
-	p{
-		position: absolute;
-		left: 10%;
-		top: calc( 50% + 10%);
-		width: 80%;
-		display: block;
-	}
+		z-index: 5;
+		transform: translateY(40%);
+		transition-duration: 0.5s;
+		// opacity: 0;
 
+	}
+	// .img-fadeUp{
+	// 	transform: translateY(40%);
+	// 	transition-duration: 0.5s;
+	// 	// top:150px;
+	// 	opacity:1;
+	// 	z-index: 10;
+
+	// }
+	.uiuc-section{
+		width: 100%;
+		height: auto;
+		position: relative;
+		// display: block;
+		background: #F5A623;
+		// margin-top: 10vh;
+		padding: 15vh 0;
+		z-index: 1;
+		
+		.section-title{
+			// position: absolute;
+			// left: calc(50% - 5%);
+			// top: 12vh;
+			text-align: center;
+		}
+		p{
+			position: absolute;
+			left: 10%;
+			top: calc( 50% + 10%);
+			width: 80%;
+			display: block;
+		}
+
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.uiuc-section-frame{
+		.uiuc-img{
+			// width: 60%;
+			height: auto;
+			// background: #efefef;
+			position: relative;
+			// top: 250px;
+			left: 10%;
+			z-index: 5;
+			// transform: translateY(-250%);
+			transition-duration: 0.5s;
+			// opacity: 0;
+
+		}
+	}
+}
+@media only screen and (max-width: 768px) {
+	.uiuc-section-frame{
+		.uiuc-img{
+			// width: 60%;
+			height: auto;
+			// background: #efefef;
+			position: relative;
+			// top: 250px;
+			left: 5%;
+			z-index: 5;
+			// transform: translateY(-250%);
+			transition-duration: 0.5s;
+			// opacity: 0;
+
+		}
+	}
+}
+@media only screen and (max-width: 540px) {
+	.uiuc-section-frame{
+		.uiuc-img{
+			// width: 60%;
+			height: auto;
+			// background: #efefef;
+			position: relative;
+			// top: 250px;
+			left: 0%;
+			z-index: 5;
+			// transform: translateY(-350%);
+			transition-duration: 0.5s;
+			// opacity: 0;
+
+		}
+	}
 }

@@ -1,21 +1,50 @@
-.uiuc-section {
+.uiuc-section-frame {
   width: 100%;
   height: auto;
-  position: relative;
-  background: #F5A623;
-  margin-top: 10vh;
-  padding: 15vh 0; }
-  .uiuc-section .uiuc-img {
-    width: 60%;
-    height: 70%;
-    position: absolute;
-    top: -45%;
-    left: 10%; }
-  .uiuc-section .section-title {
-    text-align: center; }
-  .uiuc-section p {
-    position: absolute;
+  position: relative; }
+  .uiuc-section-frame .uiuc-img {
+    height: auto;
+    position: relative;
     left: 10%;
-    top: calc( 50% + 10%);
-    width: 80%;
-    display: block; }
+    z-index: 5;
+    transform: translateY(40%);
+    transition-duration: 0.5s; }
+  .uiuc-section-frame .uiuc-section {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: #F5A623;
+    padding: 15vh 0;
+    z-index: 1; }
+    .uiuc-section-frame .uiuc-section .section-title {
+      text-align: center; }
+    .uiuc-section-frame .uiuc-section p {
+      position: absolute;
+      left: 10%;
+      top: calc( 50% + 10%);
+      width: 80%;
+      display: block; }
+
+@media only screen and (max-width: 1200px) {
+  .uiuc-section-frame .uiuc-img {
+    height: auto;
+    position: relative;
+    left: 10%;
+    z-index: 5;
+    transition-duration: 0.5s; } }
+
+@media only screen and (max-width: 768px) {
+  .uiuc-section-frame .uiuc-img {
+    height: auto;
+    position: relative;
+    left: 5%;
+    z-index: 5;
+    transition-duration: 0.5s; } }
+
+@media only screen and (max-width: 540px) {
+  .uiuc-section-frame .uiuc-img {
+    height: auto;
+    position: relative;
+    left: 0%;
+    z-index: 5;
+    transition-duration: 0.5s; } }

@@ -1,6 +1,5 @@
 .footer {
   background: #efefef;
-  display: block;
   width: 100%;
   height: 140px;
   border-width: 5px 0px 0px 0px;
@@ -8,23 +7,29 @@
   box-sizing: border-box !important;
   padding: 30px 50px;
   position: relative; }
-  .footer .logo {
+  .footer .left-items .logo {
     position: relative;
+    top: 0;
+    left: 0;
     width: 46px;
-    display: inline-block; }
-  .footer .copyrightinfo {
+    display: inline-flex; }
+    .footer .left-items .logo img {
+      width: 100%;
+      height: 100%; }
+  .footer .left-items .copyrightinfo {
     margin-left: 30px;
     display: inline-block;
     position: relative; }
-    .footer .copyrightinfo h5 {
+    .footer .left-items .copyrightinfo h5 {
       font-size: 1.6rem;
       display: block; }
-    .footer .copyrightinfo h6 {
+    .footer .left-items .copyrightinfo h6 {
       font-size: 1.2rem;
       display: block; }
-    .footer .copyrightinfo p {
+    .footer .left-items .copyrightinfo p {
       font-size: 0.8rem;
-      display: block; }
+      display: block;
+      margin: 0; }
   .footer .contactinfo {
     display: inline-block;
     position: relative;

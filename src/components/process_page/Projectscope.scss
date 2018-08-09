@@ -69,10 +69,10 @@
 		top: 0;
 		
 		.content-section{
-			@include content-section(#eeeeee,65vw);
+			@include content-section(#eeeeee,auto);
 			clip-path: polygon(0 100%, 0% 14%, 100% 0%, 100% 100%);
 			-webkit-clip-path: polygon(0 100%, 0% 14%, 100% 0%, 100% 100%);
-
+			padding: 15vh 0;
 
 			.paragraph-section{
 
@@ -104,8 +104,9 @@
 				display: block;
 				// top: 50px;
 				position: relative;
-				top: 26vw;
-				left: 0vw;
+				top: 3rem;
+				// top: 26vw;
+				// left: 0vw;
 
 				button{
 

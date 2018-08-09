@@ -2,7 +2,7 @@ export const case_content =[{
 	case_id: 1,
 	project_name: 'AAAAA',
 	date: '2018-01-01',
-	calalog: ['all','web', 'ux','mobile', 'bsns'],
+	calalog: ['all','web', 'mobile', 'bsns'],
 	description: 'description, description, description, description, description',
 	bgimage: 'https://images.pexels.com/photos/95425/pexels-photo-95425.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'
 },

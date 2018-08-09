@@ -1,7 +1,7 @@
 import React from 'react';
 import Project_card from './Project_card';
 // import Shuffle from 'react-shuffle';
-import './case_study.css';
+// import './case_study.css';
 import { SpringGrid } from 'react-stonecutter';
 
 const CaseCards_small = (props) =>{
@@ -26,10 +26,10 @@ const CaseCards_small = (props) =>{
 		);
 	});
 	return(
-		<div className={`case-cards-${props.size}`}>
-
+		<div className='row'>
+			
 				{casestudycomponent}
-		
+			
 		</div>
 	);
 }
@@ -38,3 +38,4 @@ export default CaseCards_small;
 			// <Shuffle duration={500} fade={false}>
 			// 	{casestudycomponent}
 			// </Shuffle>
+			//<div className={`case-cards-${props.size} col-12 col-xl-8 col-lg-8 col-md-10 col-sm-12`}>

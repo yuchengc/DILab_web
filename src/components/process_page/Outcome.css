@@ -1,24 +1,16 @@
 .work-process-outcome {
   width: 100%;
-  height: 800px;
+  height: auto;
   left: 0;
   position: relative;
   top: 0; }
-  .work-process-outcome .side-img img {
-    position: absolute;
-    top: 0;
-    left: 10%;
-    width: 100%;
-    height: auto;
-    z-index: 5;
-    transform: translateY(-50%); }
   .work-process-outcome .content-section {
-    height: 900px;
+    height: auto;
     width: 100%;
     left: 0;
     background: #ffffff;
-    clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
-    -webkit-clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%); }
+    padding: 15vh 0;
+    height: auto; }
     .work-process-outcome .content-section .paragraph-section h3 {
       font-size: 3rem; }
     .work-process-outcome .content-section .paragraph-section h4 {
@@ -34,22 +26,19 @@
       .work-process-outcome .content-section .paragraph-section ul li {
         font-size: 1.2rem;
         font-weight: 200; }
-    .work-process-outcome .content-section .button-set {
-      width: 60vw;
-      height: auto;
-      margin: 0px auto;
-      display: block;
-      position: relative;
-      top: 25vh;
-      left: 0vw; }
-      .work-process-outcome .content-section .button-set button {
-        display: inline-block;
-        width: auto;
-        padding: .5rem 1rem;
-        background: white;
-        border-radius: 5px;
-        border: 2px solid grey;
-        margin-right: 20px; }
+    .work-process-outcome .content-section .side-img {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+      .work-process-outcome .content-section .side-img:after {
+        content: '';
+        display: block;
+        padding-bottom: 100%; }
+      .work-process-outcome .content-section .side-img img {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        z-index: 5; }
   .work-process-outcome .scroll-indicator-left {
     z-index: 1;
     overflow: visible; }
@@ -60,28 +49,27 @@
 @media only screen and (max-width: 1200px) {
   .work-process-outcome {
     width: 100%;
-    height: 65vw;
+    height: auto;
     left: 0;
     position: relative;
     top: 0; }
-    .work-process-outcome img {
-      position: relative;
-      top: 12vw;
-      letf: 0;
-      width: 55vw;
-      height: auto;
-      margin-right: auto;
-      margin-left: auto;
-      position: absolute;
-      left: 0vw;
-      z-index: 5; }
     .work-process-outcome .content-section {
-      height: 65vw;
+      height: auto;
       width: 100%;
       left: 0;
       background: #ffffff;
-      clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
-      -webkit-clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%); }
+      padding: 15vh 0;
+      height: auto; }
+      .work-process-outcome .content-section .side-img {
+        width: 100%;
+        height: 100%;
+        position: relative; }
+        .work-process-outcome .content-section .side-img img {
+          width: 100%;
+          height: auto;
+          position: absolute;
+          left: 0vw;
+          z-index: 5; }
       .work-process-outcome .content-section .paragraph-section h3 {
         font-size: 2rem; }
       .work-process-outcome .content-section .paragraph-section h5 {
@@ -90,25 +78,21 @@
         font-size: 1rem; }
         .work-process-outcome .content-section .paragraph-section ul li {
           font-size: 1rem; }
-      .work-process-outcome .content-section .button-set {
-        width: 60vw;
-        height: auto;
-        margin: 0px auto;
-        display: block;
-        position: relative;
-        top: 25vh;
-        left: 0vw; }
-        .work-process-outcome .content-section .button-set button {
-          display: inline-block;
-          width: auto;
-          padding: .5rem 1rem;
-          background: white;
-          border-radius: 5px;
-          border: 2px solid grey;
-          margin-right: 20px; }
     .work-process-outcome .scroll-indicator-left {
       z-index: 1;
       overflow: visible; }
       .work-process-outcome .scroll-indicator-left .side-caption-left:after {
         width: 15vw;
         left: -5vw; } }
+
+@media only screen and (max-width: 720px) {
+  .work-process-outcome .content-section .side-img {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .work-process-outcome .content-section .side-img img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      left: 0vw;
+      z-index: 5; } }

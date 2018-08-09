@@ -1,5 +1,7 @@
 import React from 'react';
 import './PeopleCard.css'; 
+import '../../style_global/animate.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const PeopleCard = (props) => {
 
@@ -36,17 +38,20 @@ const PeopleCard = (props) => {
 	}
 	var profile_img=require(`${props.profilePicture}`);
 	return(
+		
 		<li key={props.id} className={cardClass} >
-			<div className='profile-picture'>
-				<img src={`${profile_img}`} alt='profile picture'/>
-			</div>
-			<div className='pl-info' href='#'>
-				
-				<h5>{`${props.firstName} ${props.lastName}`}</h5>
-				<p>{props.position}</p>
-			</div>
-			
+			<ScrollAnimation animateIn="fadeInUp" offset={200} duration={0.8} animateOnce={true} delay={0} >
+				<div className='profile-picture'>
+					<img src={`${profile_img}`} alt='profile picture'/>
+				</div>
+				<div className='pl-info' href='#'>
+					
+					<h5>{`${props.firstName} ${props.lastName}`}</h5>
+					<p>{props.position}</p>
+				</div>
+			</ScrollAnimation>
 		</li>
+		
 	);
 }
 export default PeopleCard;
