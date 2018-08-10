@@ -1,7 +1,7 @@
 import React from 'react';
 import './Projectscope.css';
-import Scrollindicator from './Scrollindicator';
-import '../../style_global/animate.css';
+import Scrollindicator from '../../sharedcomponents/Scrollindicator';
+import '../../../style_global/animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 

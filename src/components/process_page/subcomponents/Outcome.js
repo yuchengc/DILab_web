@@ -1,7 +1,7 @@
 import React from 'react';
 import './Outcome.css';
-import outcome from '../../images/outcome.png';
-import '../../style_global/animate.css';
+import outcome from '../../../images/outcome.png';
+import '../../../style_global/animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 // import Card from './Card';
 

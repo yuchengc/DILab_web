@@ -1,11 +1,11 @@
 import './Processpage.css'
 
-import Startgreeting from './Startgreeting'
-import Questionnaire from './Questionnaire'
-import Projectscope from './Projectscope'
-import Approaches from './approaches/Approaches'
-import Outcome from './Outcome'
-import Futuresupport from './Futuresupport'
+import Startgreeting from './subcomponents/Startgreeting'
+import Questionnaire from './subcomponents/Questionnaire'
+import Projectscope from './subcomponents/Projectscope'
+import Approaches from './subcomponents/approaches/Approaches'
+import Outcome from './subcomponents/Outcome'
+import Futuresupport from './subcomponents/Futuresupport'
 import CasestudyGallerySmall from '../casestudy/CasestudyGallerySmall'
 
 

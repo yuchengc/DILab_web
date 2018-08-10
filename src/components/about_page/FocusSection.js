@@ -1,5 +1,5 @@
 import React from 'react';
-import Scrollindicator from '../process_page/Scrollindicator';
+import Scrollindicator from '../sharedcomponents/Scrollindicator';
 import './FocusSection.css';
 import image_example from '../../images/img_example.png';
 import '../../style_global/animate.css';

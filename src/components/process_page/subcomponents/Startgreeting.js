@@ -1,9 +1,9 @@
 import React from 'react';
 import './Startgreeting.css';
-import '../../style_global/animate.css';
+import '../../../style_global/animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-import ideas_bg from '../../images/ideas_bg.svg';
-import Scrollindicator from './Scrollindicator';
+import ideas_bg from '../../../images/ideas_bg.svg';
+import Scrollindicator from '../../sharedcomponents/Scrollindicator';
 
 const Startgreeting = () =>{
 	

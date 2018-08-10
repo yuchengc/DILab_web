@@ -1,11 +1,9 @@
 import React from 'react';
 import './Futuresupport.css';
-import '../../style_global/animate.css';
+import '../../../style_global/animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Wheat_icon from '../../images/wheat.svg';
-import './Scrollindicator.css';
-// import Scrollindicator from './Scrollindicator';
-// import Card from './Card';
+import Wheat_icon from '../../../images/wheat.svg';
+
 
 const Futuresupport = () =>{
 	

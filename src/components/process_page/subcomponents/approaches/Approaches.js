@@ -2,7 +2,7 @@ import React from 'react';
 import './Approaches.css';
 import Approachcards from './Approachcards';
 import {approaches_content} from './approaches_content'; 
-import Scrollindicator from '../Scrollindicator';
+import Scrollindicator from '../../../sharedcomponents/Scrollindicator';
 // import Card from './Card';
 
 const Approaches = () =>{
@@ -24,7 +24,3 @@ const Approaches = () =>{
 }
 export default Approaches;
 
-// <ScrollAnimation animateIn="wapeLefttoRight" offset={50}  duration={0.8} delay={0} className='scroll-indicator-left' >
-// 				<div className='side-indicator-bar'></div>
-// 				<span className='side-caption-left'>WE DO MVP!</span>
-// 			</ScrollAnimation>

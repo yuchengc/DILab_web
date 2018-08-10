@@ -1,8 +1,8 @@
 import React from 'react';
 import './Questionnaire.css'
-import '../../style_global/animate.css';
+import '../../../style_global/animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Scrollindicator from './Scrollindicator';
+import Scrollindicator from '../../sharedcomponents/Scrollindicator';
 // import Card from './Card';
 
 const Questionnaire = () =>{

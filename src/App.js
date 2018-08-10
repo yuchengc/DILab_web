@@ -14,12 +14,12 @@ class App extends Component {
     }
   }
 
-
   changeSelected(val) {
     this.setState({selectedpage: val});
     window.scrollTo(0,0);
 
   }
+
   resetProjectPage(p_id){
     this.setState({selectedProject: p_id});
     window.scrollTo(0,0);
@@ -29,9 +29,18 @@ class App extends Component {
   
     return (
       <div className='container-fluid app-frame'>
-        <Header className='row' selectedpage={this.state.selectedpage} changeSelected={this.changeSelected.bind(this)} resetProjectPage={this.resetProjectPage.bind(this)}/>
+        <Header 
+          className='row' 
+          selectedpage={this.state.selectedpage} 
+          changeSelected={this.changeSelected.bind(this)} 
+          resetProjectPage={this.resetProjectPage.bind(this)}
+          />
 
-        <PagecontentSelector className='content' selectedpage={this.state.selectedpage} selectedProject={this.state.selectedProject} default_selectedProject_f={this.resetProjectPage.bind(this)} />
+        <PagecontentSelector
+          className='content' 
+          selectedpage={this.state.selectedpage} 
+          selectedProject={this.state.selectedProject} 
+          default_selectedProject_f={this.resetProjectPage.bind(this)} />
         <Footer />
       </div>
     );

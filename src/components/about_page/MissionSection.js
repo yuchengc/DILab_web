@@ -1,6 +1,6 @@
 import React from 'react';
 import './MissionSection.css';
-import Scrollindicator from '../process_page/Scrollindicator';
+import Scrollindicator from '../sharedcomponents/Scrollindicator';
 import '../../style_global/animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
