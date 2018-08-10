@@ -1,17 +1,19 @@
 import React from 'react';
-import './Projectscope.css'
+import './Projectscope.css';
+import Scrollindicator from './Scrollindicator';
 import '../../style_global/animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Scrollindicator from './Scrollindicator';
-// import Card from './Card';
+
 
 const Projectscope = () =>{
 	
 	return(
 		<div className='work-process-scope row no-gutters'>
+		
 			<div className='content-section row no-gutters align-items-center'>
 				
 				<div className='paragraph-section col col-5 offset-2 col-xl-5 offset-xl-2 align-items-center'>
+				<ScrollAnimation animateIn="fadeInUp" offset={200} duration={0.8} animateOnce={true} delay={0} >
 					<h3>Measure Project scope </h3>
 					<h5>A short sentence that describes this step. A short sentence that describes this step. A short sentence that describes this step.</h5>
 
@@ -25,11 +27,13 @@ const Projectscope = () =>{
 						<button type='button'>DOWNLOAD THE QUESTIONNAIRE</button>
 						
 					</div>
+					</ScrollAnimation>
 				</div>
 				
 				
 
 			</div>
+
 			<Scrollindicator wording='' side='left'/>
 
 
@@ -37,8 +41,3 @@ const Projectscope = () =>{
 	);
 }
 export default Projectscope;
-
-			// <ScrollAnimation animateIn="wapeLefttoRight" offset={50} duration={0.8} delay={0} className='scroll-indicator-left' >
-			// 	<div className='side-indicator-bar'></div>
-			// 	<span className='side-caption-left'></span>
-			// </ScrollAnimation>

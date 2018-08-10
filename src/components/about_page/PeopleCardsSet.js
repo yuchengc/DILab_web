@@ -28,8 +28,9 @@ const PeopleCardsSet = (props) =>{
 			);
 
 		})
-		return showedcard
+		return showedcard;
 	}
+
 	const teammatecomponent = props.people.map((a,i)=>{
 		if (props.people[i].jobType === "full-time"){
 			ft_people.push(a);

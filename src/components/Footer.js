@@ -8,19 +8,6 @@ import logo from '../images/logo.svg';
 
 class Footer extends Component {
 
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     selected: 0,
-  //   }
-  // }
-
-  // changeSelected(val) {
-  //   this.setState({selected: val});
-  //   // this.props.changeSelected(val);
-  //   console.log('Header level->selectedpage',this.state.selected);
-  // }
-
   render() {
     // console.log('Header level',this.props.selectedpage);
     return (

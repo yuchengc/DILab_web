@@ -4,7 +4,7 @@
   height: calc(60vw);
   margin: auto;
   position: relative;
-  z-index: 2; }
+  z-index: 10 !important; }
 
 @media only screen and (max-width: 1200px) {
   .approaches-cards {
@@ -13,4 +13,4 @@
     height: calc((80vw + 9vw) / 3 * 2);
     margin: auto;
     position: relative;
-    z-index: 2; } }
+    z-index: 10 !important; } }

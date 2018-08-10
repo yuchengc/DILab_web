@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-import './Approachcards.css'
+import './Approachcards.css';
 
 const ApproachCards = ({approaches}) =>{
 	const approachcomponent = approaches.map((a,i)=>{
@@ -18,9 +18,11 @@ const ApproachCards = ({approaches}) =>{
 		);
 	});
 	return(
-		<div className="approaches-cards">
-			{approachcomponent}
-		</div>
+		
+			<div className="approaches-cards">
+				{approachcomponent}
+			</div>
+		
 	);
 }
 export default ApproachCards;

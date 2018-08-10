@@ -3,23 +3,11 @@ import "./Header.css";
 import Tabs from './Tabs'
 import Pane from './Pane'
 // import Indicator from './Indicator'
-import logo from './images/logo.svg';
+import logo from '../images/logo.svg';
 
 
 class Header extends Component {
 
-  // constructor() {
-  //   super();
-  //   this.state = {
-  //     selected: 0,
-  //   }
-  // }
-
-  // changeSelected(val) {
-  //   this.setState({selected: val});
-  //   // this.props.changeSelected(val);
-  //   console.log('Header level->selectedpage',this.state.selected);
-  // }
 
   render() {
     // console.log('Header level',this.props.selectedpage);
@@ -55,11 +43,3 @@ class Header extends Component {
 }
 
 export default Header;
-
-        // <ul>
-        //   <li className="tab-item ">About us</li>
-        //   <li className="tab-item">Projects</li>
-        //   <li className="tab-item tab-active">Our process</li>
-        //   <li className="tab-item">Contact</li>
-
-        // </ul>

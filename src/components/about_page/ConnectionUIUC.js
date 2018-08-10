@@ -6,10 +6,10 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const ConnectionUIUC = (props) => {
 
-	const fadeUp =() => {
-		var targeted_img=document.querySelector(".uiuc-img");
-		targeted_img.classList.add('fadeInUp');
-	}
+	// const fadeUp =() => {
+	// 	var targeted_img=document.querySelector(".uiuc-img");
+	// 	targeted_img.classList.add('fadeInUp');
+	// }
 
 	return(
 		<div className='uiuc-section-frame'>

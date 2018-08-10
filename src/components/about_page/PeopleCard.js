@@ -34,7 +34,7 @@ const PeopleCard = (props) => {
 		cardClass= `people-card card-ft col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12`;
 	}
 	else {
-		var cardClass= `people-card card-it col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6`;
+		cardClass= `people-card card-it col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6`;
 	}
 	var profile_img=require(`${props.profilePicture}`);
 	return(
@@ -42,7 +42,7 @@ const PeopleCard = (props) => {
 		<li key={props.id} className={cardClass} >
 			<ScrollAnimation animateIn="fadeInUp" offset={200} duration={0.8} animateOnce={true} delay={0} >
 				<div className='profile-picture'>
-					<img src={`${profile_img}`} alt='profile picture'/>
+					<img src={`${profile_img}`} alt='profile'/>
 				</div>
 				<div className='pl-info' href='#'>
 					

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import Casestudy_gallery from './Casestudy_gallery';
-import TopBanner from './TopBanner'
+import CasestudyGallery from './CasestudyGallery';
+import TopBanner from '../TopBanner'
 import './Casestudypage.css';
 import {case_content} from './case_content' 
 import Filter from './Filter';
+import casestudy_banner from '../../images/casestudy_banner.svg';
 
 
 class Casestudypage extends Component {
@@ -26,9 +27,9 @@ class Casestudypage extends Component {
 
 	onSelectProject = (event) => {
 		// this.setState({selected_project : 1})
-		var selectedProject=event.target.closest('.project-card').getAttribute('projectKey');
+		var selectedProject=event.target.closest('.project-card').getAttribute('projectkey');
 		this.props.pagereset_f(selectedProject);
-		console.log("click a project", event.target.closest('.project-card').getAttribute('projectKey'))
+		console.log("click a project", event.target.closest('.project-card').getAttribute('projectkey'))
 	}
 
 	render(){
@@ -45,9 +46,13 @@ class Casestudypage extends Component {
 			
 			return(
 				<div className='casestudypage-frame row no-gutters'>
-					<TopBanner />
+					<TopBanner 
+						illustration={casestudy_banner}
+						title='Take a look at our works'
+						subtitle='We focus on Web , mobile app design and development. here are some awesome works.'
+					/>
 					<Filter filterChange={this.onFilterChange}/>
-					<Casestudy_gallery case_content={filteredCases} select_project={this.onSelectProject}/>
+					<CasestudyGallery case_content={filteredCases} select_project={this.onSelectProject}/>
 				</div>
 			);
 		}

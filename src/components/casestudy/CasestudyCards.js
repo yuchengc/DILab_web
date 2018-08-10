@@ -1,16 +1,13 @@
 import React from 'react';
-import Project_card from './Project_card';
-// import Shuffle from 'react-shuffle';
-// import './case_study.css';
-import { SpringGrid } from 'react-stonecutter';
+import ProjectCard from './ProjectCard';
 
-const CaseCards_small = (props) =>{
+const CaseCardsSmall = (props) =>{
 	// console.log('on cards level',cases);
 	const casestudycomponent = props.cases.map((a,i)=>{
 		
 		return(
 			
-			<Project_card 
+			<ProjectCard 
 				index={i}
 				id={props.cases[i].case_id}
 				title={props.cases[i].project_name}
@@ -33,7 +30,7 @@ const CaseCards_small = (props) =>{
 		</div>
 	);
 }
-export default CaseCards_small;
+export default CaseCardsSmall;
 
 			// <Shuffle duration={500} fade={false}>
 			// 	{casestudycomponent}

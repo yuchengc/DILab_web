@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
-import Header from "./Header";
-import Pagecontent from './Pagecontent_selector';
+import Header from "./components/Header";
+import PagecontentSelector from './PagecontentSelector';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -10,7 +9,7 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      selectedpage: 0,
+      selectedpage: 1,
       selectedProject: 0,
     }
   }
@@ -28,14 +27,14 @@ class App extends Component {
   }
 
   render() {
-    console.log('App level render->selectedpage',this.state.selectedpage);
-    console.log('App level render->selected project',this.state.selectedProject);
-    // console.log(this.state.selectedpage);
+    // console.log('App level render->selectedpage',this.state.selectedpage);
+    // console.log('App level render->selected project',this.state.selectedProject);
+    // // console.log(this.state.selectedpage);
     return (
       <div className='container-fluid app-frame'>
         <Header className='row' selectedpage={this.state.selectedpage} changeSelected={this.changeSelected.bind(this)} resetProjectPage={this.resetProjectPage.bind(this)}/>
 
-        <Pagecontent className='content' selectedpage={this.state.selectedpage} selectedProject={this.state.selectedProject} default_selectedProject_f={this.resetProjectPage.bind(this)} />
+        <PagecontentSelector className='content' selectedpage={this.state.selectedpage} selectedProject={this.state.selectedProject} default_selectedProject_f={this.resetProjectPage.bind(this)} />
         <Footer />
       </div>
     );

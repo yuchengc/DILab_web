@@ -11,22 +11,23 @@ const Questionnaire = () =>{
 		<div className='work-process-ques row no-gutters'>
 			<div className='content-section col-12 row align-items-center'>
 				<img src='#' alt='bg'/>
-				<div className='paragraph-section col-10 col-xl-5 col-lg-5 col-md-10 col-sm-10 offset-1 offset-xl-5 offset-lg-5 offset-md-1 offset-sm-1'>
-					<h3>Help us understand your goal</h3>
-					<h5>A short sentence that describes this step. A short sentence that describes this step. A short sentence that describes this step.</h5>
+				<ScrollAnimation animateIn="fadeInUp" offset={200} duration={0.8} animateOnce={true} delay={0} >
+					<div className='paragraph-section col-10 col-xl-5 col-lg-5 col-md-10 col-sm-10 offset-1 offset-xl-5 offset-lg-5 offset-md-1 offset-sm-1'>
+						<h3>Help us understand your goal</h3>
+						<h5>A short sentence that describes this step. A short sentence that describes this step. A short sentence that describes this step.</h5>
 
-					<ul>
-						Some Questions we might ask:
-						<li>Question 1, what is your business goal?</li>
-						<li>Question 2, Who is the target user? What problem you want to solve?</li>
-						<li>Question 3, What is your project plan?</li>
-					</ul>
-					<div className='button-set '>
-						<button type='button'>DOWNLOAD THE QUESTIONNAIRE</button>
-						<button type='button'>CONTACT US</button>
+						<ul>
+							Some Questions we might ask:
+							<li>Question 1, what is your business goal?</li>
+							<li>Question 2, Who is the target user? What problem you want to solve?</li>
+							<li>Question 3, What is your project plan?</li>
+						</ul>
+						<div className='button-set '>
+							<button type='button'>DOWNLOAD THE QUESTIONNAIRE</button>
+							<button type='button'>CONTACT US</button>
+						</div>
 					</div>
-				</div>
-				
+				</ScrollAnimation>
 				
 
 			</div>

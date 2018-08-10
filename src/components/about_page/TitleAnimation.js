@@ -32,7 +32,7 @@ class TitleAnimation extends Component {
 			console.log("character",i,titleString.charAt(i))
 			var offfsetY_max = offfsetY;
 			var offfsetY_min = offfsetY * (-1);
-			var half_positionY= offfsetY_max * 0.5;
+			
 			console.log("chat-y offset",offfsetY_max);
 			
 			// outElements.push(<span className={`title-cht chat-${i}`} style={{top: `${positionY}px`}}> {titleString.charAt(i)} </span>);

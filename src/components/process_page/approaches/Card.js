@@ -1,6 +1,7 @@
 import './Card.css'
 
 import React from 'react';
+
  
 
 const Card = (props) => {
@@ -52,29 +53,31 @@ const Card = (props) => {
 	// const bg_image=require(`./${props.background}`);
 	// console.log('bg_image', bg_image)
 	return(
-		<div className={cardClass} onClick={extendcard.bind(this)} >
-			<img src={`${bg_image}`} alt='bg' />
-			<div className='info-level1'>
-				<h5 className='title'>{props.title}</h5>
-				<p>{props.purpose}</p>
-			</div>
-			<div className='info-level2'>
-				<div>
-					<img alt='procees' src={props.processfigure}/>
+		
+			<div key={props.id} className={cardClass} onClick={extendcard.bind(this)} >
+				<img src={`${bg_image}`} alt='bg' />
+				<div className='info-level1'>
+					<h5 className='title'>{props.title}</h5>
+					<p>{props.purpose}</p>
 				</div>
-				<div className='detailedinfo'>
-					<span className='inputinfo'>
-						<ul>
-							{listrender(props.input)}
-						</ul>
-					</span>
-					<span className='todoinfo'></span>
-					<span className='deliverableinfo'></span>
+				<div className='info-level2'>
+					<div>
+						<img alt='procees' src={props.processfigure}/>
+					</div>
+					<div className='detailedinfo'>
+						<span className='inputinfo'>
+							<ul>
+								{listrender(props.input)}
+							</ul>
+						</span>
+						<span className='todoinfo'></span>
+						<span className='deliverableinfo'></span>
 
+					</div>
 				</div>
+				<div className='btn-close'></div>
 			</div>
-			<div className='btn-close'></div>
-		</div>
+		
 	);
 }
 export default Card;

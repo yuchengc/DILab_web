@@ -6,7 +6,7 @@ import Projectscope from './Projectscope'
 import Approaches from './approaches/Approaches'
 import Outcome from './Outcome'
 import Futuresupport from './Futuresupport'
-import Casestudy_gallery_small from '../casestudy/Casestudy_gallery_small'
+import CasestudyGallerySmall from '../casestudy/CasestudyGallerySmall'
 
 
 
@@ -23,7 +23,7 @@ class Processpage extends Component {
 				<Approaches />
 				<Outcome />
 				<Futuresupport />
-				<Casestudy_gallery_small cases_num={4} />
+				<CasestudyGallerySmall cases_num={4} />
 
 			</div>
 		);

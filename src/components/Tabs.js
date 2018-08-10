@@ -7,7 +7,7 @@ import "./Header.css";
 class Tabs extends Component{
 
 	initialFollowme(index){
-  	var indicator = document.querySelector(".tab-indicator");
+  	// var indicator = document.querySelector(".tab-indicator");
 
    	var leftposition= index * 10+ 'vw';
    	return( {left:leftposition});
@@ -27,12 +27,12 @@ class Tabs extends Component{
     });
     var indicator = document.querySelector(".tab-indicator");
 
-   	var leftposition= index * 10 + 'vw';
+   	var leftposition= index * 10 + 'vw'; //control the indicator's position based on the index
 
     indicator.style.left=leftposition;
     this.props.changeSelected(index);
     // console.log("update app level state",);
-    if (index==2){
+    if (index===2){
       this.props.resetProjectPage(0);
     }
 

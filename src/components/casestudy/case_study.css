@@ -13,14 +13,3 @@ body {
   box-sizing: border-box !important;
   text-decoration: none;
   font-size: 1em; }
-
-.casestudy-gallery-small {
-  width: 100%; }
-  .casestudy-gallery-small h3 {
-    font-size: 1.6rem;
-    font-weight: 200;
-    top: 1rem;
-    text-align: left;
-    display: block;
-    position: relative;
-    text-align: center; }

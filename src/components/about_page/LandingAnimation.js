@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './LandingAnimation.css';
 import  landing  from '../../images/landing.svg';
 

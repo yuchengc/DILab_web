@@ -4,7 +4,8 @@
   height: auto;
   margin: 0px auto;
   background: #eeeeee;
-  padding-top: 6.6vh; }
+  padding-top: 6.6vh;
+  z-index: 2; }
   .work-process-internal-approaches .title h3 {
     font-size: 3rem; }
   .work-process-internal-approaches .title h4 {
