@@ -9,8 +9,8 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-      selectedpage: 1,
-      selectedProject: 0,
+      selectedpage: 0, //control the displayed page , "about us", "process", "case study", "contact us"
+      selectedProject: 0, // control which project is displayed
     }
   }
 
@@ -19,7 +19,6 @@ class App extends Component {
     this.setState({selectedpage: val});
     window.scrollTo(0,0);
 
-    // console.log('App level->change selectedpage',val);
   }
   resetProjectPage(p_id){
     this.setState({selectedProject: p_id});
@@ -27,9 +26,7 @@ class App extends Component {
   }
 
   render() {
-    // console.log('App level render->selectedpage',this.state.selectedpage);
-    // console.log('App level render->selected project',this.state.selectedProject);
-    // // console.log(this.state.selectedpage);
+  
     return (
       <div className='container-fluid app-frame'>
         <Header className='row' selectedpage={this.state.selectedpage} changeSelected={this.changeSelected.bind(this)} resetProjectPage={this.resetProjectPage.bind(this)}/>
