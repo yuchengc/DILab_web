@@ -18,11 +18,11 @@ class TitleAnimation extends Component {
 		// console.log("chat-y offset",positionY);
 		for (var i=0; i < titleString.length; i++){
 			var offfsetY= Math.floor(Math.random() * 100);
-			console.log("character",i,titleString.charAt(i))
+			// console.log("character",i,titleString.charAt(i))
 			var offfsetY_max = offfsetY;
 			var offfsetY_min = offfsetY * (-1);
 			
-			console.log("chat-y offset",offfsetY_max);
+			// console.log("chat-y offset",offfsetY_max);
 			
 			// outElements.push(<span className={`title-cht chat-${i}`} style={{top: `${positionY}px`}}> {titleString.charAt(i)} </span>);
 			outElements.push(

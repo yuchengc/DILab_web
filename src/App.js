@@ -3,7 +3,7 @@ import './App.css';
 import Header from "./components/Header";
 import PagecontentSelector from './PagecontentSelector';
 import Footer from './components/Footer';
-import { HashRouter } from 'react-router-dom';
+// import { HashRouter } from 'react-router-dom';
 
 class App extends Component {
 
@@ -37,11 +37,7 @@ class App extends Component {
           resetProjectPage={this.resetProjectPage.bind(this)}
           />
 
-        <PagecontentSelector
-          className='content' 
-          selectedpage={this.state.selectedpage} 
-          selectedProject={this.state.selectedProject} 
-          default_selectedProject_f={this.resetProjectPage.bind(this)} />
+        <PagecontentSelector/>
         <Footer />
       </div>
     );

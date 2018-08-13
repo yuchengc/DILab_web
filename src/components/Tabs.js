@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { NavLink } from 'react-router-dom';
 
 import "./Header.css";
 
@@ -14,8 +14,9 @@ class Tabs extends Component{
     // indicator.style.left=leftposition;
     // this.props.changeSelected(index);
   }
-  handleClick(index, event){
-    event.preventDefault();
+  handleClick(index){
+ 
+    // event.preventDefault();
     this.setState({
       selected: index
     });
@@ -26,7 +27,7 @@ class Tabs extends Component{
     	element.style.color="grey";
     });
     var indicator = document.querySelector(".tab-indicator");
-
+    // console.log('indicator',indicator);
    	var leftposition= index * 10 + 'vw'; //control the indicator's position based on the index
 
     indicator.style.left=leftposition;
@@ -35,13 +36,11 @@ class Tabs extends Component{
     if (index===2){
       this.props.resetProjectPage(0);
     }
-
   }
   
 
   _renderTitle(){
-    // console.log("Tab level",this.props.selected);
-    // console.log(this.props.children);
+    
 
     function labels(child, index) {
 		var activeClass= (this.props.selected === index ? 'tab-item-selected':'tab-item');
@@ -49,17 +48,15 @@ class Tabs extends Component{
 			// if ()
 			if(child.type.name === "Pane"){
 	    return (
-	    	
-	        <li key={index} className={activeClass} >
-	          <a href="#"
-	          
-	          onClick={this.handleClick.bind(this, index)}
-	          >
-	          <span>{child.props.label}</span>
-	          </a>
-	        </li>
-
-		    	
+            <NavLink to={`/${child.props.label.replace(/ /g,'').toLowerCase()}`}
+              // isActive={this.handleClick}
+              id={index}
+              onClick={this.handleClick.bind(this, index)}
+              > 
+                <li key={index} className={activeClass} >
+                <span>{child.props.label}</span>
+                </li>
+            </NavLink>
 	      );
 	    
 		  }
@@ -72,19 +69,12 @@ class Tabs extends Component{
 		  
     }
     return(
-      <ul className="tabs__labels">
+      <ul className="tabs_labels">
         {this.props.children.map(labels.bind(this))}
       </ul>
     );
   }
   
-  // _renderContent(){
-  //   return(
-  //     <div className="tabs__content">
-  //     {this.props.children[this.state.selected]}
-  //     </div>
-  //   );
-  // },
   render(){
     return (
       <div className = 'tabs'>
@@ -94,24 +84,7 @@ class Tabs extends Component{
       </div>
     )
   }
-
 }
-// class Pane extends Component{
-//   // displayName: 'Pane',
-//   // propTypes: {
-//   //   label: React.PropTypes.string.isRequired,
-//   //   children: React.PropTypes.element.isRequired
-//   // },
-//   render() {
-//     return (
-//       <div>
-//         {this.props.children}
-//       </div>
-//     );
-//   }
-// }
-
-
 export default Tabs;
 
 

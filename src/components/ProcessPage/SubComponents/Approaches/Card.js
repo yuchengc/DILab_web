@@ -6,7 +6,7 @@ import React from 'react';
 
 const Card = (props) => {
 	const bg_image=require(`./${props.background}`);
-	console.log('bg_image', bg_image)
+	// console.log('bg_image', bg_image)
 
 	const listrender = (listitem) => {
 		

@@ -4,7 +4,8 @@ export const case_content =[{
 	date: '2018-01-01',
 	calalog: ['all','web', 'mobile', 'bsns'],
 	description: 'description, description, description, description, description',
-	bgimage: 'https://images.pexels.com/photos/95425/pexels-photo-95425.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'
+	bgimage: 'https://images.pexels.com/photos/95425/pexels-photo-95425.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+	detailed_link: ''
 },
 {	case_id: 2,
 	project_name: 'AAAAA',

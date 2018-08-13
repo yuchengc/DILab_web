@@ -1,0 +1,25 @@
+.time-line-frame{
+	height: auto;
+	background: grey;
+	padding: 10vh 0;
+}
+.flow{
+	width: 100%;
+	height:auto;	
+	.sprint{
+		width:100px;
+		height: auto;
+		background: #60D0B7;
+		display: inline-block;
+		// border-radius: 100%;
+
+		&:after{
+			padding-bottom: 100%;
+			content:'';
+			display: block;
+			position: absolute;
+			top: 0;
+			// left: 0;
+		}
+	}
+}

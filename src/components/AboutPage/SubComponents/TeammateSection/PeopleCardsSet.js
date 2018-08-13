@@ -9,7 +9,7 @@ const PeopleCardsSet = (props) =>{
 
 	const cardRender = (cardlist) =>{
 		const showedcard= cardlist.map((a,i) => {
-			console.log('render',a);
+			// console.log('render',a);
 			return(
 					
 				<PeopleCard 

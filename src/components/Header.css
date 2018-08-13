@@ -34,35 +34,30 @@
       position: absolute;
       top: 0;
       left: 100px; }
-  .nav-header ul {
+  .nav-header .tabs_labels {
     display: block;
     list-style-type: none;
     position: absolute;
     right: 0;
     top: 0px; }
-    .nav-header ul .tab-item, .nav-header ul .tab-item-selected {
+    .nav-header .tabs_labels a .tab-item, .nav-header .tabs_labels a .tab-item-selected {
       display: inline-block;
       width: 10vw;
       height: 56px;
       line-height: 56px;
       text-align: center;
       text-decoration: none; }
-      .nav-header ul .tab-item a, .nav-header ul .tab-item-selected a {
+      .nav-header .tabs_labels a .tab-item:hover span, .nav-header .tabs_labels a .tab-item-selected:hover span {
+        color: #3F45A0 !important; }
+      .nav-header .tabs_labels a .tab-item span, .nav-header .tabs_labels a .tab-item-selected span {
         text-decoration: none;
-        display: block;
-        width: 100%;
-        height: 100%; }
-        .nav-header ul .tab-item a:hover span, .nav-header ul .tab-item-selected a:hover span {
-          color: #3F45A0 !important; }
-        .nav-header ul .tab-item a span, .nav-header ul .tab-item-selected a span {
-          text-decoration: none;
-          color: grey; }
-    .nav-header ul .tab-item-selected {
+        color: grey; }
+    .nav-header .tabs_labels a .tab-item-selected {
       transition-duration: .5s; }
-      .nav-header ul .tab-item-selected a span {
+      .nav-header .tabs_labels a .tab-item-selected span {
         color: black !important;
         font-weight: bold !important; }
-    .nav-header ul .tab-indicator {
+    .nav-header .tabs_labels .tab-indicator {
       transition-duration: .5s;
       display: block;
       position: absolute;
@@ -71,7 +66,7 @@
       height: 4px;
       bottom: 0px;
       left: 0px; }
-    .nav-header ul .tab-active {
+    .nav-header .tabs_labels .tab-active {
       transition-duration: .5s; }
 
 @media only screen and (max-width: 1200px) {
@@ -117,21 +112,21 @@
       position: absolute;
       right: 0;
       top: 0px; }
-      .nav-header ul .tab-item, .nav-header ul .tab-item-selected {
+      .nav-header ul .tab-item, .nav-header ul .tabs_labels a .tab-item-selected, .nav-header .tabs_labels a ul .tab-item-selected {
         display: inline-block;
         width: 10vw;
         height: 56px;
         line-height: 56px;
         text-align: center;
         text-decoration: none; }
-        .nav-header ul .tab-item a, .nav-header ul .tab-item-selected a {
+        .nav-header ul .tab-item a, .nav-header ul .tabs_labels a .tab-item-selected a, .nav-header .tabs_labels a ul .tab-item-selected a {
           text-decoration: none;
           display: block;
           width: 100%;
           height: 100%; }
-          .nav-header ul .tab-item a:hover span, .nav-header ul .tab-item-selected a:hover span {
+          .nav-header ul .tab-item a:hover span, .nav-header ul .tabs_labels a .tab-item-selected a:hover span, .nav-header .tabs_labels a ul .tab-item-selected a:hover span {
             color: #3F45A0 !important; }
-          .nav-header ul .tab-item a span, .nav-header ul .tab-item-selected a span {
+          .nav-header ul .tab-item a span, .nav-header ul .tabs_labels a .tab-item-selected a span, .nav-header .tabs_labels a ul .tab-item-selected a span {
             text-decoration: none;
             color: grey; }
       .nav-header ul .tab-item-selected {
