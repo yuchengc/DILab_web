@@ -1,0 +1,33 @@
+@import '../../../../style_global/variable.scss';
+@import '../../../../style_global/mixin.scss';
+
+.section-container{
+	position: relative;
+	top: 3vh;
+	.paragraph-section{
+		margin-bottom: 5vh;
+		@include paragraph-section-font-xl();
+		h4{
+			margin-top: 3rem;
+		}
+		.section-img{
+			img{
+				width: 100%;
+				height: auto;
+			}
+
+		}
+	}
+	
+}
+.scroll-indicator-left{
+	top: -20vw;
+}
+.focussection{
+	height: auto;
+	top: -20vh;
+	background: rgba(0,0,0,0.05);
+	padding-top: 30vh;
+	padding-bottom: 15vh;
+
+}

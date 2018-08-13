@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Processpage from './components/process_page/Processpage'
-import Casestudypage from './components/casestudy/Casestudypage'
-import Aboutpage from './components/about_page/Aboutpage'
-import Contactpage from './components/contact_page/ContactPage'
+import Processpage from './components/ProcessPage/Processpage'
+import Casestudypage from './components/CaseStudyPage/CaseStudyPage'
+import Aboutpage from './components/AboutPage/Aboutpage'
+import Contactpage from './components/ContactPage/ContactPage'
 
 
 

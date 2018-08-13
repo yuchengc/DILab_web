@@ -3,6 +3,7 @@ import './App.css';
 import Header from "./components/Header";
 import PagecontentSelector from './PagecontentSelector';
 import Footer from './components/Footer';
+import { HashRouter } from 'react-router-dom';
 
 class App extends Component {
 

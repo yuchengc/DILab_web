@@ -1,0 +1,75 @@
+@import '../shared_style/mixin_processpage.scss';
+@import '../shared_style/variable_processpage.scss';
+@import '../../../../style_global/variable.scss';
+
+.work-process-internal-approaches{
+
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 0px auto;
+	background: #eeeeee;
+	padding-top: 6.6vh;
+	z-index: 2;
+	
+	.title{
+		@include paragraph-section-font-xl();
+	}
+	.scroll-indicator-left{
+		z-index: 1;
+		top: -10vw;
+		.side-caption-left{
+			
+			&:after{
+				width:20vw;
+				left: 20pxw;
+			}
+		}
+	}
+
+}
+
+@media only screen and (max-width: 1200px) {
+	.work-process-internal-approaches{
+
+		display: block;
+		width: 100%;
+		height: auto;
+		margin: 0px auto;
+		background: #eeeeee;
+		padding-top: 6.6vw; 
+		padding-bottom: 6.6vw;
+
+		h3{
+			// @include section-title-size();
+			font-size: $title-font-size-h3-m;
+			width: calc($GLOBAL_CONTENT_WIDTH_M);
+			// height: calc(55vw);
+			margin: auto;
+		}
+		h5{
+			// @include section-subtitle-size();
+			width: calc($GLOBAL_CONTENT_WIDTH_M);
+			font-size: $paragraph-font-size-h5-m;
+			// height: calc(55vw);
+			margin: auto;
+			margin-bottom: 2vw;
+		}
+
+		.scroll-indicator-left{
+			z-index: 1;
+			top: -5vw !important;
+			.side-indicator-bar{
+				width: 20vw;
+			}
+			.side-caption-left{
+
+				&:after{
+					width:30vw;
+					left: 20pxw;
+				}
+			}
+		}
+
+	}
+}

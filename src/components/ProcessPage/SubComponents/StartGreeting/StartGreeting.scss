@@ -1,0 +1,73 @@
+@import '../shared_style/mixin_processpage.scss';
+@import '../shared_style/variable_processpage.scss';
+@import '../../../../style_global/variable.scss';
+
+$bg-image-width-l: 60%;
+$bg-image-width-m: 70%;
+
+.work-process-greeting {
+	// width: 100%;
+	height: auto;
+	left: 0;
+	position: relative;
+
+	.content-section{
+		
+		clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
+		-webkit-clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
+		@include content-section($linear_gradient_green,50vw);
+
+		.paragraph-section{
+			@include paragraph-section-font-xl();
+			align-items: center; 
+
+		}
+		.section-bg{
+			position: absolute;
+			left: calc(100% - #{$bg-image-width-l} - 5%);
+			rigth: 0;
+			bottom: 0;
+			width:$bg-image-width-l;
+			height: auto;
+			display: block;
+
+		}
+	}
+}
+
+
+@media only screen and (max-width: 1200px) {
+	@include paragraph-section-font-xl();
+				
+}
+
+@media only screen and (max-width: 768px) {
+	@include paragraph-section-font-xl();
+	.work-process-greeting{
+		.content-section{
+			height: 70vh;
+
+			.section-bg{
+				width: 100%;
+				height: auto;
+				left:5%;
+				bottom: 5%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 576px) {
+	.work-process-greeting{
+		.content-section{
+			height: 70vh;
+
+			.section-bg{
+				width: 100%;
+				height: auto;
+				left:5%;
+				bottom: 5%;
+			}
+		}
+	}
+}
