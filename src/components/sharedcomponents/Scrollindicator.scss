@@ -1,5 +1,5 @@
-@import 'shared_style/mixin_processpage.scss';
-@import 'shared_style/variable_processpage.scss';
+@import '../ProcessPage/SubComponents/shared_style/mixin_processpage.scss';
+@import '../ProcessPage/SubComponents/shared_style/variable_processpage.scss';
 @import '../../style_global/variable.scss';
 
 .scroll-indicator-left{

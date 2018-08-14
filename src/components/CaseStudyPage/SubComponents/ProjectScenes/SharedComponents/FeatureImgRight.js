@@ -1,5 +1,6 @@
 import React from 'react';
 import './FeatureImg.css';
+import imgExample from '../../../../../images/img_example.png';
 // import './FeatureImgLeft.css';
 
 const FeatureImgRight =(props)=>{
@@ -8,7 +9,7 @@ const FeatureImgRight =(props)=>{
 		<div className='project-top-banner-frame col-8 offset-2'>
 			<div className='row'>
 			<span className='col-4'>
-				<img src='#' alt='featured screen' />
+				<img src={imgExample} alt='featured screen' />
 			</span>
 			<span className='text-section col-8'>
 				<h3>Feature one</h3>

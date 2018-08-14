@@ -1,4 +1,14 @@
 .project-top-banner-frame{
 	height: auto;
-	padding: 10vh 0;
+	padding: 10vh 0 0 0;
+}
+
+.project-mockup{
+	z-index: 5;
+	position:relative;
+	transform: translateY(20%);
+	img{
+		width: 100%;
+		height: auto;
+	}
 }

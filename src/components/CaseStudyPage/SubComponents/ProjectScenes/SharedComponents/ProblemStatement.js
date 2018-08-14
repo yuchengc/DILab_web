@@ -1,5 +1,6 @@
 import React from 'react';
 import './ProblemStatement.css';
+import imgExample from '../../../../../images/img_example.png';
 
 const ProblemStatement =(props)=>{
 	return(
@@ -7,9 +8,9 @@ const ProblemStatement =(props)=>{
 		<div className='problem-frame col-12 '>
 			<div className='row no-gutters'>
 				<div className='col-8 offset-2'>
-					<div className='row no-gutters'>
+					<div className='row '>
 						<span className='ps-image col-6'>
-							<img src='#' alt='featured screen' />
+							<img src={imgExample} alt='featured screen' />
 						</span>
 						<span className='text-section col-6'>
 							<h3>Mission / Problem statement</h3>

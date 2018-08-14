@@ -7,9 +7,16 @@
 }
 .grey-bg{
 	background: #efefef;
-	padding: 5vh 5vh;
-	clip-path: polygon(0 90%, 0% 0%, 100% 0%, 100% 90%);
-	-webkit-clip-path: polygon(0 90%, 0% 0%, 100% 0%, 100% 90%);
+	padding: 8vh 5vh;
+	clip-path: polygon(0 80%, 0% 10%, 100% 10%, 100% 80%);
+	-webkit-clip-path: polygon(0 80%, 0% 10%, 100% 10%, 100% 80%);
 
 
 }	
+
+.screen-mockup{
+	img{
+		width: 100%;
+		height: auto;
+	}
+}

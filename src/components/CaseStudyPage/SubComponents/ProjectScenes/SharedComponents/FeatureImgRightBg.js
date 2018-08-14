@@ -1,14 +1,15 @@
 import React from 'react';
 import './FeatureImg.css';
 import './FeatureImgRightBg.css';
+import iphonemockup from '../../../../../images/iPhoneMockup.png';
 
 const FeatureImgRightBg =(props)=>{
 	return(
 
 		<div className='feature-frame  col-8 offset-2'>
 			<div className='row'>
-			<span className='col-4'>
-				<img src='#' alt='featured screen' />
+			<span className='screen-mockup col-4'>
+				<img src={iphonemockup} alt='featured screen' />
 			</span>
 			<span className='text-section grey-bg col-8'>
 				<h3>Feature one</h3>

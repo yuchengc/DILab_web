@@ -6,7 +6,8 @@ import FeatureImgRight from './SharedComponents/FeatureImgRight';
 import FeatureImgRightBg from './SharedComponents/FeatureImgRightBg';
 import FeatureImgCenter from './SharedComponents/FeatureImgCenter';
 import TimeLine from './SharedComponents/TimeLine'
-
+import TeammateList from './SharedComponents/TeammateList'
+import {projectContent} from './Project1/project1_content';
 
 
 const CasestudyGallery =(props) => {
@@ -18,15 +19,31 @@ const CasestudyGallery =(props) => {
 
 		<div className='row no-gutters'>
 			
-			<ProjectTopBanner />
-			<ProblemStatement />
+			<ProjectTopBanner 
+				title={projectContent.project_name}
+				introduction={projectContent.introduction}
+			/>
+			<ProblemStatement 
+				sectionContent={projectContent.problem_statement}
+			/>
 			<h3 className='offset-2'>Our Design</h3>
-			<FeatureImgLeft />
-			<FeatureImgRight />
-			<FeatureImgRightBg />
-			<FeatureImgCenter />
+			<FeatureImgLeft 
+				sectionContent={projectContent.features[1]}
+			/>
+			<FeatureImgRight 
+				sectionContent={projectContent.features[2]}
+			/>
+			<FeatureImgRightBg 
+				sectionContent={projectContent.features[3]}
+				/>
+			<FeatureImgCenter 
+				sectionContent={projectContent.features[4]}
+			/>
 			
-			<TimeLine />
+			<TimeLine 
+				sectionContent={projectContent.timeline}
+			/>
+			<TeammateList teamlist={projectContent.member}/>
 		</div>
 
 	);

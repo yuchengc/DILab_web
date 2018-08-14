@@ -1,12 +1,12 @@
 import React from 'react';
-import './ProjectTopBanner.css';
+import './Scenario.css';
 import iphonemockup from '../../../../../images/iPhoneMockup.png';
 
 
-const ProjectTopBanner =(props)=>{
+const Scenario =(props)=>{
 	return(
 
-		<div className='project-top-banner-frame col-8 offset-2'>
+		<div className='scenario-frame col-8 offset-2'>
 			<div className='row align-items-center'>
 			<span className='text-section col-8'>
 				<h3>Project Titile</h3>
@@ -20,4 +20,4 @@ const ProjectTopBanner =(props)=>{
 
 	);
 }
-export default ProjectTopBanner;
+export default Scenario;
