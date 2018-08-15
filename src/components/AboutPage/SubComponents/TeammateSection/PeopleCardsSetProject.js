@@ -18,7 +18,7 @@ const PeopleCardsSetProject = (props) =>{
 					id={a.id}
 					firstName={a.firstName}
 					lastName={a.lastName}
-					jobType={a.jobType}
+					jobType={'none'}
 					position={a.position}
 					profilePicture={a.profilePicture}
 					
@@ -50,6 +50,9 @@ const PeopleCardsSetProject = (props) =>{
 				t_people.push(item);
 				return item;
 			}
+			// else{
+			// 	t_people.push(a);
+			// }
 
 
 			})

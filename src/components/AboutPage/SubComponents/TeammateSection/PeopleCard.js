@@ -8,8 +8,12 @@ const PeopleCard = (props) => {
 	if (props.jobType === 'full-time') {
 		cardClass= `people-card card-ft col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12`;
 	}
-	else {
+	else if (props.jobType === 'intern'){
 		cardClass= `people-card card-it col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6`;
+	}
+	else{
+		cardClass= `people-card card-it col-xl-2 col-lg-2 col-md-3 col-sm-4 col-4`;
+
 	}
 	var profile_img=require(`${props.profilePicture}`);
 	return(

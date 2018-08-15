@@ -3,6 +3,10 @@ import './App.css';
 import Header from "./components/Header";
 import PagecontentSelector from './PagecontentSelector';
 import Footer from './components/Footer';
+
+// import { library } from '@fortawesome/fontawesome-svg-core';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 // import { HashRouter } from 'react-router-dom';
 
 class App extends Component {

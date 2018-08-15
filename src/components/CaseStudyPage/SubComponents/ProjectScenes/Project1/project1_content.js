@@ -50,62 +50,169 @@ export const projectContent = {
 		},
 		{
 			member_id: 13
+		},
+		{
+			member_id: 12
 		}
 	],
 	timeline: [
 		{
 			sprint_id: 1,
-			content: {
-				task1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-				task2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-				task3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-				task4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-					
-			}
+			content: [
+				{	taskName: 'Exploration',
+					taskContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				},
+				{
+					taskName: 'Design',
+					taskContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				},
+				{
+					taskName: 'Development',
+					taskContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				},
+				{
+					taskName: 'Evaluation',
+					taskContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				}
+			]
 		},
 		{
 			sprint_id: 2,
-			content: {
-				task1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-				task2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-				task3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-				task4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-					
-			}
+			content: [
+				{	taskName: 'Exploration',
+					taskContent: ' 222222 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				},
+				{
+					taskName: 'Design',
+					taskContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				},
+				{
+					taskName: 'Development',
+					taskContent: '22222  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				},
+				{
+					taskName: 'Evaluation',
+					taskContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				}
+			]
 		},
 		{
 			sprint_id: 3,
-			content: {
-				task1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-				task2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-				task3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-				task4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-					
-			}
+			content: [
+				{	taskName: 'Exploration',
+					taskContent: '33333 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				},
+				{
+					taskName: 'Design',
+					taskContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				},
+				{
+					taskName: 'Development',
+					taskContent: '33333 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				},
+				{
+					taskName: 'Evaluation',
+					taskContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				}
+			]
 		},
 		{
 			sprint_id: 4,
-			content: {
-				task1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-				task2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-				task3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-				task4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-					
-			}
+			content: [
+				{	taskName: 'Exploration',
+					taskContent: ' 44444 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				},
+				{
+					taskName: 'Design',
+					taskContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				},
+				{
+					taskName: 'Development',
+					taskContent: '44444 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				},
+				{
+					taskName: 'Evaluation',
+					taskContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				}
+			]
 		},
 		{
 			sprint_id: 5,
-			content: {
-				task1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-				task2: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-				task3: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-				task4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
-					
-			}
+			content: [
+				{	taskName: 'Exploration',
+					taskContent: '5555555 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				},
+				{
+					taskName: 'Design',
+					taskContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				},
+				{
+					taskName: 'Development',
+					taskContent: '555555 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				},
+				{
+					taskName: 'Evaluation',
+					taskContent: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec neque at tortor aliquam maximus vitae eget lacus. Integer sollicitudin nisl nisl, ac blandit neque ornare id. Mauris mauris massa, vulputate ac egestas eget, laoreet eget nunc. Proin vel ipsum elementum massa rutrum ultricies. Vivamus egestas porta auctor. Duis blandit sed enim sed tincidunt. Etiam ac vehicula metus. Mauris sodales pharetra mauris vel scelerisque. Nam',
+				}
+			]
 		},
 	],
-	Tech: {
-		framework: 'React'
-	},
-	Resource: {},
+	techStack: [
+		{
+			id: 1,
+			kind: 'View Framework',
+			content: 'React'
+		},
+		{
+			id: 2,
+			kind: 'Data Framework',
+			content: 'Redux'
+		},
+		{
+			id: 3,
+			kind: 'Router',
+			content: 'React-Router'
+		},
+		{
+			id: 4,
+			kind: 'Static Typing',
+			content: 'React'
+		},
+		{
+			id: 5,
+			kind: 'Unit Testing',
+			content: 'jest'
+		},
+		{
+			id: 6,
+			kind: 'Code formatting',
+			content: 'ReaXXXXXct'
+		},
+	],
+	resource: [
+		{
+			file_id:1,
+			fileName: 'aaaaa.pdf',
+			fileType: 'pdf',
+			direction: '#',
+		},
+		{
+			file_id:2,
+			fileName: 'bbbbbbdiunuih hdur.pdf',
+			fileType: 'pdf',
+			direction: '#',
+		},
+		{
+			file_id:3,
+			fileName: 'ccccc ccccc.jpg',
+			fileType: 'jpg',
+			direction: '#',
+		},
+		{
+			file_id:4,
+			fileName: 'bbbsixqsoopk.pdf',
+			fileType: 'pdf',
+			direction: '#',
+		},
+	],
 }

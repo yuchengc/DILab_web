@@ -1,66 +1,111 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './TimeLine.css';
+import '../../../../../style_global/animate.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 
-const TimeLine =(props)=>{
 
+class TimeLine extends Component{
 
-	
-	return(
+	constructor(props){
+		super(props);
+		this.state = { selectedSprint: 1, 
+					 }
+	}
+	generateFlowTitle = (sectionContent) => {
+		const sprintList = sectionContent.map((a,i) => {
+			// console.log('a',a.sprint_id);
+				return(
+					<span className={i===0?'sprint sprint-1 sprint-active':'sprint sprint-1'} sKey={a.sprint_id} onMouseOver={this.handleMouseOver}>
+						<span className='back'></span>
+						<span className='front'>{`sprint ${a.sprint_id}`}</span>
+					</span>
+				);
+			}
+		);
+		return(
+			
+			<div className='flow'>
+				<span className="line"></span>
+					{sprintList}
+			</div>
+			
+			
+		)
+		
+	}
+	generateTask = (sprint) => {
+		console.log("selected sprint",sprint)
+		const taskContent = sprint.content.map((item) => {
+			console.log("sprint item",item)
+			return (
+				<div className="task col-6">
+					<div className='title'>{item.taskName}</div>
+					<div className='description'>{item.taskContent}</div>
+				</div>
+			)
 
-		<div className='time-line-frame col-12 '>
-			<div className='row no-gutters'>
-				<div className='col-8 offset-2'>
-					<div className='flow'>
-						<span className="line"></span>
-						<span className='sprint sprint-1'>
-							<span className='back'></span>
-							<span className='front'>sprint 1</span>
-						</span>
-						<span className='sprint sprint-2'>
-							<span className='back'></span>
-							<span className='front'>sprint 2</span>
-						</span>
-						<span className='sprint sprint-3'>
-							<span className='back'></span>
-							<span className='front'>sprint 3</span>
-						</span>
-						<span className='sprint sprint-4'>
-							<span className='back'></span>
-							<span className='front'>sprint 4</span>
-						</span>
-						<span className='sprint sprint-5'>
-							<span className='back'></span>
-							<span className='front'>sprint 5</span>
-						</span>
-						
+		});
+		return taskContent;
+	}
+	generateContent = () =>{
+		const sprintDetail = this.props.sectionContent.map((a,i)=>{
+			console.log(a.sprint_id, this.state.selectedSprint);
+			if (a.sprint_id === this.state.selectedSprint) {
+				console.log("selecteda",a)
+				return this.generateTask(a)
+				console.log("return from generateTask",this.generateTask(a))
+			}
+		});
+		return(
+			<div className='content-section row no-gutters'>
+				<div className='section-line line-top'></div>
+				<div className='text-container row'>
+					{sprintDetail}
+
+				</div>
+				<div className='section-line line-bottom'></div>
+			</div>
+
+		)
+	}
+	handleMouseOver = (event) => {
+		let selectItem = event.target.closest('.sprint');
+		let selectItem_index = selectItem.getAttribute('sKey');
+		let allSibling = selectItem.parentNode.childNodes;
+		console.log("allSibling",allSibling)
+		for (var i=1; i<allSibling.length; i++){
+			if (i !== parseInt(selectItem_index)){
+				allSibling[i].classList.remove('sprint-active');
+			}
+			
+		}
+		this.setState({selectedSprint : parseInt(selectItem_index)})
+		selectItem.classList.add('sprint-active');
+		console.log(selectItem_index);
+
+	}
+
+	render(){
+		console.log("render state selectedSprint", this.state.selectedSprint)
+		console.log(this.props.sectionContent);
+		return(
+
+			<div className='time-line-frame col-12 '>
+				<div className='row no-gutters'>
+				
+					<div className='col-8 offset-2'>
+						<ScrollAnimation animateIn="fadeInUp" offset={200} duration={0.8} animateOnce={true} delay={0} >
+							{this.generateFlowTitle(this.props.sectionContent)}
+						</ScrollAnimation>
+						<ScrollAnimation animateIn="fadeInUp" offset={200} duration={0.8} animateOnce={true} delay={0} >
+							{this.generateContent()}
+						</ScrollAnimation>
 					</div>
-					<div className='content-section row no-gutters'>
-						<div className='section-line line-top'></div>
-						<div className='text-container row'>
-							<div className="task col-6">
-								<div className='title'>Design</div>
-								<div className='description'>Fusce nec arcu nec augue tempor ultrices. Quisque tempor quam massa, non sodales urna aliquam interdum. In hac habitasse platea dictumst. Nunc vulputate purus a erat tempus, sed finibus arcu vulputate. Integer sit amet ornare velit. Mauris non aliquet odio, id porta felis. Donec id tellus eleifend, gravida nulla sit amet, condimentum quam.</div>
-							</div>
-							<div className="task col-6">
-								<div className='title'>Design</div>
-								<div className='description'>Fusce nec arcu nec augue tempor ultrices. Quisque tempor quam massa, non sodales urna aliquam interdum. In hac habitasse platea dictumst. Nunc vulputate purus a erat tempus, sed finibus arcu vulputate. Integer sit amet ornare velit. Mauris non aliquet odio, id porta felis. Donec id tellus eleifend, gravida nulla sit amet, condimentum quam.</div>
-							</div>
-							<div className="task col-6 ">
-								<div className='title'>Design</div>
-								<div className='description'>Fusce nec arcu nec augue tempor ultrices. Quisque tempor quam massa, non sodales urna aliquam interdum. In hac habitasse platea dictumst. Nunc vulputate purus a erat tempus, sed finibus arcu vulputate. Integer sit amet ornare velit. Mauris non aliquet odio, id porta felis. Donec id tellus eleifend, gravida nulla sit amet, condimentum quam.</div>
-							</div>
-							<div className="task col-6">
-								<div className='title'>Design</div>
-								<div className='description'>Fusce nec arcu nec augue tempor ultrices. Quisque tempor quam massa, non sodales urna aliquam interdum. In hac habitasse platea dictumst. Nunc vulputate purus a erat tempus, sed finibus arcu vulputate. Integer sit amet ornare velit. Mauris non aliquet odio, id porta felis. Donec id tellus eleifend, gravida nulla sit amet, condimentum quam.</div>
-							</div>
-
-						</div>
-						<div className='section-line line-bottom'></div>
-					</div>
+					
 				</div>
 			</div>
-		</div>
 
-	);
+		);
+	}
 }
 export default TimeLine;

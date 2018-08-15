@@ -10,6 +10,8 @@ const ApproachCards = ({approaches}) =>{
 				title={approaches[i].title}
 				purpose={approaches[i].purpose}
 				input={approaches[i].input}
+				todolist={approaches[i].todolist}
+				deliverable={approaches[i].deliverable}
 				processfigure={approaches[i].processfigure}
 				background={approaches[i].background}
 

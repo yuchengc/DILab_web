@@ -3,10 +3,11 @@ import ProjectTopBanner from './SharedComponents/ProjectTopBanner';
 import ProblemStatement from './SharedComponents/ProblemStatement';
 import FeatureImgLeft from './SharedComponents/FeatureImgLeft';
 import FeatureImgRight from './SharedComponents/FeatureImgRight';
-import FeatureImgRightBg from './SharedComponents/FeatureImgRightBg';
+import FeatureImgLeftBg from './SharedComponents/FeatureImgLeftBg';
 import FeatureImgCenter from './SharedComponents/FeatureImgCenter';
-import TimeLine from './SharedComponents/TimeLine'
-import TeammateList from './SharedComponents/TeammateList'
+import TimeLine from './SharedComponents/TimeLine';
+import TeammateList from './SharedComponents/TeammateList';
+import TechSection from './SharedComponents/TechSection';
 import {projectContent} from './Project1/project1_content';
 
 
@@ -33,7 +34,7 @@ const CasestudyGallery =(props) => {
 			<FeatureImgRight 
 				sectionContent={projectContent.features[2]}
 			/>
-			<FeatureImgRightBg 
+			<FeatureImgLeftBg 
 				sectionContent={projectContent.features[3]}
 				/>
 			<FeatureImgCenter 
@@ -44,6 +45,10 @@ const CasestudyGallery =(props) => {
 				sectionContent={projectContent.timeline}
 			/>
 			<TeammateList teamlist={projectContent.member}/>
+			<TechSection 
+				techContent={projectContent.techStack}
+				resourceContent={projectContent.resource}
+			/>
 		</div>
 
 	);

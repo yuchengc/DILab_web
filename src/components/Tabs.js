@@ -6,46 +6,56 @@ import "./Header.css";
 
 class Tabs extends Component{
 
-	initialFollowme(index){
-  	// var indicator = document.querySelector(".tab-indicator");
 
-   	var leftposition= index * 10+ 'vw';
+
+	initialFollowme(index){
+   	let leftposition= index * 10+ 'vw';
    	return( {left:leftposition});
-    // indicator.style.left=leftposition;
-    // this.props.changeSelected(index);
+   
   }
   handleClick(index){
- 
-    // event.preventDefault();
     this.setState({
       selected: index
     });
-    // console.log(event.target);
     // Set the tab class based on the
     var all_items = document.querySelectorAll(".tab-item>a>span");
     all_items.forEach(function(element){
     	element.style.color="grey";
     });
     var indicator = document.querySelector(".tab-indicator");
-    // console.log('indicator',indicator);
    	var leftposition= index * 10 + 'vw'; //control the indicator's position based on the index
 
     indicator.style.left=leftposition;
     this.props.changeSelected(index);
-    // console.log("update app level state",);
     if (index===2){
       this.props.resetProjectPage(0);
     }
   }
-  
+
+  syncSelectedPage = (index) =>{
+    //detect the url and initial the selected tab, for solving the refresh problem
+    let indexTable = {
+      aboutus : 0,
+      process: 1,
+      casestudy: 2,
+      contact: 3,
+    }
+   
+    const urlParts = window.location.href.split("/");
+    const pageName = urlParts[4];
+    return indexTable[pageName]
+  }
 
   _renderTitle(){
     
-
+    
+    let initSelectedPage = this.syncSelectedPage();
+    console.log('index2',this.props.selected);
+    
     function labels(child, index) {
-		var activeClass= (this.props.selected === index ? 'tab-item-selected':'tab-item');
-		// console.log("child.type.name", child.type.name);
-			// if ()
+          
+    // 
+		var activeClass= (initSelectedPage === index ? 'tab-item-selected':'tab-item');
 			if(child.type.name === "Pane"){
 	    return (
             <NavLink to={`/${child.props.label.replace(/ /g,'').toLowerCase()}`}
@@ -61,9 +71,8 @@ class Tabs extends Component{
 	    
 		  }
 		  if(child.props.className === "tab-indicator"){
-		  	// this.followme(this.props.selected);
 		  	return(
-		  		<div className="tab-indicator" style={this.initialFollowme(this.props.selected)}></div>
+		  		<div className="tab-indicator" style={this.initialFollowme(initSelectedPage)}></div>
 	  		);
 		  }
 		  
@@ -77,6 +86,7 @@ class Tabs extends Component{
   
   render(){
     return (
+
       <div className = 'tabs'>
         {this._renderTitle()}
         

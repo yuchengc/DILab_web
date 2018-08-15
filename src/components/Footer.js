@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import "./Footer.css";
 import logo from '../images/logo.svg';
-// import Tabs from './Tabs'
-// import Pane from './Pane'
-// import Indicator from './Indicator'
-
 
 class Footer extends Component {
 
   render() {
-    // console.log('Header level',this.props.selectedpage);
     return (
       <footer className="footer row no-gutters justify-content-between align-items-center">
         <div className='left-items col-5 align-self-center'>
@@ -22,8 +17,6 @@ class Footer extends Component {
             <h6>Digital Innovation Lab</h6>
           </span>
         </div>
-        
-          
         
         <div className='right-items col-5'>
           <span className='contactinfo'>
