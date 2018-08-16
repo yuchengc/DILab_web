@@ -1,4 +1,4 @@
-export const approaches_content =[
+export const approachesContent =[
 	{
 		id: 1,
 		classname: 'exploration',

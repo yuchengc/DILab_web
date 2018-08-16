@@ -8,7 +8,7 @@ import FeatureImgCenter from './SharedComponents/FeatureImgCenter';
 import TimeLine from './SharedComponents/TimeLine';
 import TeammateList from './SharedComponents/TeammateList';
 import TechSection from './SharedComponents/TechSection';
-import {projectContent} from './Project1/project1_content';
+import {projectContent} from '../../../../ContentFolder/CaseStudyPage/Projects/Project1/project1_content';
 
 
 const CasestudyGallery =(props) => {

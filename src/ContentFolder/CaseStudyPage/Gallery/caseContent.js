@@ -1,4 +1,4 @@
-export const case_content =[{
+export const caseContent =[{
 	case_id: 1,
 	project_name: 'AAAAA',
 	date: '2018-01-01',

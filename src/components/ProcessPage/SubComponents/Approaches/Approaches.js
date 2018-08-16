@@ -1,23 +1,20 @@
 import React from 'react';
 import './Approaches.css';
 import Approachcards from './Approachcards';
-import {approaches_content} from './approaches_content'; 
 import Scrollindicator from '../../../sharedcomponents/Scrollindicator';
-// import Card from './Card';
 
-const Approaches = () =>{
+const Approaches = (props) =>{
 	
 	return(
 		
 		<div className='work-process-internal-approaches row no-gutters'>
 
 			<div className='col col-5 offset-2 col-xl-5 offset-xl-2 title'>
-				<h3 >Approaches</h3>
-				<h5>some sentances some sentances some sentances some sentances some sentances </h5>
+				<h3 >{props.sectionContent.slogan}</h3>
+				<h5>{props.sectionContent.paragraph}</h5>
 			</div>
-			<Approachcards approaches={approaches_content}/>
+			<Approachcards approaches={props.approachContent}/>
 			<Scrollindicator wording='' side='left'/>
-			
 		</div>
 
 	);

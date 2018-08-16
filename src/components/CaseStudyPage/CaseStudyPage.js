@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-// import CasestudyGallery from './SubComponents/CasestudyGallery/CasestudyGallery';
-// import TopBanner from '../sharedcomponents/TopBanner'
 import './CaseStudyPage.css';
-import {case_content} from './case_content' 
-// import Filter from './SubComponents/Filter/Filter';
-// import casestudy_banner from '../../images/casestudy_banner.svg';
+import {caseContent} from '../../ContentFolder/CaseStudyPage/Gallery/caseContent'; 
 import { Switch, Route } from 'react-router-dom';
 import ProjectMenu from './ProjectMenu';
 import Project from './SubComponents/ProjectScenes/Project';
@@ -13,7 +9,7 @@ import Project from './SubComponents/ProjectScenes/Project';
 class CaseStudyPage extends Component {
 	constructor(props){
 		super(props);
-		this.state = { cases: case_content, 
+		this.state = { cases: caseContent, 
 					   filter: 'all',
 					  }
 	}

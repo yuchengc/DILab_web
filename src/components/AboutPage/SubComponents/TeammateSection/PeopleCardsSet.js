@@ -1,7 +1,7 @@
 import React from 'react';
 import PeopleCard from './PeopleCard';
 import './PeopleCardsSet.css';
-import {peopleContent} from '../../peopleContent';
+// import {peopleContent} from '../../peopleContent';
 
 const PeopleCardsSet = (props) =>{
 	// console.log('on cards level',cases);
@@ -42,13 +42,6 @@ const PeopleCardsSet = (props) =>{
 		}
 		
 	});
-
-	// const projectteam = props.teamlist.map((a,i)=>{
-	// 	if (Object.values(peopleContent).indexOf(a) > -1){
-	// 		tm_people.push(peopleContent);
-	// 	}
-
-	// });
 	return(
 		<div className='people-cards-set col-8 col-xl-8 col-lg-8 offset-2 offset-xl-2 offset-lg-2 no-gutters'>
 

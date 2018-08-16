@@ -8,6 +8,8 @@ import TeammateSection from './SubComponents/TeammateSection/TeammateSection';
 import ConnectionUIUC from './SubComponents/ConnectionUIUC/ConnectionUIUC';
 import CasestudyGallerySmall from '../CaseStudyPage/SubComponents/CasestudyGallery/CasestudyGallerySmall';
 import './Aboutpage.css';
+import {peopleContent} from '../../ContentFolder/AboutUsPage/peopleContent';
+import {aboutUsContent} from '../../ContentFolder/AboutUsPage/aboutUsContent';
 
 class Aboutpage extends Component {
 
@@ -23,10 +25,10 @@ class Aboutpage extends Component {
 					<TitleAnimation titleString={"INNOVATION"} />
 					<TitleAnimation titleString={"LAB"} />
 				</div>
-				<MissionSection />
-				<FocusSection />
-				<TeammateSection />
-				<ConnectionUIUC />
+				<MissionSection sectionContent={aboutUsContent.mission}/>
+				<FocusSection sectionContent={aboutUsContent.focus}/>
+				<TeammateSection sectionContent={peopleContent}/>
+				<ConnectionUIUC sectionContent={aboutUsContent.uiuc}/>
 				<CasestudyGallerySmall cases_num={4} />
 
 
