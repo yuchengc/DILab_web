@@ -53,29 +53,24 @@ class Tabs extends Component{
     console.log('index2',this.props.selected);
     
     function labels(child, index) {
-          
-    // 
-		var activeClass= (initSelectedPage === index ? 'tab-item-selected':'tab-item');
-			if(child.type.name === "Pane"){
-	    return (
-            <NavLink to={`/${child.props.label.replace(/ /g,'').toLowerCase()}`}
-              // isActive={this.handleClick}
-              id={index}
-              onClick={this.handleClick.bind(this, index)}
-              > 
-                <li key={index} className={activeClass} >
-                <span>{child.props.label}</span>
-                </li>
-            </NavLink>
-	      );
-	    
-		  }
-		  if(child.props.className === "tab-indicator"){
-		  	return(
-		  		<div className="tab-indicator" style={this.initialFollowme(initSelectedPage)}></div>
-	  		);
-		  }
-		  
+      var activeClass= (initSelectedPage === index ? 'tab-item-selected':'tab-item');
+        if(child.props.className === "tab-indicator"){
+          return(
+            <div className="tab-indicator" style={this.initialFollowme(initSelectedPage)}></div>
+          );
+        } else {
+          return (
+                <NavLink to={`/${child.props.label.replace(/ /g,'').toLowerCase()}`}
+                  id={index}
+                  onClick={this.handleClick.bind(this, index)}
+                  > 
+                    <li key={index} className={activeClass} >
+                    <span>{child.props.label}</span>
+                    </li>
+                </NavLink>
+            );
+        }
+      
     }
     return(
       <ul className="tabs_labels">
