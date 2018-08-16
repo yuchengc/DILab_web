@@ -120,8 +120,8 @@ export const approaches_content =[
 	},
 	{
 		id: 3,
-		classname: 'experliments',
-		title: 'Experliments',
+		classname: 'experiment',
+		title: 'Experiments',
 		purpose: 'here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
 		background: 'images/experliment_bg.svg',
