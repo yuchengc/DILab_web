@@ -20,7 +20,6 @@ class CaseStudyPage extends Component {
 	onSelectProject = (event) => {
 		var selectedProject=event.target.closest('.project-card').getAttribute('projectkey');
 		this.props.pagereset_f(selectedProject);
-		console.log("click a project", event.target.closest('.project-card').getAttribute('projectkey'))
 	}
 
 	render(){

@@ -1,3 +1,7 @@
+.tech-section-frame {
+	width: 100%;
+}
+
 .tech-frame{
 	padding: 10vh 0;
 	.tech-stack-frame{
@@ -21,12 +25,7 @@
 			margin-bottom: 40px;
 		}
 		.reso-item{
-			// padding: 20px;
-			
 			width: 100%;
-			// height: auto;
-			// background: #efefef; 
-
 			.item-box{
 				width: 100%;
 				height: auto;
@@ -43,12 +42,9 @@
 					margin-left: 10px;
 					margin-bottom: 0;
 				}
-
 			}
-			
 		}
 	}
-
 }
 .decoration{
 	width: 100%;

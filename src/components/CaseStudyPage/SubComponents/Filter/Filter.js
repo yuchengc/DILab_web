@@ -3,13 +3,6 @@ import './Filter.css'
 
 
 class Filter extends Component{
-	// changefilter => (filter){
-
-	// } 
-	// handleFilter (){
-
-	// } 
-
 	render(){
 		return(
 			<div className='filter col-8 col-xl-8 col-lg-8 col-md-10 offset-2 offset-xl-2 offset-lg-2 offset-md-1 '>

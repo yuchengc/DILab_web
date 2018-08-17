@@ -2,11 +2,6 @@ import React from 'react';
 import './TopBanner.css';
 
 
-//props:
-//illustration : the illustration place on the left
-//titl: the slogan
-//subtitle: 
-//item_style:style object that could customize the banner-frame
 const TopBanner = (props) =>{
 	
 	return(

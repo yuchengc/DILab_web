@@ -22,7 +22,6 @@ class Header extends Component {
     }
   }
 
-
   componentDidMount() {
     // 32 is the number of milliseconds to debounce
     // I picked this because it's approx 1 frame (ie: 16.7ms)

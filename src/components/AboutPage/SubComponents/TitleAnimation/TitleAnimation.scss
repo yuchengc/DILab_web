@@ -1,12 +1,10 @@
 $chat_num : 20;
 .title-word{
 	position: relative;
-	// top:;
 	height: 8rem;
 	display: block;
 }
 .title-cht{
-	// color: red;
 	position: relative;
 	font-size: 8rem;
 	font-weight: 900;
@@ -14,11 +12,8 @@ $chat_num : 20;
 	transition-duration: .5s;
 	color: #F5A623;
 	display: inline-block;
-	// top: 10vh;
 	width: auto;
 	height: auto;
-	// margin-top: 50vh;
-	// top: random(50)+px;
 }
 .chat-front{
 	position: relative;
@@ -38,19 +33,16 @@ $chat_num : 20;
 	position: absolute;
 	background: black;
 	left: -3rem;
-	// top: calc(24rem + 12rem);
 	z-index: 10;
 }
 
 @media only screen and (max-width: 1200px) {
 	.title-word{
 		position: relative;
-		// top:;
 		height: 6rem;
 		display: block;
 	}
 	.title-cht{
-		// color: red;
 		position: relative;
 		font-size: 6rem;
 		font-weight: 900;
@@ -58,11 +50,8 @@ $chat_num : 20;
 		transition-duration: .5s;
 		color: #F5A623;
 		display: inline-block;
-		// top: 10vh;
 		width: auto;
 		height: auto;
-		// margin-top: 50vh;
-		// top: random(50)+px;
 	}
 	.chat-front{
 		position: relative;
@@ -81,37 +70,7 @@ $chat_num : 20;
 		height: calc(18rem + 4rem);
 		position: absolute;
 		background: black;
-		// left: 12vw;
 		top: calc(0rem);
 		z-index: 10;
 	}
 }
-// .parallax-style{
-// 	display: inline-block;
-
-// }
-// @for $i from 0 through $chat_num {
-// 	.chat-#{$i}{
-// 		top: (random(10)*10)+px;
-// 		color: green;
-// 		transition-duration: .5s;
-// 		animation: title-move .3s ease-in-out both;
-// 	}
-// }
- 
-// [class^="chat-"]{
-// 	color: blue !important;
-// 	&:hover{
-// 		font-weight: 700;
-// 		color: green;
-// 	}
-// }
-
-// @keyframe title-move {
-// 	from{
-
-// 	}
-// 	to{
-// 		top: 0px;
-// 	}
-// }

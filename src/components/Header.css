@@ -7,7 +7,7 @@
   display: block;
   color: #444444;
   background: rgba(0, 0, 0, 0);
-  z-index: 10; }
+  z-index: 20; }
   .nav-header .lab-title {
     display: inline-block;
     width: calc( 100% - 40vw);

@@ -5,8 +5,6 @@ import Aboutpage from './components/AboutPage/Aboutpage'
 import Contactpage from './components/ContactPage/ContactPage'
 import { Switch, Route, Redirect, HashRouter, withRouter } from 'react-router-dom'
 
-
-
 const PagecontentSelector = () => (
 	//base on the top-tab, this component will return the relavent content for that page
 	<main>

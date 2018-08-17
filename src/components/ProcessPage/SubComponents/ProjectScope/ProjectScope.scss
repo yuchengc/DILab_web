@@ -16,28 +16,20 @@
 		clip-path: polygon(0 101%, 0% 14%, 100% 0%, 100% 101%);
 		-webkit-clip-path: polygon(0 101%, 0% 14%, 100% 0%, 100% 101%);
 		padding: 25vh 0;
-
-
 		.paragraph-section{
 
-			// @include paragraph-section(20vh, 50vw, left);
 			@include paragraph-section-font-xl();
 			.button-set{
 
-				// width: $GLOBAL_CONTENT_WIDTH;
 				height: auto;
 				margin: 0px auto;
 				display: block;
-				// top: 50px;
 				position: relative;
-				// top: 25vh;
-				// left: 0vw;
 
 				button{
 
 					display: inline-block;
 					width: auto;
-					// height: rem;
 					padding: .5rem 1rem;
 					background: white;
 					border-radius: 5px;
@@ -76,22 +68,18 @@
 
 			.paragraph-section{
 
-				// @include paragraph-section(20vh, 50vw, left, 80vw);
 				@include paragraph-section(18vw, 50vw, left, $GLOBAL_CONTENT_WIDTH_M);
 				h3{
 					font-size: $title-font-size-h3-m;
-					
 				}
 				h5{
 					font-size: $paragraph-font-size-h5-m;
 				}
 				ul{
 					font-size: $paragraph-font-size-h5-m;
-					
 
 					li{
 						font-size: $paragraph-font-size-h5-m;
-						
 					}
 				}
 
@@ -102,23 +90,17 @@
 				height: auto;
 				margin: 0px auto;
 				display: block;
-				// top: 50px;
 				position: relative;
 				top: 3rem;
-				// top: 26vw;
-				// left: 0vw;
 
 				button{
 
 					display: inline-block;
 					width: auto;
-					// height: rem;
 					padding: .5rem 1rem;
 					background: white;
 					border-radius: 5px;
 					border: 2px solid grey;
-					// margin-right: 20px;
-
 				}
 			}
 		}
@@ -128,12 +110,7 @@
 			.side-indicator-bar{
 				width:20vw;
 			}
-			.side-caption-left{
-				// &:after{
-				// 	width:15vw;
-				// 	left: 0;
-				// }
-			}
+			
 		}
 	}
 }

@@ -13,7 +13,6 @@ class TimeLine extends Component{
 	}
 	generateFlowTitle = (sectionContent) => {
 		const sprintList = sectionContent.map((a,i) => {
-			// console.log('a',a.sprint_id);
 				return(
 					<span className={i===0?'sprint sprint-1 sprint-active':'sprint sprint-1'} sKey={a.sprint_id} onMouseOver={this.handleMouseOver}>
 						<span className='back'></span>
@@ -28,15 +27,11 @@ class TimeLine extends Component{
 				<span className="line"></span>
 					{sprintList}
 			</div>
-			
-			
-		)
+		);
 		
 	}
 	generateTask = (sprint) => {
-		console.log("selected sprint",sprint)
 		const taskContent = sprint.content.map((item) => {
-			console.log("sprint item",item)
 			return (
 				<div className="task col-6">
 					<div className='title'>{item.taskName}</div>
@@ -49,11 +44,8 @@ class TimeLine extends Component{
 	}
 	generateContent = () =>{
 		const sprintDetail = this.props.sectionContent.map((a,i)=>{
-			console.log(a.sprint_id, this.state.selectedSprint);
 			if (a.sprint_id === this.state.selectedSprint) {
-				console.log("selecteda",a)
-				return this.generateTask(a)
-				console.log("return from generateTask",this.generateTask(a))
+				return this.generateTask(a);
 			}
 		});
 		return(
@@ -72,7 +64,6 @@ class TimeLine extends Component{
 		let selectItem = event.target.closest('.sprint');
 		let selectItem_index = selectItem.getAttribute('sKey');
 		let allSibling = selectItem.parentNode.childNodes;
-		console.log("allSibling",allSibling)
 		for (var i=1; i<allSibling.length; i++){
 			if (i !== parseInt(selectItem_index)){
 				allSibling[i].classList.remove('sprint-active');
@@ -81,13 +72,10 @@ class TimeLine extends Component{
 		}
 		this.setState({selectedSprint : parseInt(selectItem_index)})
 		selectItem.classList.add('sprint-active');
-		console.log(selectItem_index);
 
 	}
 
 	render(){
-		console.log("render state selectedSprint", this.state.selectedSprint)
-		console.log(this.props.sectionContent);
 		return(
 
 			<div className='time-line-frame col-12 '>

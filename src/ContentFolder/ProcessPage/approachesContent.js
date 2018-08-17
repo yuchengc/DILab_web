@@ -5,7 +5,8 @@ export const approachesContent =[
 		title: 'Exploration',
 		purpose: 'Exploration:  here is the description, here is the description, here is the description,here is the descriptionoi h;qkjdnf;ugf',
 		processfigure: '#',
-		background: 'images/exploration_bg.svg',
+		background: 'images/approaches/exploration_bg.svg',
+		flowimg: 'images/approaches/flow.svg',
 		input: [
 			{
 				id: 1,
@@ -64,7 +65,8 @@ export const approachesContent =[
 		title: 'Ideation',
 		purpose: 'Ideation:here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
-		background: 'images/ideation_bg.svg',
+		background: 'images/approaches/ideation_bg.svg',
+		flowimg: 'images/approaches/flow.svg',
 		input: [
 			{
 				id: 1,
@@ -124,7 +126,8 @@ export const approachesContent =[
 		title: 'Experiments',
 		purpose: 'here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
-		background: 'images/experliment_bg.svg',
+		background: 'images/approaches/experliment_bg.svg',
+		flowimg: 'images/approaches/flow.svg',
 		input: [
 			{
 				id: 1,
@@ -184,7 +187,8 @@ export const approachesContent =[
 		title: 'Prototype',
 		purpose: 'here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
-		background: 'images/prototype_bg.svg',
+		background: 'images/approaches/prototype_bg.svg',
+		flowimg: 'images/approaches/flow.svg',
 		input: [
 			{
 				id: 1,
@@ -243,7 +247,8 @@ export const approachesContent =[
 		classname: 'mvp',
 		purpose: 'here is the description, here is the description, here is the description,here is the description, here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
-		background: 'images/mvp_bg.svg',
+		background: 'images/approaches/mvp_bg.svg',
+		flowimg: 'images/approaches/flow.svg',
 		input: [
 			{
 				id: 1,
@@ -302,7 +307,8 @@ export const approachesContent =[
 		title: 'Lego Bricks',
 		purpose: 'here is the description, here is the description, here is the description,here is the description',
 		processfigure: '#',
-		background: 'images/lego_bg.svg',
+		background: 'images/approaches/lego_bg.svg',
+		flowimg: 'images/approaches/flow.svg',
 		input: [
 			{
 				id: 1,

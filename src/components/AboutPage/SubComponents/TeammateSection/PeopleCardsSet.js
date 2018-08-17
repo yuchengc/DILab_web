@@ -1,16 +1,13 @@
 import React from 'react';
 import PeopleCard from './PeopleCard';
 import './PeopleCardsSet.css';
-// import {peopleContent} from '../../peopleContent';
 
 const PeopleCardsSet = (props) =>{
-	// console.log('on cards level',cases);
 	let ft_people = [];
 	let it_people = [];
 
 	const cardRender = (cardlist) =>{
 		const showedcard= cardlist.map((a,i) => {
-			// console.log('render',a);
 			return(
 					
 				<PeopleCard 
@@ -21,7 +18,6 @@ const PeopleCardsSet = (props) =>{
 					jobType={a.jobType}
 					position={a.position}
 					profilePicture={a.profilePicture}
-					
 				/>
 			);
 
@@ -32,13 +28,9 @@ const PeopleCardsSet = (props) =>{
 	const teammatecomponent = props.people.map((a,i)=>{
 		if (props.people[i].jobType === "full-time"){
 			ft_people.push(a);
-			// console.log("ft",ft_people);
-			
 		}
 		else{
 			it_people.push(a);
-			// console.log("intern",it_people);
-			
 		}
 		
 	});

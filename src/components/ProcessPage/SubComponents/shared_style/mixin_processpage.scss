@@ -2,14 +2,10 @@
 @import '../../../../style_global/variable.scss';
 
 @mixin content-section($gb:#D8D8D8,$height: 90vh){
-	// display: block;
 	height: $height;
 	width: 100%;
-	// position: relative;
 	left: 0;
 	background: $gb;
-	// clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
-	// -webkit-clip-path: polygon(0 84%, 0% 0%, 100% 0%, 100% 100%);
 }
 
 @mixin section-title-size(){
@@ -88,35 +84,19 @@
 }
 @mixin paragraph-section($top:25vh, $text_width:40vw, $align:left, $section_width:$GLOBAL_CONTENT_WIDTH){
 	position: relative;
-	// width: $section_width;
-	// height: auto;
-	// margin: auto;
-	// display: block;
-	// top: $top;
-
 
 	h3{
 		@include section-title-size();
-		// font-size: 4rem;
 		width: $text_width;
-		// position: relative;
 
 		@if $align == left {left: 0;}
 		@if $align == right {left: calc(100% - #{$text_width}) !important;}
-		// text-align:left;
-		// display: block;
 	}
 	h5{
 		@include section-subtitle-size();
 		width: $text_width;
-		// position: relative;
-		// font-size: 1.6rem;
-		// font-weight: 200;
 		@if $align == left {left: 0;}
 		@if $align == right {left: calc(100% - #{$text_width}) !important;}
-		// top:1rem;
-		// text-align:left;
-		// display: block;
 	}
 	ul{
 		font-size: $paragraph-font-size-h5;

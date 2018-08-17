@@ -5,13 +5,9 @@ import "./Header.css";
 
 
 class Tabs extends Component{
-
-
-
 	initialFollowme(index){
    	let leftposition= index * 10+ 'vw';
    	return( {left:leftposition});
-   
   }
   handleClick(index){
     this.setState({
@@ -50,7 +46,6 @@ class Tabs extends Component{
     
     
     let initSelectedPage = this.syncSelectedPage();
-    console.log('index2',this.props.selected);
     
     function labels(child, index) {
       var activeClass= (initSelectedPage === index ? 'tab-item-selected':'tab-item');

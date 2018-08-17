@@ -11,7 +11,6 @@ const LandingAnimation =()=>{
 			</div>
 		</div>
 	);
-
 }
 
 export default LandingAnimation;

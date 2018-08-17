@@ -3,7 +3,6 @@ import './FeatureImg.css';
 import imgExample from '../../../../../images/screen_mockup_highlight.png';
 import '../../../../../style_global/animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-// import './FeatureImgLeft.css';
 
 const FeatureImgLeft =(props)=>{
 	return(

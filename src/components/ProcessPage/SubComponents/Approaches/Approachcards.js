@@ -14,7 +14,7 @@ const ApproachCards = ({approaches}) =>{
 				deliverable={approaches[i].deliverable}
 				processfigure={approaches[i].processfigure}
 				background={approaches[i].background}
-
+				flowimg={approaches[i].flowimg}
 			/>
 
 		);

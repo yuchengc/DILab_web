@@ -20,9 +20,6 @@ const FutureSupport = () =>{
 					</ScrollAnimation>
 					
 				</div>
-				
-				
-				
 			</div>
 			<div className={`scroll-indicator-right`} >
 				<div className='scroll-indicator-icon'>
@@ -30,10 +27,7 @@ const FutureSupport = () =>{
 				</div>
 				<div className='side-indicator-bar'></div>
 				<span className={`side-caption-right`}>CASE STUDY</span>
-			
 			</div>
-				
-			
 		</div>
 
 	);

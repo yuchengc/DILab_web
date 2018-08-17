@@ -13,22 +13,13 @@
 		@include content-section(#ffffff,auto);
 		padding: 15vh 0;
 		.paragraph-section{
-
-			// @include paragraph-section(10vh, 50vw, right);
 			@include paragraph-section-font-xl();
 
 		}
 		.button-set{
-
-			// width: $GLOBAL_CONTENT_WIDTH;
 			height: auto;
-			// margin: 0 auto;
 			display: block;
-			// top: 50px;
 			position: relative;
-			// top: 20vh;
-			// left: 10vw;
-
 			button{
 				display: inline-block;
 				width: auto;

@@ -2,7 +2,7 @@ export const processContent ={
 	startGreeting: {
 		slogan: 'Got an idea? Let us help you bring it to life.',
 		paragraph:'We all have great, earth-shattering, mind-blowing ideas. But sometimes, an idea simply isn’t enough. More often than not, you need a confidante, a co-worker, and a guding hand. That’s where we come in-- we are here to help you on your way to bringing your idea come to fruition.',
-		sideWord:'bring your idea here!',
+		sideWord:'bring your idea here!'
 	},
 	questionnaire: {
 		slogan: 'Understanding and Identifying Your Goals',

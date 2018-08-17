@@ -17,10 +17,6 @@
 		
 		.paragraph-section{
 			@include paragraph-section-font-xl();
-			// @include paragraph-section(15vh, 50vw, left);
-			// position: absolute;
-			// left: 30vw;
-
 		}
 		
 	}
@@ -39,12 +35,8 @@
 			clip-path: polygon(0 100%, 0% 0%, 100% 14%, 100% 100%);
 			-webkit-clip-path: polygon(0 100%, 0% 0%, 100% 14%, 100% 100%);
 
-			
 			.paragraph-section{
-
 				@include paragraph-section(18vw, 50vw, left, $GLOBAL_CONTENT_WIDTH_M);
-				// position: absolute;
-				// left: 30vw;
 				h3{
 					font-size: $title-font-size-h3-m;
 					
@@ -66,11 +58,8 @@
 			
 		}
 		.scroll-indicator-right{
-			// position: relative;
 			.scroll-indicator-icon{
-				// position: relative;
 				img{
-					// width: 5vw;
 					top: -5vw;
 					position: relative;
 				}

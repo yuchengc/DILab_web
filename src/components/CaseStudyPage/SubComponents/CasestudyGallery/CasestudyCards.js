@@ -2,7 +2,9 @@ import React from 'react';
 import ProjectCard from './ProjectCard/ProjectCard';
 
 const CaseCardsSmall = (props) =>{
-	// console.log('on cards level',cases);
+
+	
+
 	const casestudycomponent = props.cases.map((a,i)=>{
 		
 		return(
@@ -16,6 +18,7 @@ const CaseCardsSmall = (props) =>{
 				backgroundimg={props.cases[i].bgimage}
 				size={props.size}
 				select_project={props.select_project}
+				// onClick={handleScrollTop}
 			/>
 		);
 	});

@@ -16,7 +16,6 @@
 		top: 70px;
 		left: 0px;
 		display: block;
-		// background: white;
 		z-index: 1;
 		border-style: dashed;
 		border-width: 5px 0px 0px 0px;
@@ -33,7 +32,6 @@
 		.front{
 			width:140px;
 			height: 140px;
-			// background: #60D0B7;
 			display: block;
 			flex-direction: row;
 			border-radius: 50%;
@@ -79,7 +77,6 @@
 			border: 5px solid black;
 			color: black;
 			line-height: 150px;
-			// background: rgba(0,0,0,0);
 		}
 		.back{
 			width: 160px;
@@ -88,10 +85,7 @@
 			top: -8px;
 			left: 10px;
 			z-index: 2;
-			
 		}
-	
-		
 	}
 }
 .time-line-frame{
@@ -104,7 +98,6 @@
 		.section-line{
 			width: 100%;
 			height: 8px;
-			// background: #60D0B7;
 			display: block;
 			border-radius: 4px;
 
@@ -114,33 +107,24 @@
 			height: auto;
 			padding: 40px;
 			transition-duration: 0.5s;
-			
-			// display: inline-block;
 			.task{
 				padding: 20px;
 				position: relative;
-				// transform: translateY(50px);
-				// -webkit-transform: translateY(50px);
 				top: 50px;
 				opacity:0;
 				animation: textMoveIn .5s ease-in-out forwards 0s 1;
 			}
 		}
-
 	}
 }
 
 @keyframes textMoveIn {
 	from{
-		// transform: translateY(50px);
-		// -webkit-transform: translateY(50px);
 		top: 50px;
 		opacity: 0;
 
 	}
 	to{
-		// transform: translateY(0px);
-		// -webkit-transform: translateY(0px);
 		top: 0px;
 		opacity: 1;
 	}

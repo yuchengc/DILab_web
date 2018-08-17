@@ -1,12 +1,9 @@
 import React from 'react';
-// import './content_processpage.css'
-import CasestudyCards from './CasestudyCards'
-// import {caseContent} from '../../case_content' 
+import CasestudyCards from './CasestudyCards';
 import {caseContent} from '../../../../ContentFolder/CaseStudyPage/Gallery/caseContent'; 
 import "./CasestudyGallerySmall.css";
 import '../../../../style_global/animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-// import Card from './Card';
 
 const CasestudyGallerySmall = (props) =>{
 	var display_num=props.cases_num;

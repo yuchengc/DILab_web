@@ -1,5 +1,3 @@
-
-
 .card-frame{
 	list-style: none;
 	margin: 15px 0; 
@@ -14,7 +12,6 @@
 		padding-bottom: 100%;
 
 	}
-	// padding: 30px;
 	position: relative;
 	.info-level1{
 		position: absolute;
@@ -23,7 +20,6 @@
 		display: block;
 		width: 100%;
 		height: 100% ;
-		// background: white;
 		opacity: 0;
 		transition-delay: 0s;
 		&:active{
@@ -65,12 +61,10 @@
 			opacity: 1;
 		}
 		.cardmask{
-			// background: white;
 			opacity: 0.8;
 			animation: parjectcard-hovereffect .3s ease-in-out both
 		}
-		// -webkit-filter: opacity(50%);
-		// filter: opacity(50%);
+		
 		h5{
 			color: black;
 			opacity: 1;
@@ -109,10 +103,6 @@
 		clip-path: polygon(0 100%, 0% 0%, 75% 0%, 65% 100%);
 		-webkit-clip-path: polygon(0 100%, 0% 0%, 75% 0%, 65% 100%);
 	}
-	// 70%{
-	// 	clip-path: polygon(0 100%, 0% 0%, 80% 0%, 75% 100%);
-	// 	-webkit-clip-path: polygon(0 100%, 0% 0%, 80% 0%, 75% 100%);
-	// }
 	100%{
 		clip-path: polygon(0 100%, 0% 0%, 100% 0%, 100% 100%);
 		-webkit-clip-path: polygon(0 100%, 0% 0%, 100% 0%, 100% 100%);

@@ -12,10 +12,8 @@
 	-webkit-transform: rotate(90deg);
 	position: relative;
 	left: 15vw !important;
-	// flost: left;
 	z-index:5;
 	top: -18vw;
-	// rught: auto;
 	.side-indicator-bar{
 		width:15vw;
 		height: 5px;
@@ -44,23 +42,15 @@
 		position: absolute;
 		top: calc(-80px - 2.5px);
 		left: -20px;
-		// left: -0.3rem;
-
 	}
 
 }
 .scroll-indicator-right{
 	@extend .scroll-indicator-left;
-	// width:30vw;
-	// height:1rem;
-	// transform: rotate(-90deg);
-	// -webkit-transform: rotate(-90deg);
 	position: relative;
 	float: right;
 	left: 85vw  !important;
-	// right: 0;
 	top: -8vw;
-	// left: auto;
 	z-index: 5;
 
 	.side-caption-right{
@@ -83,10 +73,8 @@
 		-webkit-transform: rotate(90deg);
 		position: relative;
 		left: 10vw  !important;
-		// flost: left;
 		z-index:5;
 		top: -18vw;
-		// rught: auto;
 		.side-indicator-bar{
 			width:15vw;
 			height: 5px;
@@ -122,16 +110,11 @@
 		transform-origin: 0% 50%;
 		-webkit-transform-origin: 0% 50%;
 		-webkit-transform: rotate(90deg);
-		// width:30vw;
-		// height:1rem;
-		// transform: rotate(-90deg);
-		// -webkit-transform: rotate(-90deg);
 		position: relative;
 		float: right;
 		left: 90vw  !important;
 		right: 0;
 		top: -8vw;
-		// left: auto;
 		z-index: 5;
 
 		.side-caption-right{

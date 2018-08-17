@@ -13,9 +13,6 @@ import {projectContent} from '../../../../ContentFolder/CaseStudyPage/Projects/P
 
 const CasestudyGallery =(props) => {
 	const projectIndex = parseInt(props.match.params.number, 10);
-	console.log('projectIndex',projectIndex)
-
-	// render(){
 		return(
 
 		<div className='row no-gutters'>
@@ -52,7 +49,5 @@ const CasestudyGallery =(props) => {
 		</div>
 
 	);
-	// }
-
 }
 export default CasestudyGallery;
